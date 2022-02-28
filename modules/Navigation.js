@@ -9,9 +9,9 @@ export function Nav(){
                         <input  type="text" placeholder="Поиск по товарам">
                     </div>-->
                     <div class="navButtons">
-                        <p>Каталог товаров</p>
-                        <p>Блог</p>
-                        <p>Контакты</p>
+                        <a href='#'>Каталог товаров</a>
+                        <a href='#'>Блог</a>
+                        <a href='#'>Контакты</a>
                     </div>            
                     <div class="menuIcons">
                         <img src="/img/icons/SearchBlack.png" alt="">

@@ -7,6 +7,11 @@
         <link rel='stylesheet' href='style.css'>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
     </head>
     <body>
     <nav class="nav">
@@ -24,12 +29,14 @@
                         произрастания с доставкой на дом.</br>
                         </br>Мы обжариваем кофе каждые выходные.
                     </p>
-                    <button class="Button" style="width: 180px; margin-top: 30px;">Посмотреть каталог</button>
+                    <button class="Button" id="promoButton" style="width: 180px; margin-top: 30px;">Посмотреть каталог</button>
                 </div>
                 <!--<img class='blot' src="/img/blot.png" style="position: fixed; display: flex; top: 0px; height: 1000px;" >-->
                 <div class="promoTopImage" style="display: flex;">
-                    <img src="/img/coffee-breans&cup.png" id='cup'style="width: 100%;position: relative;top: 0px; right: -20px; z-index: 5;"alt="">
+
+                    <img src="/img/coffee-breans&cup.png" id='cup' style="position: absolute;top: 0px; left: -80px; z-index: 5;"alt="">
                     <!--попробуй дать елементу в позиции флекс и прижаеть его flex-end-->
+                    <!--или поработать с бекграунд имадже-->
                     
                     
                 </div>
@@ -39,10 +46,43 @@
         </div>
             <div class="bodyContainer">
                 <div class="catalogyOurProd">
-                    <p class="ourProdP">
-                        Каталоги нашей продукции
-                    </p>
+                    <p class="ourProdP">Каталоги нашей продукции</p>
+                        <div class="catalogProd">
+                            <div class="catalogProdItems">
+                                <div class="catalogItem" id="catalogItem0">
+                                    <img src="/img/freshCoffeCatalog.png" alt="" id="catalogItem0img">
+                                    
+                                    <p>Свежеобжаренный кофе</p>
+                                    
+                                </div>
+                                    <!--style="background-image: url(/img/freshCoffeCatalog.png); background-position: top; background-repeat: no-repeat; background-size: 200px;"-->
+                                <div class="catalogItem" id="catalogItem1">
+                                    <img src="/img/teaAndCoffeeCatalog.png" alt="" style="bottom: 50px;">
+                                    
+                                    <p>Чай и кофеные напитки</p>
+                                    
+                                </div>
+
+                                <div class="catalogItem" id="catalogItem2">
+                                    <img src="/img/HealthuFood.png" alt="">
+                                    
+                                    <p>Здоровое питание</p>
+                                    
+                                </div>
+
+                                <div class="catalogItem" id="catalogItem3">
+                                    <img src="/img/VendingProductCatalog.png" alt="">
+                                    
+                                    <p>Продукция для вендинга</p>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
                 </div>
+
+                
+                
             </div>
         </div>
     </main>

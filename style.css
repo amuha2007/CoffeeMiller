@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 /*fonts*/
 .GilroyFont{
@@ -14,6 +15,8 @@ font-size: 70px;
 
 color: #000000;
 }
+
+
 /*_______*/
 .Button{
     width: fit-content;
@@ -60,6 +63,15 @@ color: #000000;
     line-height: 29px;
     
     
+}
+
+.navButtons>a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.navButtons>a:hover{
+    color: #F9B300;
 }
 
 .logo > img{
@@ -114,12 +126,20 @@ align-items: center
 }
 
 .promoTop{
+    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+   
 }
 
 .promoTopImage{
-    position: relative;
+    position: absolute;
+    left: 50%;
+    
+}
+
+.promoTopText{
+    font-family: 'Ubuntu', sans-serif;
     
 }
 
@@ -127,3 +147,139 @@ align-items: center
     width: 700px !important;
 }
 
+
+.catalogyOurProd{
+    margin-top: 200px;
+}
+
+.ourProdP{
+    
+    font-family: 'Ubuntu', sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+position: relative;
+z-index: 1;
+}
+
+#promoButton{
+    box-shadow: #000000 5px 8px 10px;
+}
+
+#promoButton:hover{
+    color: black;
+}
+
+.activePromoButton{
+    position: relative;
+    top: 8px;
+    left: 5px;
+    box-shadow: none !important;
+}
+
+.catalogProdItems{
+    display: flex;
+    margin-right: 10%;
+    position: relative;
+    
+    
+
+}
+
+.catalogItem{
+    font-family: Gilroy;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+    width: 250px;
+    max-height: 340px;
+    background-color: white;
+    
+    box-shadow: rgb(192, 192, 192) 0px 0px 15px;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    
+    
+}
+
+.catalogItem:hover{
+    box-shadow: #F9B300 0px 0px 15px;
+}
+
+.catalogItem>img{
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
+}
+
+.catalogItem>p{
+   margin-bottom: 45px;
+  
+}
+
+.catalogWithDiscounted{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*КАРУСЕЛЬ*/
+/*карусель общий контейнер*/
+.catalogWithDiscountedCorusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+/*карусель итемы*/
+.DiscountedCouruselItems{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    width: fit-content;
+    
+}
+/*карусель где перемещается контент и динамически меняется*/
+/*тут надо работать над перемещение и динамически контентом*/
+.DiscountedCouruselItemsContainer{
+    display: flex;
+    position: relative;
+    
+}
+/*карусель итем*/
+.DiscountedCouruselItem{
+    box-shadow: rgb(192, 192, 192) 0px 0px 15px;
+    height: 340px;
+    width: 200px;
+    border-radius: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.DiscountedCouruselItem:hover{
+    box-shadow: #F9B300 0px 0px 15px;;
+}
+
+.buttonCorusel{
+    width: 50px;
+    height: 50px;
+    background-color: #F9B300;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
