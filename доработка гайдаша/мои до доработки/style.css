@@ -1,0 +1,536 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+/*fonts*/
+.GilroyFont{
+    font-family: Gilroy;
+font-style: normal;
+font-weight: 900;
+font-size: 70px;
+
+/* identical to box height */
+
+
+color: #000000;
+}
+
+
+/*_______*/
+.Button{
+    width: fit-content;
+    padding: 10px;
+    background-color: #F9B300;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: Gilroy;
+}
+
+.bodyContainer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav{
+    width: 100%;
+    /*box-shadow: 0px 5px 20px rgba(157, 157, 157, 0.25);*/
+    z-index: 1;
+    position: relative;
+
+    
+}
+
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+
+}
+
+.navButtons{
+    display: flex;
+    max-width: 1000px;
+    width: 500px;
+    justify-content: space-evenly;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 29px;
+    
+    
+}
+
+.navButtons>a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.navButtons>a:hover{
+    color: #F9B300;
+}
+
+.logo > img{
+    width:200px;
+    height:100px;
+    margin-right: 30px;
+}
+
+.searchInput{
+    width: 1240px;
+    height:59px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(157, 157, 157, 0.25);
+border-radius: 30px;
+display: flex;
+align-items: center
+
+}
+.searchInput>img{
+    width: 32px;
+    height: 31px;
+    margin-right: 15px;
+    margin-left: 30px;
+}
+.searchInput>input{
+    height:20px;
+    margin-left: 15px;
+    border: none;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    outline: none;
+    color: grey;
+    
+}
+.searchInput>input::placeholder{
+    color: grey;
+}
+
+.menuIcons{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    
+}
+
+.menuIcons>img{
+    width: 22px;
+    height: 22px;
+
+}
+
+.promoTop{
+    
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.promoTopImage{
+    position: absolute;
+    left: 50%;
+    
+}
+
+.promoTopText{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+#cup{
+    width: 700px !important;
+}
+
+
+.catalogyOurProd{
+    margin-top: 200px;
+}
+
+.ourProdP{
+    width: 90%;
+    font-family: 'Ubuntu', sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+position: relative;
+z-index: 1;
+}
+
+#promoButton{
+    box-shadow: #000000 5px 8px 10px;
+}
+
+#promoButton:hover{
+    color: black;
+}
+
+.activePromoButton{
+    position: relative;
+    top: 8px;
+    left: 5px;
+    box-shadow: none !important;
+}
+
+.catalogProdItems{
+    display: flex;
+    margin-right: 10%;
+    position: relative;
+    
+    
+
+}
+
+.catalogItem{
+    font-family: Gilroy;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+    width: 250px;
+    max-height: 340px;
+    background-color: white;
+    
+    box-shadow: rgb(192, 192, 192) 0px 0px 15px;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    
+    
+}
+
+.catalogItem:hover{
+    box-shadow: #F9B300 0px 0px 15px;
+}
+
+.catalogItem>img{
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
+}
+
+.catalogItem>p{
+   margin-bottom: 45px;
+  
+}
+
+.catalogWithDiscounted{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*КАРУСЕЛЬ*/
+/*карусель общий контейнер*/
+.catalogWithDiscountedCorusel{
+    /*контейнер который выстраивает в линию стрелочки и карусель*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+/*карусель итемы*/
+.DiscountedCouruselItems{
+    
+    display: flex;
+    overflow: hidden;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    /*width: fit-content;*/
+    width: 1260px;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*карусель где перемещается контент и динамически меняется*/
+/*тут надо работать над перемещение и динамически контентом*/
+.DiscountedCouruselItemsContainer{
+    
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    
+   /* width: 1260px;*/
+    /*left:-16px;*/
+    /*transition: all 0.5s ease-out;*/
+}
+/*карусель итем*/
+.DiscountedCouruselItem{
+    box-shadow: rgb(192, 192, 192) 0px 0px 8px;
+    height: 430px;
+    width: 230px !important;
+    border-radius: 15px;
+    margin-right: 11px;
+    margin-left: 11px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    transition: all 1s ease-in-out; 
+    
+}
+.DiscountedCouruselItem:hover{
+    box-shadow: #F9B300 0px 0px 8px;;
+}
+
+.buttonCorusel{
+    width: 50px;
+    height: 50px;
+    background-color: #F9B300;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.procentsCircle{
+    color:white; 
+    background-color:#F9B300;
+    width:50px;
+    height:50px;
+    border-radius:50%; 
+    font-family:Gilroy; 
+    font-size:28px;
+    line-height:50px; 
+    margin-left:auto; 
+    position:relative; 
+    top:-20px; 
+    z-index:1; 
+    left:-20px
+}
+
+.DiscountedCouruselItemSelect{
+    border-radius: 5px;
+    border-color: #F9B300;
+    font-family: Gilroy;
+    background-color: #FFF7E1;
+    padding: 1px;
+    position: relative;
+    left: -67px;
+    top: -40px;
+}
+
+.catalogWithDiscountedCoruselItemsImg{
+    height: 200px;
+    position: relative;
+    top:-270px;
+    left: -52px;
+}
+
+.stars{
+    width: 18px;
+    position: relative;
+    left: 60px;
+    top: -40px;
+    cursor: pointer;
+}
+
+.DiscountedCouruselItem>span{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    left: -5px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Gilroy;
+    line-height: 0%;
+    top: -30px;
+}
+.DiscountedCouruselItem>span>p{
+    margin-left: 5px;
+    
+}
+.DiscountedCouruselItemCorns{
+    position: relative;
+    left: 60px;
+    top: -20px;
+}
+.Corns{
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    
+}
+
+.settingsCoffee{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Gilroy;
+    font-size: 12px;
+    position: relative;
+    left: 130px;
+    top: -20px;
+    line-height: 5px;
+}
+
+.settingsCoffeeSourrnessPoint{
+    width: 7px;
+    height:7px;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    margin: 1px;
+}
+
+.settingsCoffeeBitternessPoint{
+    width: 7px;
+    height:7px;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    margin: 1px;
+}
+
+.settingsCoffeeSaturationPoint{
+    width: 7px;
+    height:7px;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    margin: 1px;
+}
+
+.settingsCoffeeSourrness, .settingsCoffeeBitterness, .settingsCoffeeSaturation{
+    display: flex;
+    
+}
+
+.coffeeName{
+    font-family: Gilroy;
+    font-weight: 900;
+    font-style: normal;
+    position: relative;
+    left: -30px;
+    top: -10px;
+}
+
+.coffeeDescription{
+    position: relative;
+    left: 13px;
+    top:-235px;
+    font-family: Gilroy;
+    font-size: 13px;
+    text-align: start;
+    width: 90%;
+    font-weight: 200;
+}
+
+.oldPrice{
+    position: relative;
+    top: -250px;
+    left: -87px;
+    color: rgb(212, 208, 208);
+    font-size: 20px;
+    font-family: Gilroy;
+}
+
+.nowPrice{
+    position: relative;
+    top: -280px;
+    left: -76px;
+    color: #000000;
+    font-family: Gilroy;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.DiscountedCouruselItemButton{
+    position: relative;
+    top: -346px;
+    left: 30px;
+    width: 130px;
+    background-color: #F9B300;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    color: #F0F0F0;
+    font-family: Gilroy;
+    z-index: 100;
+
+}
+
+.DiscountedCouruselItemButton:hover{
+    color: black;
+}
+
+/*контейнер почему стоит работать именно с нами */
+.containerWorkWithUs{
+    display: flex;
+    width: 100%; 
+    text-align: center;
+    justify-content: center;
+    gap: 180px
+}
+
+
+
+.workWithUsLeft{
+   display: block;
+   width: 100%;
+}
+
+.workWithUsLeft__wrapper{
+
+    position: relative;/*может быть лучше будет сделать релатив */
+}
+
+.workWithUsLeft__img-1 {
+    width: 260px; 
+    position: absolute;
+    z-index: 3; 
+    top: 110px;
+    right: 0;
+}
+
+.workWithUsLeft__img-2{
+    width: 370px; 
+    position: absolute;
+    z-index: 1; 
+    right: 56px; 
+    top: 20px;
+}
+
+.workWithUsRight{
+    margin-left: auto;
+    width: 100%;
+}
+
+.workWithUsRightSection{
+    /*display: -webkit-box; не будет редактить размеры елемента*/
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+.workWithUsRightSectionText{
+    margin-left: 25px;
+}
+
+.workWithUsRightSectionPTop{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.workWithUsRightSectionPBottom{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+}

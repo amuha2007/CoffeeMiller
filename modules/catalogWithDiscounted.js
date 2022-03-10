@@ -1,109 +1,375 @@
-export function catalogWithDiscountedCorusel(){
-    let catalogWithDiscounted = document.createElement('div')
-    catalogWithDiscounted.innerHTML=`
+export function catalogWithDiscountedCorusel() {
+  let catalogWithDiscounted = document.createElement("div");
+  catalogWithDiscounted.innerHTML = `
     <p class="ourProdP" style="text-align: end;">Товары со скидкой</p>
-    <p class="catalogWithDiscountedText" style="text-align: end; font-family:'Ubuntu', sans-serif;">Наша компания предлагает покупать товар со скидкой не только в дни распродаж<br> или в течение действия ограниченных предложений, но и пользоваться скидками постоянно</p>
+    <p class="catalogWithDiscountedText" style="text-align: end; font-family:'Ubuntu', sans-serif; width:90%;">Наша компания предлагает покупать товар со скидкой не только в дни распродаж<br> или в течение действия ограниченных предложений, но и пользоваться скидками постоянно</p>
 
                 <div class="catalogWithDiscountedCorusel">
+
                         <div class="buttonCorusel" id='buttonPrev' style="background-image:url(/img/ArrowLeft.png);"></div>
                             <div class="DiscountedCouruselItems">
                                 <div class='DiscountedCouruselItemsContainer'>
-                                        <div class="DiscountedCouruselItem"></div>
-                                        <div class="DiscountedCouruselItem"></div>
-                                        <div class="DiscountedCouruselItem"></div>
+                                        
                                 </div>
                             </div>
                         <div class="buttonCorusel" id='buttonNext' style="background-image: url(/img/ArrowRight.png);"></div>
-                    </div>
-
-
-                    <div style="width:80%; text-align: end;" >
-                    <div style="margin-top: 30px; text-align:end;"><a href="">смотреть все</a></div><!--style="margin-left: 75%;-->
-                    </div>
                 </div>
+
+
+                    <div style='width:80%; text-align:center; margin-right:auto; margin-left:auto;'>
+                        <div style="margin-top: 15px;width:100%;"><a class='catalogWithDiscountedCoruselA' href="">смотреть все</a></div><!--style="margin-left: 75%;-->
+                        </div>
+                    </div>
     `;
-    catalogWithDiscounted.classList.add('catalogWithDiscounted');
-    document.querySelector('.main').append(catalogWithDiscounted);
+  catalogWithDiscounted.classList.add("catalogWithDiscounted");
+  document.querySelector(".forCourusel").append(catalogWithDiscounted);
+  console.log(document.querySelector(".DiscountedCouruselItemsContainer")); //сюда надо добавлять елементы через цикл-контент карточек
 }
 
-setTimeout(()=>{
-    let catalogWithDiscountedCorusel=document.querySelector('.catalogWithDiscountedCorusel');
-    let buttonNext=document.querySelector('#buttonNext');
-    let buttonPrev=document.querySelector('#buttonPrev');
-    
-    let catalogWithDiscountedCoruselItems=[
-        {
-            name:tovar1,
-            description:'описание 1',
-            img:'//img/',
-            price:'1234',
-            oldprice:'123',
-            stars:5,
-            volume:'',//объем
-            saturation:3,//насыщенность
-            sourrness:2,//кислинка
-            bitterness:2//горчинка
+setTimeout(() => {
+  let catalogWithDiscountedCoruselItems = [
+    {
+      name: "Colombia Supremo1",
+      description: "Свежеобжаренный кофе - описание товара, вкус, аромат",
+      img: "/img/coffePack.png",
+      price: "1234",
+      oldprice: "123",
+      stars: 5,
+      volume: "", //объем
+      saturation: 3, //насыщенность
+      sourrness: 2, //кислинка
+      bitterness: 2, //горчинка
+      coffeeStrength: 3,
+    },
+    {
+      name: "Colombia Supremo2",
+      description: "Свежеобжаренный кофе - описание товара, вкус, аромат",
+      img: "/img/coffePack.png",
+      price: "1234",
+      oldprice: "123",
+      stars: 1,
+      volume: "", //объем
+      saturation: 3, //насыщенность
+      sourrness: 2, //кислинка'tovar'
+      bitterness: 2, //горчинка
+      coffeeStrength: 4,
+    },
+    {
+      name: "Colombia Supremo3",
+      description: "Свежеобжаренный кофе - описание товара, вкус, аромат",
+      img: "/img/coffePack.png",
+      price: "1234",
+      oldprice: "123",
+      stars: 2,
+      volume: "", //объем
+      saturation: 3, //насыщенность
+      sourrness: 2, //кислинка
+      bitterness: 2, //горчинка
+      coffeeStrength: 2,
+    },
+    {
+      name: "Colombia Supremo4",
+      description: "Свежеобжаренный кофе - описание товара, вкус, аромат",
+      img: "/img/coffePack.png",
+      price: "1234",
+      oldprice: "123",
+      stars: 3,
+      volume: "", //объем
+      saturation: 3, //насыщенность
+      sourrness: 2, //кислинка
+      bitterness: 2, //горчинка
+      coffeeStrength: 5,
+    },
+    {
+      name: "Colombia Supremo5",
+      description: "Свежеобжаренный кофе - описание товара, вкус, аромат",
+      img: "/img/coffePack.png",
+      price: "1234",
+      oldprice: "123",
+      stars: 4,
+      volume: "", //объем
+      saturation: 3, //насыщенность
+      sourrness: 2, //кислинка
+      bitterness: 2, //горчинка
+      coffeeStrength: 3,
+    },
+    {
+      name: "Colombia Supremo6",
+      description: "Свежеобжаренный кофе - описание товара, вкус, аромат",
+      img: "/img/coffePack.png",
+      price: "1234",
+      oldprice: "123",
+      stars: 3,
+      volume: "", //объем
+      saturation: 3, //насыщенность
+      sourrness: 2, //кислинка
+      bitterness: 2, //горчинка
+      coffeeStrength: 5,
+    },
+    {
+      name: "Colombia Supremo7",
+      description: "Свежеобжаренный кофе - описание товара, вкус, аромат",
+      img: "/img/coffePack.png",
+      price: "1234",
+      oldprice: "123",
+      stars: 3,
+      volume: "", //объем
+      saturation: 3, //насыщенность
+      sourrness: 2, //кислинка
+      bitterness: 2, //горчинка
+      coffeeStrength: 5,
+    },
+  ];
 
-        },
-        {
-            name:tovar2,
-            description:'описание 2',
-            img:'//img/',
-            price:'1234',
-            oldprice:'123',
-            stars:1,
-            volume:'',//объем
-            saturation:3,//насыщенность
-            sourrness:2,//кислинка
-            bitterness:2//горчинка
+  let DiscountedCouruselItemsContainer = document.querySelector(
+    ".DiscountedCouruselItemsContainer"
+  );
+  let catalogWithDiscountedCorusel = document.querySelector(
+    ".catalogWithDiscountedCorusel"
+  );
+  let buttonNext = document.querySelector("#buttonNext");
+  let buttonPrev = document.querySelector("#buttonPrev");
 
-        },
-        {
-            name:tovar3,
-            description:'описание 3',
-            img:'//img/',
-            price:'12341234',
-            oldprice:'123',
-            stars:2,
-            volume:'',//объем
-            saturation:3,//насыщенность
-            sourrness:2,//кислинка
-            bitterness:2//горчинка
+  for (let i = 0; i < catalogWithDiscountedCoruselItems.length; i++) {
+    //console.log(DiscountedCouruselItemsContainer.children[i]);
 
-        },
-        {
-            name:tovar4,
-            description:'описание 4',
-            img:'//img/',
-            price:'1234',
-            oldprice:'123',
-            stars:3,
-            volume:'',//объем
-            saturation:3,//насыщенность
-            sourrness:2,//кислинка
-            bitterness:2//горчинка
+    let DiscountedCouruselItem = document.createElement("div");
+    DiscountedCouruselItem.setAttribute("class", "DiscountedCouruselItem");
+    DiscountedCouruselItemsContainer.appendChild(DiscountedCouruselItem);
 
-        },
-        {
-            name:tovar5,
-            description:'описание 5',
-            img:'//img/',
-            price:'1234',
-            oldprice:'123',
-            stars:4,
-            volume:'',//объем
-            saturation:3,//насыщенность
-            sourrness:2,//кислинка
-            bitterness:2//горчинка            
+    let procentCircle = document.createElement("div"); //круг с процентами
 
-        }
-    ];
+    procentCircle.setAttribute("class", "procentsCircle");
+    procentCircle.innerHTML = `%`;
+    DiscountedCouruselItem.appendChild(procentCircle);
 
+    let DiscountedCouruselItemSelect = document.createElement("select");
+    DiscountedCouruselItemSelect.setAttribute(
+      "class",
+      "DiscountedCouruselItemSelect"
+    );
+    DiscountedCouruselItemSelect.innerHTML = `
+    <option value='first' selected='selected'>250г</option>
+    <option value='second' >500г</option>
+    <option value='third'>1000г</option>`;
+    DiscountedCouruselItem.appendChild(DiscountedCouruselItemSelect);
+    DiscountedCouruselItemsContainer.appendChild(DiscountedCouruselItem);
+    let Pskidki = document.createElement("p");
+    Pskidki.innerHTML = "Скидки";
+    Pskidki.style.cssText = `color:#F9B300; font-family:Gilroy; font-size:14px; position:relative; top:-50px;left:70.3px;`;
+    DiscountedCouruselItem.appendChild(Pskidki);
 
+    let DiscountedCouruselItemStars = document.createElement("div");
+    DiscountedCouruselItemStars.setAttribute(
+      "class",
+      "DiscountedCouruselItemStars"
+    );
+    DiscountedCouruselItemStars.innerHTML = `
+    <img src='/img/StarGrey.png' class='stars'>
+        <img src='/img/StarGrey.png' class='stars'>
+        <img src='/img/StarGrey.png' class='stars'>
+        <img src='/img/StarGrey.png' class='stars'>
+        <img src='/img/StarGrey.png' class='stars'>
+    `;
+    DiscountedCouruselItem.appendChild(DiscountedCouruselItemStars);
 
+    let spanOcenka = document.createElement("span");
+    spanOcenka.innerHTML = `4.0`;
+    //spanOcenka.style.cssText=`font-family:Gilroy;`
+    spanOcenka.setAttribute("class", "spanOtzivy");
+    let spanOtzivy = document.createElement("p");
+    spanOtzivy.style.cssText = "font-size:12px; font-family:Gilroy;";
+    spanOtzivy.innerHTML = "(32 отзыва)";
+    spanOcenka.appendChild(spanOtzivy);
+    DiscountedCouruselItem.appendChild(spanOcenka);
+
+    //Орехи
+    let DiscountedCouruselItemCorns = document.createElement("div");
+    DiscountedCouruselItemCorns.setAttribute(
+      "class",
+      "DiscountedCouruselItemCorns"
+    );
+    DiscountedCouruselItem.appendChild(DiscountedCouruselItemCorns);
+
+    //характеристики кофе
+    let settingsCoffee = document.createElement("div");
+    settingsCoffee.setAttribute("class", "settingsCoffee");
+    settingsCoffee.innerHTML = `
+                    <div>
+                        <p>Кислинка</p>
+                            <div class='settingsCoffeeSourrness'>
+                                <div class='settingsCoffeeSourrnessPoint'></div>
+                                <div class='settingsCoffeeSourrnessPoint'></div>
+                                <div class='settingsCoffeeSourrnessPoint'></div>
+                                <div class='settingsCoffeeSourrnessPoint'></div>
+                                <div class='settingsCoffeeSourrnessPoint'></div>
+                                <div class='settingsCoffeeSourrnessPoint'></div>
+                                <div class='settingsCoffeeSourrnessPoint'></div>
+                                <div class='settingsCoffeeSourrnessPoint'></div>
+                                <div class='settingsCoffeeSourrnessPoint'></div>
+                                <div class='settingsCoffeeSourrnessPoint'></div>
+                            </div>
+                    </div>
+
+                    <div>        
+                        <p>Горчинка</p>
+                            <div class='settingsCoffeeBitterness'>
+                                <div class='settingsCoffeeBitternessPoint'></div>
+                                <div class='settingsCoffeeBitternessPoint'></div>
+                                <div class='settingsCoffeeBitternessPoint'></div>
+                                <div class='settingsCoffeeBitternessPoint'></div>
+                                <div class='settingsCoffeeBitternessPoint'></div>
+                                <div class='settingsCoffeeBitternessPoint'></div>
+                                <div class='settingsCoffeeBitternessPoint'></div>
+                                <div class='settingsCoffeeBitternessPoint'></div>
+                                <div class='settingsCoffeeBitternessPoint'></div>
+                                <div class='settingsCoffeeBitternessPoint'></div>
+                            </div>
+                    </div>
+
+                    <div>
+                        <p>Насыщенность</p>
+                            <div class='settingsCoffeeSaturation'>
+                            <div class='settingsCoffeeSaturationPoint'></div>
+                            <div class='settingsCoffeeSaturationPoint'></div>
+                            <div class='settingsCoffeeSaturationPoint'></div>
+                            <div class='settingsCoffeeSaturationPoint'></div>
+                            <div class='settingsCoffeeSaturationPoint'></div>
+                            <div class='settingsCoffeeSaturationPoint'></div>
+                            <div class='settingsCoffeeSaturationPoint'></div>
+                            <div class='settingsCoffeeSaturationPoint'></div>
+                            <div class='settingsCoffeeSaturationPoint'></div>
+                            <div class='settingsCoffeeSaturationPoint'></div>
+                            </div>
+                    </div>
+                        `;
+    DiscountedCouruselItem.appendChild(settingsCoffee);
+    //название кофе
+    let coffeName = document.createElement("p");
+    coffeName.innerHTML = `${catalogWithDiscountedCoruselItems[i].name}`;
+    coffeName.setAttribute("class", "coffeName");
+    DiscountedCouruselItem.appendChild(coffeName);
+    //картинка кофе
+    let catalogWithDiscountedCoruselItemsImg = document.createElement("img");
+    catalogWithDiscountedCoruselItemsImg.setAttribute(
+      "class",
+      "catalogWithDiscountedCoruselItemsImg"
+    );
+    catalogWithDiscountedCoruselItemsImg.setAttribute(
+      "src",
+      `${catalogWithDiscountedCoruselItems[i].img}`
+    );
+    DiscountedCouruselItem.appendChild(catalogWithDiscountedCoruselItemsImg);
+    //описание кофе
+    let coffeeDescription = document.createElement("p");
+    coffeeDescription.setAttribute("class", "coffeeDescription");
+    coffeeDescription.innerHTML = `${catalogWithDiscountedCoruselItems[i].description}`;
+    DiscountedCouruselItem.appendChild(coffeeDescription);
+
+    let OldPrice = document.createElement("p");
+    OldPrice.setAttribute("class", "oldPrice");
+    OldPrice.innerHTML = `${catalogWithDiscountedCoruselItems[i].oldprice}`;
+    DiscountedCouruselItem.appendChild(OldPrice);
+
+    let NowPrice = document.createElement("p");
+    NowPrice.setAttribute("class", "nowPrice");
+    NowPrice.innerHTML = `${catalogWithDiscountedCoruselItems[i].price}`;
+    DiscountedCouruselItem.appendChild(NowPrice);
+
+    //кнопка В Корзину
+    let DiscountedCouruselItemButton = document.createElement("button");
+    DiscountedCouruselItemButton.innerHTML = "В корзину";
+    DiscountedCouruselItemButton.setAttribute(
+      "class",
+      "DiscountedCouruselItemButton"
+    );
+    DiscountedCouruselItem.appendChild(DiscountedCouruselItemButton);
+  }
+
+  // циклом отрисовываю исходя из крепости кофе - количество зерен
+  let DiscountedCouruselItemCorns = document.querySelectorAll(
+    ".DiscountedCouruselItemCorns"
+  );
+
+  for (let i = 0; i < catalogWithDiscountedCoruselItems.length; i++) {
+    for (
+      let j = 0;
+      j < catalogWithDiscountedCoruselItems[i].coffeeStrength;
+      j++
+    ) {
+      console.log(catalogWithDiscountedCoruselItems[i].coffeeStrength);
+      let Corn = document.createElement("img");
+      Corn.setAttribute("src", "/img/Corns.png");
+      Corn.setAttribute("class", "Corns");
+      DiscountedCouruselItemCorns[i].append(Corn);
+    }
+  }
+
+  for (let i = 0; i < catalogWithDiscountedCoruselItems.length; i++) {
+    let settingsCoffeeSourrness =
+      catalogWithDiscountedCoruselItems[i].sourrness;
+    console.log(settingsCoffeeSourrness);
+  }
+
+  //______Бесконечный Слайдер____________________________
+
+  //вычесляю размеры карточки
+  let widthCard = document.querySelector(".DiscountedCouruselItem").offsetWidth; //ширина карточки
+
+  let step = 0; //шаг карусели
+  let stepWidth = widthCard + 20; // ширина шага = ширина карточки + падинги еще по 10 пикс
+  let coruselItems = [];
+
+  // функция устанавливает массив из элементов элементов
+  const setArrayItems = () => {
+    // берет все элементы HTML с классом DiscountedCouruselItem и обьеденяет в массив
+    coruselItems = Array.from(
+      document.querySelectorAll(".DiscountedCouruselItem")
+    );
+
+    // проходится по всем элентам массива coruselItems и для каждого задает отступ с лева от края контейнера
+    for (let i = 0; i < coruselItems.length; i++) {
+      const element = coruselItems[i];
+      element.style.left = `${stepWidth * i}px`;
+    }
+  };
+
+  // сразу вызываем функцию, чтобы нарисовать наши элементы
+  setArrayItems();
+
+  buttonNext.addEventListener("click", function () {
+    step = step + 1;
+
+    // первый элемент
+    const firstElement = document.querySelector(
+      ".DiscountedCouruselItemsContainer"
+    ).children[0];
+
+    // последний элемент
+    const lastElement = document.querySelector(
+      ".DiscountedCouruselItemsContainer"
+    ).children[coruselItems.length - 1];
+
+    // заменяем последний элемент на первый
+    document
+      .querySelector(".DiscountedCouruselItemsContainer")
+      .insertBefore(lastElement, firstElement);
+
+    // устанавливаем новый массив с измененными элементами
+    setArrayItems();
+  });
+
+  buttonPrev.addEventListener("click", function () {
+    step = step - 1;
+
+    // переносим первый элемент в конец
+    document
+      .querySelector(".DiscountedCouruselItemsContainer")
+      .appendChild(
+        document.querySelector(".DiscountedCouruselItemsContainer").children[0]
+      );
+
+    // устанавливаем новый массив с измененными элементами
+    setArrayItems();
+  });
 }, 0);
-
-/*требуется создать массив из обьектов где будет вся инфа карточек , установить им фиксированную ширину 
-и удалять из этого массива елемент и добалвять его вначала при прокрутке и наоборот*/
-
-//добавляю мои карточки из массива catalogWithDiscountedCoruselItems в елемент catalogWithDiscountedCorusel

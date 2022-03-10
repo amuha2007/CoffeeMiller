@@ -54,47 +54,7 @@ document.querySelector('#promoButton').addEventListener('mouseout', function(){
 //добавляю и удаляю кнопки в .catalogPropItem
 
 document.querySelectorAll('.catalogItem').forEach(function(elem,index){
-    /*elem.addEventListener('mouseover',function(event){
-        let buttonBye = document.createElement('button');
-        buttonBye.setAttribute('class','buttonCatalogProdItem')
-        buttonBye.setAttribute('id','buttonCatalogProdItem'+index);
-        buttonBye.innerHTML='Купить';
-        buttonBye.style.cssText='background-color:#F9B300; min-height:30px; width:70%;margin-left:auto;margin-right:auto; border-radius:10px; border:solid 1px white;';
-        
-            if(!elem.querySelector('.buttonCatalogProdItem')){
-            elem.insertBefore(buttonBye, elem.children[1]);
-//                console.log(buttonBye);
-            
-                console.log(buttonBye);
-                console.dir(buttonBye);
 
-                
-            }
-        
-        elem.addEventListener('mouseout', function(event){
-            console.log(event.target.tagName);
-            if(event.target.tagName=='IMG'){
-                console.log('мышка вышла из img ');
-            }
-            if(event.target.tagName=='P'){
-                console.log('мышка вышла из р');
-            }
-            if(event.target.tagName=='DIV'&&event.target.className=='catalogItem'){
-                if(event.target.tagName=='IMG'||event.target.tagName=='P'||event.target.tagName=="BUTTON"){
-                    console.log('containerDiv');
-                }
-                
-            }
-            if(event.target.tagName=='BUTTON'){
-                console.log('мышка вышла из Button');
-            }
-        })
-            
-    })*/
-
-    
-
-    
 })
 
 catalogWithDiscountedCorusel();
