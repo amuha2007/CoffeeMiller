@@ -2947,7 +2947,12 @@ position: absolute;
 .openCard_Container_oldPrice{
   margin-top: 20px;
 }
-
+.AdditionallyHeader{
+  font-size: 22px;
+}
+#reviews{
+  display: none;
+}
 .openCard_Container_settings{
   display: flex;
   flex-direction: column;
