@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="by">
     <head>
-        <title>Cofe</title>
+        <title>Coffee</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' href='style.css'>
-
+        <!-- медиа запросы -->
+        <link rel="stylesheet" href="media.css"> 
+        <!---->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +15,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         
     </head>
-    <body>
-    <nav class="nav">
+    <body class="body" id="body">
+    <nav class="nav" id="nav">
 
     </nav>
         
     <main class="main">
+        <!-- <div class='searchingTovars'></div> -->
         <div class="bodyContainer">
+            
             <div class="promoTop" ><!--style="position: absolute"-->
                 <div class="promoTopText" style="z-index: 10;">
-                    <h1 class="GilroyFont" style="white-space: nowrap;">Свежеобжаренный кофе</h1>
+                    <h1 class="GilroyFont">Свежеобжаренный кофе</h1>
                     <br>
                     <p>
                         Кофе Калининградской обжарки из разных стран<br>
@@ -31,18 +35,14 @@
                     </p>
                     <button class="Button" id="promoButton" style="width: 180px; margin-top: 30px;">Посмотреть каталог</button>
                 </div>
-                <!--<img class='blot' src="/img/blot.png" style="position: fixed; display: flex; top: 0px; height: 1000px;" >-->
+                
                 <div class="promoTopImage" style="display: flex;">
-
-                    <img src="/img/coffee-breans&cup.png" id='cup' style="position: absolute;top: 0px; left: -80px; z-index: 5;"alt="">
-                    <!--попробуй дать елементу в позиции флекс и прижаеть его flex-end-->
-                    <!--или поработать с бекграунд имадже-->
-                    
-                    
+                    <!-- изображения чашки и зерен кофе -->
+                    <img src="/img/coffee-breans&cup2.png" style="position: relative; z-index: 2;">
                 </div>
                 
             </div>
-            <img class='' src="/img/blot.png" style=" top: 0px; max-height: 1100px; position: absolute; right: 0;">
+            <img class='' src="/img/blot.png" style=" top: 0px; max-height: 1100px; position: absolute; right: 0; z-index: 0;">
         </div>
             <div class="bodyContainer">
                 <div class="catalogyOurProd">
@@ -50,33 +50,39 @@
                         <div class="catalogProd">
                             <div class="catalogProdItems">
                                 <div class="catalogItem" id="catalogItem0">
-                                    <img src="/img/freshCoffeCatalog.png" alt="" id="catalogItem0img">
-                                    
+                                    <div class="catalogItemForImg">
+                                        <!-- <img src="/img/freshCoffeCatalog.png" alt="" id="catalogItem0img"> -->
+                                    </div>
                                     <p>Свежеобжаренный кофе</p>
                                     
                                 </div>
-                                    <!--style="background-image: url(/img/freshCoffeCatalog.png); background-position: top; background-repeat: no-repeat; background-size: 200px;"-->
+
                                 <div class="catalogItem" id="catalogItem1">
-                                    <img src="/img/teaAndCoffeeCatalog.png" alt="" style="bottom: 50px;">
-                                    
+                                    <div class="catalogItemForImg">
+                                        <!-- <img src="/img/teaAndCoffeeCatalog.png" alt="" style="bottom: 50px;"> -->
+                                    </div>
                                     <p>Чай и кофеные напитки</p>
                                     
                                 </div>
 
                                 <div class="catalogItem" id="catalogItem2">
-                                    <img src="/img/HealthuFood.png" alt="">
-                                    
+                                    <div class="catalogItemForImg">
+                                        <!-- <img src="/img/HealthuFood.png" alt=""> -->
+                                    </div>
                                     <p>Здоровое питание</p>
                                     
                                 </div>
 
                                 <div class="catalogItem" id="catalogItem3">
-                                    <img src="/img/VendingProductCatalog.png" alt="">
-                                    
+                                    <div class="catalogItemForImg">
+                                        <!-- <img src="/img/VendingProductCatalog.png" alt=""> -->
+                                    </div>
                                     <p>Продукция для вендинга</p>
                                     
                                 </div>
 
+                                <!-- <div class="catalogItem" id="catalogItem4"></div> -->
+                                
                             </div>
                         </div>
                 </div>
@@ -88,7 +94,7 @@
                 <!--весь код фрагмента в catalogWithDiscounted.js-->
             </div>
 
-            
+        <div class="WorkWithUs">
             <div class="containerWorkWithUsHeader">
                 <!-- <p>Почему стоит работать<br> именно с нами?</p> -->
                 <img src="/img/Vector.png" alt="">
@@ -103,26 +109,26 @@
                 </div>
 
                     <div class="workWithUsRight">
-                        <p style="margin-right: 0px;font-family: 'Ubuntu', sans-serif; font-style: normal;font-weight: 900; font-size: 30px; text-align: start; ">Почему стоит работать<br> именно с нами?</p>
+                        <p style="margin-right: 0px;font-family: 'Ubuntu', sans-serif; font-style: normal;font-weight: 900; font-size: 30px; text-align: start;">Почему стоит работать<br> именно с нами?</p>
 
                         <div class="workWithUsRightSections">
                             <div class="workWithUsRightSection">
-                                <div style="background-color: #F9B300; border-radius: 50%;background-position: center; background-image: url('/img/cupIco.png'); width: 55px; height: 55px; background-repeat: no-repeat; background-size: 22px;"></div>
-                                    <div class="workWithUsRightSectionText">
+                                <div class='circleWithIcoWorkWithUS' style="background-image: url('/img/cupIco.png');"></div>
+                                    <div class="workWithUsRightSectionText" >
                                         <p class="workWithUsRightSectionPTop">Всегда свежая обжарка</p>
                                         <p class="workWihtUsRightSectionPBottom">Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка</p>
                                     </div>
                             </div>
                             <div class="workWithUsRightSection">
-                                <div  style="background-color: #F9B300;border-radius: 50%; background-position: center; background-image: url('/img/stickIco.png');width: 55px; height: 55px; background-repeat: no-repeat; background-size: 22px;"></div>
-                                    <div class="workWithUsRightSectionText">
+                                <div class="circleWithIcoWorkWithUS" style="background-image: url('/img/stickIco.png');"></div>
+                                    <div class="workWithUsRightSectionText" >
                                         <p class="workWithUsRightSectionPTop">Лучшие цены на продукции</p>
                                         <p class="workWihtUsRightSectionPBottom">Благодаря крупным объемам производства мы даем лучшие цены на нашу продукцию</p>
                                     </div>
                             </div>
                             <div class="workWithUsRightSection">
-                                <div style="background-color: #F9B300;border-radius: 50%; background-position: center; background-image: url('/img/peopleIco.png');width: 54px; height: 55px; background-repeat: no-repeat; background-size: 22px;"></div>
-                                    <div class="workWithUsRightSectionText">
+                                <div class='circleWithIcoWorkWithUS' style="background-image: url('/img/peopleIco.png');"></div>
+                                    <div class="workWithUsRightSectionText" >
                                         <p class="workWithUsRightSectionPTop">Консультации 24/7</p>
                                         <p class="workWihtUsRightSectionPBottom">Наши специалисты готовы всегда помочь и подсказать вам с выбором кофе или другой продукции.</p>
                                     </div>
@@ -130,53 +136,35 @@
                         </div>
                     </div>
             </div>
-            <div class="workWithUsFooter">
-                <img src="/img/Vector.png" alt="">
-            </div>
+            
+        </div>
+        <!-- конец WorkWithUs -->
 
             <div class="HowFriedCoffee">
-                <div class="HowFriedCoffeeContainer">
-                    <div class="HowFriedCoffeeContainerText">
-                        <p class="HowFriedCoffeeContainerTextHeaderP">Как мы обжариваем наш кофе:</p>
-                            <p class="HowFriedCoffeeContainerTextInnerP">
-                                Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство 
-                                в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы 
-                                для производства растворимой продукции. <br><br>
-                                
-                                Кофе поставляется в контейнерах напрямую с плантаций по всему миру. Компания имеет долгосрочные контракты по поставке продукции. Каждая партия проходит строгий контроль на заводе для проверки зерна. Зеленое зерно обжаривается, проходит процесс дегазации и тут же отправляется клиентам. Наши обжарщики прошли обучение в России и за рубежом. 
-                                У нас свой подход к каждой партии зерна. <br><br><br>
-                                
-                                Мы раскрываем вкус каждого сорта кофе.
-                            </p>
-                            <button class="HowFriedCoffeeContainerButton">Перейти в каталог</button>
-                            
-                    </div>
-                    
-                </div>
-                <img alt='' style="position: relative;  top:25px; width: 100%;" src="/img/VectorWhite.png"> 
-            </div> 
+                
+            </div>  
             <!--Новости компании-->
+        
             <div class="NewsCompany">
-                <div class="NewsCompanyHeader">
-                    <p class="NewsCompanyHeaderP">Новости компании</p>
-                    <a class="NewsCompanyHeaderA" href="">Читать все</a>
-                </div>
-                <div class="NewsCpmpanyContant">
-
-                </div>
+                
             </div>
+            <!-- тут надо закрыть container с width 90% что бы контейнер стал на всю ширину для векторов -->
 
             <!--Мы в интаграмм возможно лучше сделать отдельным компонентом-->
             <div class="WeInInstagram">
-                <div class="WeInInstagramHeader">
-                    <p class="WeInInstagramHeaderP">Мы в Instagram</p>
-                    <img src="/img/icons/instagramIco.png">
-                </div>
+                
             </div>
+
+            <div class="SubscribeForNews">
+            </div>
+        
+            
     </main>
     
-    
+    <footer class="footer"></footer>
     </body>
 
     <script type='module' src='script.js'></script>
     </html>
+
+    

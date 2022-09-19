@@ -1,62 +1,44 @@
+
 import {Nav} from './modules/Navigation.js';
 import {catalogWithDiscountedCorusel} from './modules/catalogWithDiscounted.js';
+import {newsCompany} from './modules/NewsCompany.js'; 
+import {WeInInstagram} from './modules/WeInInstagram.js';
+import {HowFriedCoffee} from './modules/HowFriedCoffee.js';
+import {SubscribeForNews} from './modules/subscribeForNews.js';
+import {Footer} from './modules/footer.js';
+import {registration} from "./modules/registration.js";
+import {CoffeCatalogMain} from "./pages/coffeeCatalog/cofeeCatalogMain.js";
+import {teaCatalogMain} from "./pages/teaCatalog/teaCatalogMain.js";
+import {vendingCatalogMain} from "./pages/vendingCatalog/vendingCatalogMain.js";
+import {foodCatalogMain} from "./pages/foodCatalog/foodCatalogMain.js";
+import {Basket} from "../pages/basket/basket.js";
+import {mainPage} from './pages/MainPage/mainPage.js';
+
+import {allTovarsData} from './modules/allTovarsData.js';
+
+
+
 Nav();
-/*
-let blot = document.querySelector('.blot');
-console.log(blot);
-window.addEventListener('resize', function(event){
-    console.log(document.body.clientWidth);
-    console.log(blot.offsetWidth);
-    blot.style.left=(document.body.clientWidth-blot.offsetWidth)+'px';
-})
-*/
 
-let NavIcons = document.querySelector('.menuIcons').children;
-let arNavIcons = Array.from(NavIcons);
-arNavIcons[0].addEventListener('mouseover', function(){
+export function PageMain(){
+
+//сюда функция по отрисовке первого экрана 
+//document.querySelector('.main').innerHTML
+    document.querySelector('#mainPageA').addEventListener('click', PageMain);
     
-    this.setAttribute('src','/img/icons/SearchWhite.png');
-arNavIcons[0].addEventListener('mouseout', function(){
-    this.setAttribute('src','/img/icons/SearchBlack.png');
-})
+    mainPage();
     
-})
+    document.querySelector('#catalogItem0').addEventListener('click', CoffeCatalogMain);
+    document.querySelector('#catalogItem1').addEventListener('click', teaCatalogMain);
+    document.querySelector('#catalogItem2').addEventListener('click', foodCatalogMain);
+    document.querySelector('#catalogItem3').addEventListener('click', vendingCatalogMain);   
 
-arNavIcons[1].addEventListener('mouseover', function(){
-    this.setAttribute('src','/img/icons/corzineWhite.png');
-    arNavIcons[1].addEventListener('mouseout', function(){
-        this.setAttribute('src','/img/icons/corzine.png');
-        
-    })
-})
+    
+    
 
-arNavIcons[2].addEventListener('mouseover', function(){
-    this.setAttribute('src','/img/icons/peopleWhite.png');
-    arNavIcons[2].addEventListener('mouseout', function(){
-        this.setAttribute('src','/img/icons/people.png');
-    })
-})
-/*
-.addEventListener('mouseon', function(event){
-    console.log(event.target);
-})*/
-
-document.querySelector('#promoButton').addEventListener('mousedown', function(){
-    this.classList.toggle('activePromoButton');
-});
-document.querySelector('#promoButton').addEventListener('mouseup', function(){
-    this.classList.remove('activePromoButton');
-});
-document.querySelector('#promoButton').addEventListener('mouseout', function(){
-    this.classList.remove('activePromoButton');
-});
-
-//добавляю и удаляю кнопки в .catalogPropItem
-
-document.querySelectorAll('.catalogItem').forEach(function(elem,index){
-
-})
-
-catalogWithDiscountedCorusel();
+}
+    
+PageMain()
+    
 
 

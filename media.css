@@ -1,0 +1,1215 @@
+@media screen and (max-width:1651px){
+    .main{
+        height: 5180px;
+    }
+};
+    
+
+
+
+@media screen and (max-width:1520px){
+    /* надо поработать с "Как мы обжариваем кофе" с векторами */
+    /* .HowFriedCoffee{
+
+    } */
+}
+@media screen and (max-width:1650px){
+    #catalogItem0{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #catalogItem1{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #catalogItem2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #catalogItem3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .DiscountedCouruselItems{
+        width: 1200px;
+        
+    }
+}
+@media screen and (max-width:1625px){
+    .DiscountedCouruselItems{
+        width: 1002px;
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width:1525px){
+    
+}
+@media screen and (max-width:1380px){
+    
+    .DiscountedCouruselItems{
+        width:1002px ;
+    }
+}
+@media screen and (max-width:1350px) {
+    .textHeader{
+        font-size: 18px;
+    }
+
+    
+}
+
+@media screen and (max-width:1290px){
+    .coffeCatalogMainTypes{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width:1250px){
+    .basketInnerContainerDeliveryInputs{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1208px){
+    .DiscountedCouruselItems{
+        width:750px;
+    }
+    .subscribeForNewsContainer{
+        top: 830px;
+    }
+    .WeInInstagram{
+        top: 50px;
+    }
+    .textHeader{
+        font-size: 16px;
+    }
+    .textContainer{
+        font-size: 13px;
+        line-height:110% ;
+    }
+
+    .NewsCopmanyContentTop{
+        flex-direction: column;
+    }
+    .NewsCopmanyContentBottom{
+        flex-direction: column;
+    }
+
+    .NewsCompany{
+        height: 1275px;
+    }
+    .main{
+        height: 5590px ;
+    }
+}
+
+@media  screen and (max-width:1176px){
+    .newsContainer{
+        height: 280px;
+    }
+}
+@media  screen and (max-width:1156px) {
+    .newsInfoText{
+        margin-bottom: 10px;
+    }
+    
+}
+@media screen and (max-width:1140px){
+    .basketParamsTotal{
+        margin-left:50px;;
+    }
+    .basketItemTotal{
+        margin-left: 68px;
+    }
+    .basketParamsDiscount{
+        margin-left:38px;
+    }
+    .basketItemDiscount{
+        margin-left: 32px;
+    }
+    
+}
+
+
+@media screen and (max-width:1125px){
+    
+
+    .catalogWithDiscounted{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:1085px){
+    .newsContainerInfoText{
+        margin: 0px;
+    }
+    
+}
+@media screen and (max-width:1078px){
+    
+    .newsContainerInfo{
+        position: relative;
+
+    }
+    .newContainerInfoAuthor{
+        position: relative;
+        width: 100%;
+    }
+}
+@media screen and (max-width:1016px){
+    .newsContainerInfoHeader{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:986px){
+    .buttonContent{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:965px) {
+    .typeActiveImg{
+        background-size: 120%;
+    }
+    
+    
+}
+
+@media screen and (max-width:950px) {
+    .modalWindowContainerBack {
+      height: 50%;
+    }
+    .modalWindowContainerFront{
+        height: 50%; 
+    }
+    .basketItemName>p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:941px){
+    
+    .DiscountedCouruselItems{
+        width: 498px;
+    }
+}
+@media screen and (max-width:910px) {
+    .basketItem{
+        height: 170px;
+    }
+    .vectorGreyContainer{
+        height: 0px;
+    }
+    
+    .coffeCatalogMainParams{
+        margin-top: 30px;
+    }
+    .containerWorkWithUs{
+        /* height: 420px; */
+        gap:0px;
+    }
+    .basketFinalCostContainerCards{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -26px;
+    }
+    .coffeCatalogMainParams{
+        flex-direction: column-reverse;
+    }
+    .coffeCatalogMainParamsRight{
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 90%;
+        
+    }
+    .coffeCatalogMainParamsLeft{
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+        width: 90%;
+        justify-content: start;
+    }
+    .coffeCatalogMainParamsInner{
+        margin-top: 90px;
+    }
+}
+@media screen and (max-width:890px){
+    /* .openCard_Container_Info_Description{
+        font-size: 16px;
+    }
+    .openCard_Container_company_Description{
+        font-size: 13px;
+    } */
+    .openCard_Container_settingsCoffee{
+        flex-wrap: wrap;
+    }
+    .openCard_Container_settings{
+        margin-right: 10px;
+    }
+    .navigations :first-child{
+        margin-left: 32px;
+      }
+    .promoTop{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:872px){
+    .newsContainerInfoText{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:851px){
+    .openCard_Container_Info_Corns{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .openCard_Container{
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .openCard_Container_Img{
+        margin-right: 0px;
+    }
+    .openCard_Container_Info{
+        margin-left: 0px;
+    }
+    .openCard_Container_Info_Name{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vendingContainerImg{
+        margin-top: 25px;
+    }
+    .taste_container_div{
+        justify-content: space-around;
+    }
+    .openCard_Container_Img{
+        justify-content: center;
+        position: relative;
+        margin-left: 0px;
+    }
+    .discountCircle{
+        left:180px;
+        top: 0px;
+    }
+}
+@media screen and (max-width:846px){
+    .newContainerInfoAuthor{
+        flex-direction: row;
+    }
+}
+@media screen and (max-width:845px){
+.catalogItem{
+    height: 250px;
+    width: 250px;
+}
+
+    .catalogItemForImg{
+        min-width: 250px;
+        
+    }
+    .catalogItemForImg>img{
+        height: 160px;
+    }
+    
+    
+}
+
+@media screen and (max-width:825px) {
+    .WeInInstagramImgs{
+        left: -120px;
+    }
+    .WeInInstagramIphons{
+        left: -50px;
+    }
+    .WorkWithUs{
+        margin-top: 100px;
+    }
+    .containerWorkWithUs{
+        flex-direction: column;
+    }
+
+    .workWithUsRight>p{
+        margin-left: 80px;
+        
+    }
+
+    .workWithUsLeft__wrapper{
+        display: none;
+    }
+
+    .main{
+        height: 5600px ;
+    }
+
+    .navButtons{
+        margin-top: 40px;
+    }
+
+    .newsContainer{
+        height: 300px;
+    }
+    .subscribeInput{
+        width: 100%;
+    }
+    .subscribeButton{
+        right: 83px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .ourProdP{
+        margin-left: 0px;
+    }
+
+    .modalWindowContainerLeft>p{
+        text-align: center;
+    }
+
+    .typeActiveImg{
+        background-size: 150%;
+        
+    }
+
+    .themeForImg{
+        height: 350px;
+    }
+
+    .themeForImg>img{
+        height: fit-content;
+        width: 100%;
+    }
+
+    #More{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:792px){
+    .teaCatalogMainHeaderDivContainer {
+        width: 165px;
+    }
+    .teaCatalogMainHeader{
+        height: 679px;
+    }
+    /* .teaCatalogMainHeader{
+        display: flex;
+    } */
+    .teaCatalogMainHeaderDivTop{
+        
+        align-items: center;
+    }
+    .teaCatalogMainHeaderDivBottom{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contantForNews{
+        flex-direction: column;
+        width: 60%;
+    }
+    .contantForNews>img{
+        border-radius: 20px;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:750px){
+    
+    .containerForNewsHeader{
+        margin-top: 50px;
+    }
+.card_description{
+    flex-direction: column-reverse;
+}
+.openCard_Container_Info{
+    margin-left: 23px;
+}    
+.openCard_Container_Img{
+    margin-right: 0px;
+}
+
+.basketContainerforBg{
+    position: relative;
+    top:40px;
+}
+
+.basketVector{
+    top: 290px;
+}
+
+.basketContainer{
+    position: relative;
+    top: -220px;
+}
+    .basketPromoAndCost{
+        flex-direction: column;
+    }
+
+    .basketPromoCode{
+        width: auto;
+        margin: 0px;
+    }
+
+    .basketFinalCost{
+        width: auto;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .nav_toogle{
+        display: inline-block;
+        font-size: 22px;
+        width: 110px;
+        position: relative;
+    
+    }
+
+    .navButtons{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        position: relative;
+        left: 10px;
+        left: -38px;
+    }
+
+    .navButtonsLinks{
+        flex-direction: column;
+        display: none;
+        cursor: pointer;
+        position: relative;
+        left: 0px;
+    }
+
+    .navButtons>a{
+        display: none;
+    }
+    .nav_toogle_ul{
+        display: none;
+        flex-direction: column;
+        
+    }
+    /* .nav_toogle_ul:hover{
+        
+    } */
+
+    .newsContainerInfoHeader{
+       font-size: 19px;
+    }
+
+    .newsContainerInfoText{
+        font-size: 14px;
+    }
+    .InfoAuthor{
+        font-size: 13px;
+    }
+
+    .containerForQuestion>p{
+        font-size: 12px;
+    }
+    .containerForQuestion{
+        width: 430px;
+    }
+
+    .forLines>img{
+        top: 21px;
+        right: 112px;
+        
+    }
+
+    .AnswerForQuestion>p{
+        font-size: 13px;
+        margin-left: auto;
+    }
+    
+
+    
+}
+@media screen and (max-width:738px){
+    .vendingCatalogMainHeaderDivTop{
+        justify-content: center;
+    }
+    .vendingCatalogMainHeaderDivBottom{
+        justify-content: center;
+    }
+    .foodCatalogmainHeaderContainer{
+        width: 205px;
+        height: 141px;
+    }
+    #foodContainerimg0{
+        width:136px;
+        height:90px;
+      }
+      #foodContainerimg1{
+        height:90px;
+      }
+      #foodContainerimg2{
+        width: 180px;
+        height:90px;
+      }
+      #foodContainerimg3{
+        height:90px;
+      }
+      #foodContainerimg4{
+        width: 180px;
+        height:90px;
+      }
+}
+@media screen and (max-width:715px) {
+    .vendingCatalogMainHeader{
+        display: flex;
+    }
+    .vendingCatalogMainHeaderDivTop {
+        align-items: center;
+        flex-direction: column;
+        justify-content:flex-start;
+    }
+    .vendingCatalogMainHeaderDivBottom{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .QuestionContainer{
+        text-align: -webkit-right;
+    }
+    .forLines{
+        position: relative;
+    left: 143px;
+    bottom: 15px;
+    }
+
+    .basketMediaDiscountTotal{
+        margin-left: 50px;
+    }
+    .basketItemTotal{
+        margin-left: 34px;
+    }
+    .basketItemDiscount{
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:700px){
+    .GilroyFont{
+        font-size: 50px;
+    }
+    .AnswerForQuestion{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:790px){
+    .teaCatalogMainHeaderDivContainer {
+        width: 165px;
+    }
+}
+@media screen and (max-width:705px){
+
+}
+@media screen and (max-width:678px){
+    .workWithUsRightSectionText{
+        font-size: 14px;
+       
+    }
+    .basketItems{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:675px){
+    .themeForImg{
+        height: 290px;
+    }
+    .WeInInstagram{
+        top: 70px;
+    }
+    .newsContainerInfo>.newsContainerInfoHeader{
+        font-size: 18px;
+    }
+    .newsContainerInfo>.newsContainerInfoText{
+        font-size: 12px;
+    }
+    .newContainerInfoAuthor{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:663px){
+    .InfoAuthor{
+        margin-bottom: 6px;
+    }
+}
+@media screen and (max-width:660px){
+    .taste_container{
+        margin-right: 0px;
+    }
+    .characteristics_container{
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+    .taste_and_characteristics{
+        flex-direction: column;
+    }
+    #modalWindowText{
+        display: none;
+    }
+
+    .typeActiveImg{
+        background-size: 200%;
+    }
+}
+@media screen and (max-width:650px){
+    .vendingCatalogMainHeaderDivContainer{
+        width: 225px;
+    }
+    .taste_container{
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    .characteristics_container{
+        margin-left: 0px;
+    }
+    .InfoAuthor{
+        margin-bottom: 0px;
+    }
+    .teaCatalogMainHeaderDivContainer{
+        width: 165px;
+    }
+}
+@media screen and (max-width:640px){
+    .HowFriedCoffee{
+        background-size: 250%;
+    }
+}
+@media screen and (max-width:635px){
+    
+    .DiscountedCouruselItems{
+        width: 245px;
+    }
+    
+}
+@media screen and (max-width:630px){
+    
+    
+    .WorkWithUs{
+        margin-top: 130px;
+    }
+    
+    .promoTopText{
+        width: 300px;
+    }
+    .newsContainerInfoText{
+        height: 98px;
+        overflow: hidden;
+    }
+    
+}
+@media screen and (max-width:618px){
+    #Iphone1{
+        display: none;
+    }
+    #Iphone2{
+        display: none;
+    }
+    .WeInInstagramImgs {
+        left: -477px;
+    }
+    .coffeCatalogMainTypes{
+       justify-content: center;
+    }
+    .coffeCatalogMainTypesTop{
+        flex-direction: column;
+        width: fit-content;
+    }
+    .coffeCatalogMainTypesTop>div{
+        height: 140px;
+    }
+    .coffeCatalogMainTypesBottom{
+        flex-direction: column;
+        width: fit-content;
+    }
+    .coffeCatalogMainTypesBottom>div{
+        height: 140px;
+    }
+}
+@media screen and (max-width:616px){
+    .teaCatalogMainHeader {
+        height: 883px;
+        display: flex;
+        justify-content: center;
+    }
+    .teaCatalogMainHeaderDivTop{
+        flex-direction: column;
+        margin: 0px;
+        width: auto;
+    }
+    .teaCatalogMainHeaderDivBottom{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:611px){
+    .coffeCatalogMainTypes{
+        justify-content: center;
+    }
+    
+    
+}
+
+@media screen and (max-width:595px){
+    .catalogItem{
+        height: 215px;
+        width: 215px;
+    }
+    .catalogItemForImg{
+        min-width: 215px;
+    }
+}
+
+@media screen and (max-width:590px){
+    .nav_toogle{
+        right: 0px;
+    }
+    .coffeeCatalogCardsContainer{
+        justify-content: center;
+    }
+    
+    .navButtonsLinks{
+        right: 8px;
+    }
+    .modalWindowContainerLeft>p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:580px){
+    .buttonInfoCard{
+        font-size: 14px;
+    }
+    .containerForQuestion{
+        width: 308px;
+        margin-left: 195px;
+    }
+    .QuestionContainer{
+        text-align: initial;
+    }
+    .forLines{
+        left: 113px;
+    bottom: 9px;
+    }
+    .AnswerForQuestion{
+        
+        width: 300px;
+    }
+}
+@media screen and (max-width:565px){
+    .newsContainerInfoHeader{
+        font-size: 16px !important;
+    }
+    .newsContainerInfoText{
+        height: 70px;
+    }
+    .NewsComapnyWithImgText{
+        margin-left: 0px;
+    }
+    .themeForImg{
+        height: 200px;
+    }
+.openCard_Container_amountAndButton{
+    flex-direction: column;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.openCard_Container_Button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.openCard_Container_oldPrice{
+    text-align: center;
+}
+.openCard_Container_Button{
+    height: 40px;
+}
+.subscribetext{
+    width: auto;
+}
+.subscribeInputContaent{
+    width: 100%;
+}
+.InfoAuthor{
+    padding-right: 10px;
+}
+}
+@media screen and (max-width:560px){
+    .vendingCatalogMainBody{
+        justify-content: center;
+    }
+    .teaCatalogMainBodyContainer{
+        justify-content: center;
+    }
+    #sortButton{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:555px) {
+    .divSearchTovarCoffeeForImg{
+        width: 170px;
+        height: 124px;
+    }
+    .divSearchTovarCoffeeForImg>img{
+  
+        height: 125px;
+        
+      }
+    .divSearchTovarForInfoPrices>p{
+        font-size: 12px;
+    }
+    .divSearchTovarForInfoPrices>button{
+        font-size: 12px;
+    }
+   .newsContainerForImg{
+       display: flex;
+       align-items: center;
+   } 
+   .newsContainerForImg>img{
+       height: 80%;
+       border-radius: 15px;
+       margin-left: 10px;
+   }
+}
+
+@media screen and (max-width:524px){
+    .NewsCompanyContentWithImg{
+        align-items: center;
+        display: flex;
+        align-items: center;
+    }
+    .NewsCompanyImg{
+        width: 153px;
+        height: 192px;
+       
+    }
+    .NewsCompany {
+        height: 1295px;
+    }
+    .NewsCompanyContainerForImg>img{ 
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width:522px){
+    .vendingCatalogMainHeaderDivContainer {
+        width: 185px;
+    }
+    .NewsCompanyContainerForImg{
+        border-radius: 20px;
+        height: 70%;
+    }
+    
+    .catalogItem{
+        height: 180px;
+    width: 175px;
+    }
+    #catalogItem0>div>img{
+        position: relative;
+        top: 11px;
+        left: -27px;
+        height: 110px;
+        width: 130px;
+    }
+    #catalogItem1>div>img{
+        position: relative;
+        top: 3px;
+        height: 113px;
+        width: 100px;
+        left: -19px;
+    }
+    #catalogItem2>div>img{
+        position: relative;
+        top: 18px;
+        height: 99px;
+        left: -18px;
+        width: 133px;
+    }
+    #catalogItem3>div>img{
+        position: relative;
+    top: 10px;
+    height: 101px;
+    width: 119px;
+    left: -20px;
+    }
+}
+@media screen and (max-width:500px){
+    .foodCatalogMainHeader{
+        display: flex;
+        flex-direction: column;
+    }
+    .foodCatalogMainHeaderDivTop{
+        flex-direction: column;
+        align-items: center;
+    }
+    .foodCatalogMainHeaderDivBottom{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:487px){
+    #More{
+        margin-top: 8px;
+    }
+}
+@media screen and (max-width:485px){
+    .blogNavigationsButton{
+        height: 40px;
+    }
+}
+@media screen and (max-width:480px){
+    
+    .logo>img{
+        width: 136px;
+        height: 74px;
+        margin-top: 20px;
+    }
+
+    .coffeCatalogMainParamsRight{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .coffeCatalogMainParamsLeft{
+        margin-left: 10px;
+    }
+    .coffeCatalogMainParams{
+        margin-top: 357px;
+    }
+    .buttonToTop{
+        left: 85%;
+    }
+    .menuIcons{
+        margin-left: 0px;
+    }
+    .logo>img{
+        margin-right: 0px;
+    }
+    .subscribeInput{
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:470px){
+
+    #foodContainerimg0{
+        width:136px;
+        height:90px;
+      }
+      #foodContainerimg1{
+        height:90px;
+      }
+      #foodContainerimg2{
+        width: 180px;
+        height:90px;
+      }
+      #foodContainerimg3{
+        height:90px;
+      }
+      #foodContainerimg4{
+        width: 180px;
+        height:90px;
+      }
+    .navigations:first-child{
+        padding-left: 10px;
+    }
+    .HowFriedCoffee{
+        background-size: 300%;
+    }
+    .typeActiveImg {
+        background-size: 250%;
+    }
+}
+
+@media screen and (max-width:466px){
+    .divSearchTovarForInfo_Button{
+        height: 45px;
+    }
+    .containerForQuestion{
+        width: 235px;
+        margin-left: 282px;
+    }
+    .containerForQuestion>p{
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width:450px){
+    .NewsCompanyContentWithImg{
+        flex-direction: column;
+        height: auto;
+        padding-top: 10px;
+    }
+    .NewsCompany {
+        height: 1782px;
+    }
+}
+@media screen and (max-width:446px){
+    .divSearchTovarCoffeeForImg>img {
+        height: 107px;
+    }
+    .divSearchTovarCoffeeForImg {
+        width: 150px;
+        height: 124px;
+    }
+    .divSearchTovarForImg {
+        width: 125px;
+    }
+    .divSearchTovarForImg>img {
+        height: 105px;
+    }
+    .newsContainerForImg>img {
+        height: 70%;
+    }
+    #modalWindowButtonRegistation{
+        padding: 4px;
+    }
+    .modalWindowButton{
+        padding: 4px;
+    }
+}
+@media screen and (max-width:435px){
+    .SubscribeForNews{
+        top: -1010px;
+    }
+    #CofeeDrinksImg{
+        width: 52px;
+    }
+    .WeInInstagram {
+        top: 135px;
+    }
+    .teaCatalogMainHeaderDivContainer {
+        width: 135px;
+        height: 175px;
+    }
+    .teaCatalogMainHeaderDivContainer> img{
+        width: 75px;
+    }
+}
+@media screen and (max-width:430px){
+    .HowFriedCoffee {
+        background-size: 400%;
+    }
+    .vendingCatalogMainHeader {
+        display: flex;
+        flex-direction: column;
+    }
+    .InfoAuthor{
+        font-size: 10px;
+    }
+    .AnswerForQuestion{
+        width: 226px;
+    }
+    .catalogProdItems{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+}
+@media screen and (max-width:410px){
+    .divSearchTovarCoffeeForImg>img {
+        height: 85px;
+    }
+    .divSearchTovarForImg {
+        width: 135px;
+        position: relative;
+        top: 18px;
+    }
+    .divSearchTovarForImg>img {
+        height: 85px;
+    }
+    .newsContainer{
+        height: 250px;
+    }
+    .navigationsAImgContainer>img {
+        z-index: 200;
+        position: absolute;
+        width: 310px;
+        
+    }
+}
+@media screen and (max-width:406px){
+    .navigations :first-child{
+        margin-left: 10px;
+      }
+    .newsContainer{
+        height: 275px;
+    }
+}
+@media screen and (max-width:395px){
+    .divSearchTovarForImg>img {
+        height: 72px;
+    }
+}
+@media screen and (max-width:390px){
+    .navigationsAContainer{
+        margin-left: -10px;
+    }
+    .newsContainerForImg{
+        justify-content: center;
+        height: 315px;
+    }
+    .newsContainerForImg>img{
+        margin: 0px;
+        
+    }
+    .typeActiveImg {
+        background-size: 300%;
+    }
+    .newsContainer{
+        flex-direction: column;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:364px){
+    .navigationsAContainer>a{
+     font-size: 11px;
+    }
+}
+
+@media screen and (max-width:362px){
+    .headerPpages{
+        margin-left: 39px; 
+        margin-top: 9px; 
+    }
+}
+@media screen and (max-width:356px){
+    .QuestionContainer {
+        width: 535px;
+        
+    }
+    .AnswerForQuestion{
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width:348px){
+    .WeInInstagram {
+        top: 205px;
+    }
+}

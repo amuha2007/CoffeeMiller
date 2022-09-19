@@ -1,7 +1,18 @@
 body {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  
+  /* overflow-y: hidden; */
+}
+
+.main{
+    height: 5125px;
+    /* 4695px */
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.mainHeight{
+  height: auto !important;
 }
 /*fonts*/
 .GilroyFont {
@@ -14,6 +25,8 @@ body {
 
   color: #000000;
 }
+
+
 
 /*_______*/
 .Button {
@@ -32,31 +45,103 @@ body {
   margin-right: auto;
 }
 
+
+
+
 .nav {
   width: 100%;
-  /*box-shadow: 0px 5px 20px rgba(157, 157, 157, 0.25);*/
   z-index: 1;
   position: relative;
 }
 
 .navContainer {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 120px;
+  align-items: start;
+  justify-content: space-around;
+  height: 110px;
 }
 
 .navButtons {
+  margin-top: 40px;
+
   display: flex;
+  flex: 3;
   max-width: 1000px;
   width: 500px;
   justify-content: space-evenly;
-  font-family: Gilroy;
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 15px;
   line-height: 29px;
+  
 }
+
+.navButtons>a{
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+}
+
+.navButtons>a:hover{
+  color: #f9b300;
+}
+
+.navButtonsLinks{
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Gilroy;
+  align-items: center;
+  position: relative;
+  left: 10px;
+  left: -36px;
+}
+
+.navButtonsLinks>a{
+  color:  black;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.nav_toogle{
+  display: none ;
+}
+
+.visibility{
+  display:  flex !important;
+}
+
+.unvisibility{
+  display: none;
+}
+
+.nav_toogle_active{
+  display:block !important; 
+  /* position:absolute;
+  margin-top:55px */
+}
+
+.nav_toogle_ul{
+  padding: 0;
+  position: absolute;
+  
+  
+}
+.nav_toogle_ul_active{
+  padding: 0;
+  position: absolute;
+  display:  block;
+}
+
+.nav_toogle_ul>li{
+  
+  /* position: relative; */
+  list-style: none;
+  
+}
+
 
 .navButtons > a {
   text-decoration: none;
@@ -73,54 +158,217 @@ body {
   margin-right: 30px;
 }
 
+.nav_toogle{
+  border: none;
+  background: none;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+  display: none;
+}
+
+
 .searchInput {
-  width: 1240px;
-  height: 59px;
-  background: #ffffff;
-  box-shadow: 0px 0px 20px rgba(157, 157, 157, 0.25);
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-}
-.searchInput > img {
-  width: 32px;
-  height: 31px;
-  margin-right: 15px;
-  margin-left: 30px;
-}
-.searchInput > input {
   height: 20px;
   margin-left: 15px;
-  border: none;
+  border: solid 1px grey;
+  border-radius: 20px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
   outline: none;
   color: grey;
+  padding: 7px;
+  padding-left: 15px;
+  position: relative;
+    left: 35px;
+    
 }
-.searchInput > input::placeholder {
-  color: grey;
-}
-
 .menuIcons {
+  width: 50px;
+  height: 30px;
   display: flex;
-  justify-content: space-between;
-  width: 150px;
+  justify-content: flex-end;
+  /* position: absolute;
+    left: 90%; */
+    transition: 1s;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 40px;
+    position: relative;
+    /* left: -44px; */
 }
 
-.menuIcons > img {
+.menuIcons >div{
+  margin-left: 7px;
+  margin-right: 7px;
+  
+}
+
+.menuIcons >div> img {
   width: 22px;
   height: 22px;
+  position: relative;
+  /* right: 30px; */
+  z-index: 50;
+  /* background-color: #f9b300; */
+  
+}
+
+#divSearch{
+  display: flex;
+  align-items: center;   
+}
+#divSearch>img{
+  bottom:1px;
+  
+}
+
+.searchingTovars{
+  position: absolute;
+  top: 100px;
+  z-index: 1000;
+  width: 80%;
+  display:flex; 
+  flex-direction:column;
+  overflow: auto; 
+  /* height: fit-content; */
+  max-height: 1000px;
+  
+  overflow-y: scroll;
+  left: 11%;
+  /* display: none; */
+  
+}
+
+
+.searchingTovars::-webkit-scrollbar{
+  background-color: white;
+  border-radius: 10px;
+  
+  width: 8px;
+  
+  
+}
+
+/* .searchingTovars::-webkit-scrollbar-track{
+  
+  
+} */
+
+.searchingTovars::-webkit-scrollbar-thumb{
+  color: #f9b300;
+  background-color: #F9B300;
+  border-radius: 10px;
+  
+  width: 5px;
+  border: 1px solid white;
+}
+
+.divSearchTovar{
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgb(192 192 192) 0px 0px 15px;
+  padding: 15px;
+  margin-top: 10px;
+  height:fit-content;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1000;
+  background-color: white;
+  align-items: center
+
+}
+.divSearchTovarCoffeeForImg{
+  width: 150px;
+        height: 124px;
+  overflow: hidden;  
+  text-align: center;
+  
+  border-radius: 15px;
+  margin-right: 12px;
+}
+.divSearchTovarForImg{
+  width: 150px;
+        height: 124px;
+  overflow: hidden;  
+  text-align: center;
+  
+  border-radius: 15px;
+  margin-right: 12px;
+}
+.divSearchTovarForImgVending{
+  width: 150px;
+        height: 124px;
+  overflow: hidden;  
+  text-align: center;
+  
+  border-radius: 15px;
+  margin-right: 12px;
+}
+.divSearchTovarForImgVending>img{
+  position: relative;
+    left: -214px;
+    top: -101px;
+}
+.divSearchTovarForImg>img{
+  
+  height: 125px;
+  
+}
+
+.divSearchTovarCoffeeForImg>img{
+  height: 125px;
+}
+
+.searchTovarIcoSkidka{
+  border-radius: 50%;
+  background-color: #f9b300;
+  color: white;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  top: 35px;
+  left: 25px;
+  font-family: Gilroy;
+  font-size: 25px;
+  justify-content: center
+}
+.searchTovarIcoSkidkaVending{
+  border-radius: 50%;
+  background-color: #f9b300;
+  color: white;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  top: 16px;
+  left: 25px;
+  font-family: Gilroy;
+  font-size: 25px;
+  justify-content: center
 }
 
 .promoTop {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+  margin-left: 70px;
 }
+
+
 
 .promoTopImage {
   position: absolute;
-  left: 50%;
+  left: 60%;
+  top: 80px;
 }
 
 .promoTopText {
@@ -133,6 +381,8 @@ body {
 
 .catalogyOurProd {
   margin-top: 200px;
+  position: relative;
+  z-index: 10;
 }
 
 .ourProdP {
@@ -142,11 +392,22 @@ body {
   font-weight: 900;
   font-size: 40px;
   position: relative;
-  z-index: 1;
+  z-index: 1000;
+  margin-left: 70px;
+}
+
+
+
+.tovarsWithDiscountedPage{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  
 }
 
 #promoButton {
   box-shadow: #000000 5px 8px 10px;
+  display: none;
 }
 
 #promoButton:hover {
@@ -161,9 +422,10 @@ body {
 }
 
 .catalogProdItems {
-  display: flex;
-  margin-right: 10%;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative; 
+  z-index: 1100;
 }
 
 .catalogItem {
@@ -171,7 +433,8 @@ body {
   text-align: center;
   border-radius: 20px;
   margin: 10px;
-  width: 250px;
+  /* width: 250px; */
+  height: 310px;
   max-height: 340px;
   background-color: white;
 
@@ -183,15 +446,32 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* transition: 1s; */
 }
 
-.catalogItem:hover {
+.catalogItemForImg{
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  min-width: 350px;
+}
+/* .catalogItemForImg>img{
+  
+} */
+.coffeName, .cardName{
+  font-family: Gilroy;
+}
+.catalogItem_Active{
   box-shadow: #f9b300 0px 0px 15px;
 }
 
+/* .catalogItem:hover {
+  box-shadow: #f9b300 0px 0px 15px;
+} */
+
 .catalogItem > img {
   position: relative;
-  width: 70%;
+  
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -205,6 +485,8 @@ body {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 10;
 }
 
 /*КАРУСЕЛЬ*/
@@ -219,36 +501,35 @@ body {
 
 /*карусель итемы*/
 .DiscountedCouruselItems {
-  display: flex;
+  /* display: flex; */
   overflow: hidden;
   padding-top: 24px;
-  padding-bottom: 24px;
+  
   position: relative;
   /*width: fit-content;*/
-  width: 1254px;
+  width: 1255px;
   justify-content: center;
   align-items: center;
+  transition: 1s;
 }
 /*карусель где перемещается контент и динамически меняется*/
 /*тут надо работать над перемещение и динамически контентом*/
 .DiscountedCouruselItemsContainer {
-  display: flex;
-  position: relative;
+  /* display: flex; */
+  justify-content: center;
   top: 0;
   left: 0;
-
-  width: 100%;
-  height: 450px;
-  margin-left: -500px;
-
-  /* width: 1260px;*/
-  /*left:-16px;*/
-  /*transition: all 0.5s ease-out;*/
+  white-space: nowrap;
+  left: -255px;
+  height: 410px;
+  position: relative;
+  transition: 0.5s;
+  
 }
 /*карусель итем*/
 .DiscountedCouruselItem {
   box-shadow: rgb(192, 192, 192) 0px 0px 8px;
-  height: 430px;
+  height: 420px;
   width: 230px !important;
   border-radius: 15px;
   margin-right: 11px;
@@ -257,15 +538,19 @@ body {
   vertical-align: middle;
   /* position: relative; */
   position: absolute;
-  display: inline-block;
+  
   transition: all 0.5s ease-in-out;
+}
+
+.DiscountedCouruselItem>div{
+  display: inline;
 }
 .DiscountedCouruselItem:hover {
   box-shadow: #f9b300 0px 0px 8px;
 }
 
 .buttonCorusel {
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   background-color: #f9b300;
   border-radius: 50%;
@@ -286,7 +571,7 @@ body {
   position: relative;
   top: -20px;
   z-index: 1;
-  left: -20px;
+  left: -146px;
 }
 
 .DiscountedCouruselItemSelect {
@@ -336,6 +621,16 @@ body {
   left: 60px;
   top: -20px;
 }
+
+.cornsContainer{
+  display: flex;
+  justify-content: center;
+  position: relative;
+    left: 60px;
+    top: -20px;
+    
+}
+
 .Corns {
   width: 15px;
   height: 15px;
@@ -394,6 +689,7 @@ body {
 }
 
 .coffeeDescription {
+  white-space: pre-wrap;
   position: relative;
   left: 13px;
   top: -235px;
@@ -407,20 +703,22 @@ body {
 .oldPrice {
   position: relative;
   top: -250px;
-  left: -87px;
+  width: 77px;
   color: rgb(212, 208, 208);
   font-size: 20px;
   font-family: Gilroy;
+  
 }
 
 .nowPrice {
   position: relative;
   top: -280px;
-  left: -76px;
+  width: 77px;
   color: #000000;
   font-family: Gilroy;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bolder;
+
 }
 
 .DiscountedCouruselItemButton {
@@ -442,13 +740,24 @@ body {
 }
 .catalogWithDiscountedCoruselA{
   text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.catalogWithDiscountedCoruselA:hover{
+  color: #f9b300;
+
 }
 /*контейнер почему стоит работать именно с нами */
 
-
+.WorkWithUs{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
 .containerWorkWithUsHeader>img{
   position: relative;
-  top:10px;
+  
   z-index: 1;
   width: 100%;
 } 
@@ -469,7 +778,7 @@ body {
   position: relative;
   bottom: 10px;
   z-index: 100;
-  height: 350px;
+  height: 400px;
 }
 
 .workWithUsLeft {
@@ -502,8 +811,14 @@ body {
   margin-left: auto;
   width: 100%;
   position: relative;
-  bottom: 140px;
+  bottom: 85px;
+  font-family: Gilroy;
 }
+
+.workWithUsRight>p{
+  margin-top: 52px;
+}
+
 
 .workWithUsRightSection {
   /*display: -webkit-box; не будет редактить размеры елемента*/
@@ -537,28 +852,48 @@ body {
   z-index: 50;
 }
 
+.circleWithIcoWorkWithUS{
+  background-color: #F9B300;
+  border-radius: 50%;
+  background-position: center;
+  /*background-image: url('/img/cupIco.png');*/
+  min-width: 55px; 
+  height: 55px; background-repeat: no-repeat;
+  background-size: 22px;
+}
+
 .HowFriedCoffee{
   background-image: url(/img/cofeeBochka.png);
   background-position: center;
   width: 100%;
-  height: 614px;
-  background-size: 100%;
-    background-position-y: -472px;
+  background-size: 150%;
+    background-position-y: 0px;
     position: relative;
-    bottom: 300px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    position: relative;
+    bottom: 10px;
   
 }
 
 .HowFriedCoffeeContainer{
   margin-right: auto;
   margin-left: auto;
-  width: 80%;
+  
   color: white;
 }
 
+.HowFriedCoffeeContainerInner{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .HowFriedCoffeeContainerText{
-  position: relative;
-  top: 130px;
+  /* position: relative;
+  top: -150px; */
   z-index: 50;
   width: 70%;
 }
@@ -582,9 +917,34 @@ body {
     width: 210px;
     margin-top: 25px;
 }
+.HowFriedCoffeeContainerTextInnerP{
+  font-family: Gilroy;
+}
+
+.vectorReverse{
+  transform: scale(-1,1) rotate(180deg);
+  margin-top:-2px;
+  width: 100%;
+}
+
+.vectorWhite{
+  width: 100%;
+  position: relative;
+    top: 3px;
+  /* position: relative;
+  top: -290px; */
+  
+}
+
+.vectorsBg{
+  width: 100%;
+  position: relative;
+  z-index: 50;
+}
 
 .NewsCompany{
-  width: 80%;
+  position: relative;
+  z-index: 100000;
   margin-right: auto;
   margin-left: auto;
 }
@@ -592,15 +952,294 @@ body {
 .NewsCompanyHeader{
   display: flex;
   align-items: center;
-  
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
   
 }
 
-.NewsCompanyHeaderP{
-  font-size: 30px;
+#vectorBg{
+  position: relative;
+  top: -670px;
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+}
+
+.containerForVector{
+  height: 0px;
+}
+
+#bgSquareSkin{
+  height: 165px;
+  z-index: 50;
+  /* height: 800px; */
+  width: 100%;
+  background-color: #FFF7E1;
+
+}
+
+#bgSquareOrange{
+  position: relative;
+  z-index:50;
+  width: 100%;
+  height: 300px;/*600px*/
+  background-color: #f9b300;
+}
+  
+
+/* #bgSquareOrange{
+  
+  width: 100%;
+  height: 300px;
+} */
+
+
+
+#coffeeBreansCupNewsCompany{
+  position: relative;
+    width: 500px;
+    left: 550px;
+    top: 457px;
+    z-index: 20;
+}
+
+.WeInInstagram{
+  
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  height: 970px;;
+  overflow: hidden;
+  position: relative;
+    z-index: 100000;
+}
+
+.WeInInstagramHeader{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  
+  z-index: 50;
+}
+
+.WeInInstagramHeader>img{
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+}
+
+.WeInInstagramHeaderP{
+  font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    
+    
+    text-align: start;
+}
+
+.WeInInstagramContainer{
+  position: relative;
+  z-index: 50;
+  /*настроить высоту и потом сделать overflow:hidden что бы не выступали инты фотки*/
+  width:auto;
+  height: 100px;
+}
+
+
+
+.WeInInstagramIphons{
+  position: relative;
+  width: fit-content;
+  
+  top: 140px;
+}
+
+#Iphone1{
+  position: absolute;
+  top: -120px;
+  left: 120px;
+  height: 450px;
+}
+
+#Iphone2{
+  position: absolute;
+  height: 375px;
+  left: 215px;
+}
+
+#opacityArrow{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 43px;
+  justify-content: center;
+  position: relative;
+  top: -70px;
+  left: 85.1%;
+  cursor: pointer;
+}
+
+#opacityArrow>img{
+  width: 20px;
+}
+
+
+.WeInInstagramImgs{
+  position: relative;
+  top: 40px;
+
+  
+}
+.WeInInstagramImgsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1335px;
+  justify-content: center;
+  position: absolute;
+  
+  left: 510px;
+  overflow: hidden;
+}
+.WeInInstagramImage{
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 15px;
+  position: relative;
+  transition: 1s;
+  right: 220px;
+  /* box-shadow: black  0px 0px 5px; */
+}
+#WeInInstagramImgsContainer2{
+  top: 220px;
+}
+/* .WeInInstagramImage:hover{
+  transform: scale(1.08);
+} */
+
+#InsVectorOrangeReverse{
+  position: relative;
+  top: 165px;
+  
+}
+
+#coffeeBreansCup2{
+  position: relative;
+  width: 450px;
+  z-index: 40;
+  left:520px;
+  top: 500px;
+}
+
+.subscribeForNewsContainer{
+  position: relative;
+    top: 724px;
+  z-index: 20;
+  text-align: center;
+  
+}
+.SubscribeForNews{
+  position: relative;
+  top: -1078px;
+  z-index: 10000;
+
+}
+
+#VectorOrangeSubscribeForNews{
+  position: relative;
+  z-index: 30;
+  top: -30px;
+}
+
+.subscribeForNewsContainer{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 70px;
+}
+.subscribeContainer{
+  text-align: start;
+}
+
+.subscribeInputContainer{
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.subscribeInputContaent{
+  display: flex;
+  width: 90%;
+}
+
+.subscribetext{
+  width: 500px;
+}
+
+.subscribeInput{
+  padding: 10px;
+  padding-left: 20px;
+  width: 50%;
+  border-radius: 20px;
+  border: #000000 solid 0px;
+  background-color: #F3F3F3;
+  outline: 0;
+}
+.subscribeButton{
+  color: white;
+  background-color: #f9b300;
+  border-radius: 20px;
+  border: 0px;
+  width: 120px;
+  position: relative;
+  right: 120px;
   font-family: Gilroy;
+  
+}
+
+.subscribeButton:hover{
+  color: #000000;
+}
+
+.SubscribeRulesA{
+  text-decoration: none;
+  color: #f9b300;
+}
+
+.subscribeRules{
+  font-size: 11px;
+  color: #979797;
+}
+
+.subscribeH3{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+
+.subscribetext{
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.NewsCompanyHeaderP{
+  
   justify-content: space-between;
   width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    margin-right: auto;
+  margin-left: auto;
 }
 
 .NewsCompanyHeaderA{
@@ -609,27 +1248,2375 @@ body {
   text-decoration: none;
   border-bottom: #000000 1px solid;
   font-family: Gilroy;
+  white-space: nowrap;
+}
+.NewsCompanyHeaderA:hover{
+  color: #f9b300;
+  border-bottom: #f9b300 1px solid;
 }
 
-.WeInInstagram{
+
+.NewsCompanyContentContainer{
+  margin-bottom: 60px;
+}
+.WeInInstagram {
+    top: 205px;
+}
+.NewsCompanyContent>div{
+  display: flex;
+}
+
+.NewsCompanyContentWithImg{
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(172, 170, 170);
+  margin: 15px;
+  /* position: relative; */
+  z-index: 50;
+  background-color: white;
+  
+  height: 300px;
+}
+.NewsCompanyContentWithImg:hover{
+  box-shadow: 0px 0px 10px #f9b300;
+}
+
+.NewsCompanyContentWithoutImg{
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgb(172, 170, 170);
+  padding: 20px;
+  margin: 15px;
+  /* position: relative; */
+  z-index: 50;
+  background-color: white;
+  
+  max-height: 300px;
+}
+.NewsCompanyContentWithoutImg:hover{
+  box-shadow: 0px 0px 10px #f9b300;
+}
+
+.NewsCompanyImg{
+  width: 240px;
+  height: 300px;
+}
+.NewsComapnyWithImgText{
+  padding: 20px;
+  margin-left: 20px;
+  
+}
+
+
+
+.NewsCompanyWithoutImgContainer{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.NewsCopmanyContentTop{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.NewsCopmanyContentBottom{
   width: 80%;
   margin-right: auto;
   margin-left: auto;
 }
 
-.WeInInstagramHeader{
+.textHeader{
+  font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.textContainer{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 100;
+  color: #585858;
+  font-size: 15px;
+
+  height: 87px;
+  overflow: hidden;
+}
+
+.NewsCompanyContentA{
+  text-decoration: none;
+  color: #f9b300;
+  font-family: Gilroy;
+}
+.NewsCompanyContentA>img{
+  width: 12px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.footer{
+  text-align: center;
+
+}
+.footerContainer{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.footerNavigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*модальное окно*/
+.modalWrapper{
+  /* width: 100%;
+  height: 100%; */
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  z-index: 1000;
+  transition: 1s;
+}
+
+.modalWindow{
+    display: flex;
+    
+    /* opacity: 0; */
+    /* transition: 1s; */
+    perspective: 4000px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.modalWindowHeaderText{
+  font-size:20px;
+  font-family: Ubuntu, sans-serif;
+  text-align: center;
+}
+
+.modalWindowContainerFront{
+  /*тут надо сделать позитион fixed и отрегулировать размеры*/
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  border-radius: 20px;
+  height: 425px;
+  transition: 1s;
+  opacity: 0;
+  height: 80%;
+  backface-visibility: hidden;
+  /*пробую играть с контейнером и его прозрачностью*/
+  /* opacity: 0; */
+}
+
+.modalWindowContainerBack{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  height: 425px;
+  margin-top: 70px;
+  background-color: white;
+  transform: rotateY(180deg);
+  transition: 1s;
+  backface-visibility: hidden;
+  height: 80%;
+}
+
+.modalWindowContainerLeft{
+  display: flex;
+  flex-direction: column;
+  background-color: #f9b300;
+  border-radius: 20px 0 0 20px;
+  padding: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  width: 25%;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.modalWindowButton{
+  color: white;
+  background-color: #f9b300;
+  padding: 8px;
+  border-radius: 8px;
+  
+  border: white 1px solid;
+  font-family: 'Ubuntu', sans-serif;
+}
+.modalWindowButton:hover{
+  color: #000000;
+  border: black 1px solid;
+}
+
+.modalWindowContainerRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.modalWindowContainerRight>p{
+  text-align: center;
+}
+
+#modalWindowClose{
+  
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+    left: 90%;
+}
+
+#modalWindowCloseRegistration{
+  
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+    left: 90%;
+}
+.modalWindowClose>img{
+  width: 30px;
+  height: 30px;
+}
+
+.modalWindowContainerRightInput{
+  background-color: #F6F6F6;
+  border: none;
+  width: 70%;
+  padding: 10px;
+  margin: 5px;
+  outline: none;
+}
+
+#modalWindowregistrationButton{
+  background-color: #f9b300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 7px;
+  width: 74%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#modalWindowregistrationButton:hover{
+  color: #000000;
+}
+
+#modalWindowregistrationButtonRecoveryCod{
+  background-color: #f9b300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 7px;
+  width: 74%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#fogetPassword{
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: underline;
+  color: #000000;
+  margin-top: 10px;
+}
+
+#backtoPage{
+  color:black;
+  margin-top:10px;
+  font-family:Gilroy;
+  text-align: center;
+}
+
+.navigationsAСontacts{
+  text-transform: none;
+  font-family: Gilroy;
+  font-style: normal;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
+}
+
+.navigationsAСontacts>a{
+  text-decoration: none;
+  margin-right: 10px;
+  color: #222222;
+  font-family: Gilroy;
+  
+}
+.navigationsAСontacts>p{
+  cursor:pointer;
+}
+
+.navigationsAСontacts>a:hover{
+  color: #f9b300;
+}
+
+.contactsButtons{
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+
+}
+
+.buttonContent{
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactsUl{
+  font-family: 'Gilroy',sans-serif ;
+  font-size: 24px;
+  font-weight: 900;
+  color: #000000;
+  padding: 0;
+}
+.buttonContentText{
+  width: 100%;
+  padding: 5px;
+}
+.forMap{
+  width: 100%;
+  padding: 5px;
+}
+.forMap>img{
+  width: 100%;
+}
+
+.contactsUl>li{
+  list-style: none;
+  font-family: Gilroy;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 300;
+  
+}
+
+.contactsButtons>button{
+  background-color: #f8f8f8;
+    border-radius: 5px;
+    border: solid 1px #afafaf;
+    height: 30px;
+    color: #F9B300;
+    font-family: Gilroy;
+    
+    width: 100%;
+    margin: 5px;
+}
+.contactsButtons>.contactsButtonsActive{
+  background-color: #FFF7E1;
+    border-radius: 5px;
+    border: solid 1px #F9B300;
+    height: 30px;
+    color: #F9B300;
+    font-family: Gilroy;
+    
+    width: 100%;
+    margin: 5px;
+}
+
+
+
+
+.navigations{
+  background-color: #f9b300;
+  text-decoration: none;
+  color: white;
+  text-transform: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  height: 210px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding-top: 20px;
+  
+}
+.navigationsAImgContainer{
+  display: flex;
+  justify-content: flex-end
+}
+.navigationsAImgContainer>img{
+  z-index: 200;
+  position: absolute;
+  width: 400px;
+  
+}
+
+#navigationsVector{
+  position: absolute;
+  top: 325px;
+  z-index: 101;
+}
+
+.navigations :first-child{
+  margin-left: 65px;
+}
+
+.navigations>div>a{
+  text-decoration: none;
+  color: white;
+  text-transform: none;
+  font-size: 13px;
+  font-family:'Ubuntu', sans-serif;
+  font-family: Gilroy;
+  font-style: normal;
+  margin-right: 10px;
+}
+
+.headerPpages{
+  font-size: 24px;
+  font-family:'Ubuntu', sans-serif;
+  font-family: Gilroy;
+  font-style: normal;
+  margin-left: 65px;
+}
+
+.coffeCatalogMain{
+  
+  width: 100%;
+  position: relative;
+  /* text-align: center; */
+}
+
+.coffeeCatalogWraperCards{
+  margin-top: 50px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+    display: flex;
+    align-items: center;
+  
+}
+
+.coffeCatalogMainParamsInner{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.coffeCatalogMainParams{
+  display: flex;
+  
+  height: 280px;
+  margin-bottom: 10px;
+}
+
+.coffeCatalogMainParams{
+  position: relative;
+}
+
+.coffeCatalogMainParamsLeft{
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: #b1b1b1 0px 0px 5px 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 8px;
+  margin-left: 5px;
+  position: relative;
+    z-index: 250;
+}
+
+.coffeCatalogMainParamsLeftContent{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.coffeCatalogMainParamsLeftContent>p{
+  font-family:'Ubuntu', sans-serif;
+  font-family: Gilroy;
+  font-style: normal;
+  margin-left: 14px;
+  font-size: 18px;
+}
+
+.coffeCatalogMainParamsLeft>img{
+  /* position: absolute; */
+  width: 8px;
+  /* height: 55%;  */
+  /* или 265px s*/
+}
+
+.coffeCatalogMainParamsRight{
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: #b1b1b1 0px 0px 5px 1px;
+  margin-left: 8px;
+  margin-right: 5px;
   display: flex;
   width: 100%;
+  justify-content: space-around;
+  position: relative;
+    z-index: 250;
+  /* position: relative; */
+}
+
+.coffeCatalogMainParamsRight>ul{
+  margin: 0;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  padding: 0;
+  font-family:'Ubuntu', sans-serif;
+  font-family: Gilroy;
+  font-style: normal;
+  font-size: 18px;
+  
+  
+}
+
+
+
+.coffeCatalogMainParamsRight>ul>li{
+  list-style-type: none;
+  font-family:'Ubuntu', sans-serif;
+  font-family: Gilroy;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.coffeCatalogMainTypes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+    z-index: 105;
+}
+
+.coffeCatalogMainTypesTop{
+  
+  display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.coffeCatalogMainTypesBottom{
+  display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.coffeCatalogMainType{
+  text-align: center;
+  width: 120px;
+  box-shadow: #b1b1b1 0px 0px 5px 1px;
+  border-radius: 14px;
+  margin: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  background-color: white;
+  font-size: 16px;
+}
+
+.coffeCatalogMainType_active{
+  box-shadow:#f9b300 0px 0px 5px 1px;
+}
+
+.coffeCatalogMainTypeBlog_active{
+  background-color: #f9b300 ;
+  
+}
+
+.coffeeCatalogCardsContainer{
+  text-align: center;
+  display: flex;
+    flex-wrap: wrap;
     
 }
 
-.WeInInstagramHeader>img{
-  width: 100px;
-  margin-left: 50px;
+.buttonMore{
+  width: 84%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-style:normal;
+  font-family:'Ubuntu', sans-serif;
+  
+  background-color: white;
+  margin-bottom: 25px;
+  box-shadow: #000000 0px 3px 5px 0px;
+  position: relative;
+  display: none;
 }
 
-.WeInInstagramHeaderP{
+/*background-color: #ededed9e;*/
+
+.selectCoffeeCorns{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.circle{
+  min-width: 12px;
+  height: 12px;
+  background-color:#e0e0e0;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.circle_CoffeeStrength{
+  width: 12px;
+  height: 12px;
+  background-color:#e0e0e0;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.circle_and_Types_active{
+  background-color:  #f9b300 !important;
+}
+
+#coffeeCatalogMainButton{
+  width: fit-content;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f9b300;
+  box-shadow: #000000 0px 5px 8px;
+  color: black;
+  font-family:'Ubuntu', sans-serif;
+  font-family: Gilroy;
+  font-style: normal;
+
+  position: relative;
+}
+
+.imgCorn{
+  width: 15px;
+  margin: 3px;
+}
+
+.coffeeCatalogContainerCards{
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 45px;
+  text-align: center;
+  
+}
+
+
+
+
+.coffeeCard{
+  box-shadow: rgb(192, 192, 192) 0px 0px 8px;
+  height: 400px;
+  width: 230px !important;
+  border-radius: 15px;
+  margin-right: 11px;
+  margin-left: 11px;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 15px;
+  background-color: white;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  min-width: 230px;
+    max-width: 230px;
+}
+
+.coffeeCard>span{
+  display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    left: -5px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Gilroy;
+    line-height: 0%;
+    top: -30px;
+}
+
+.coffeeCard>span>p{
+  font-size: 12px;
+    font-family: Gilroy;
+    margin-left: 5px;
+}
+.coffeeCard>img{
+  top: -240px;
+}
+
+.coffeeCard>button{
+  top: -333px;
+}
+
+.coffeeCard>.nowPrice{
+  top: -270px;
+}
+
+.coffeeCard>.coffeeDescription{
+  top: -228px;
+}
+
+.coffeeCard>.oldPrice{
+top:-243px;
+}
+
+/* styles basket */
+.basketMain{
+  width: 100%;
+  
+}
+
+.basketContainerMain{
+  
+  position: relative;
+  z-index: 2;
+  
+}
+
+.basketContainer{
+  
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 80%;
+  position: relative;
+  z-index: 50;
+}
+
+.basketContainerforBg{
+  background-color:#FFF7E1;
+  width: 100%;
+  height:260px;
+  position: absolute;
+  z-index: 1;
+}
+
+.basketVector{
+  position:absolute; 
+  transform: scale(-1,1)
+  rotate(180deg);top:235px;
+}
+
+.basketContainerA{
+  
+  text-transform: none;
+  font-size: 13px;
+  font-family: Gilroy;
+  font-style: normal;
+  padding-top: 10px;
+  color: white;
+}
+
+.basketContainerA>a{
+  color: black;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.basketContainerA>a:hover{
+  color: #F9B300;
+}
+
+.basketInnerContainers{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* .basketInnerContainers{
+
+} */
+
+
+
+.basketInnerContainer{
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 10px #9c9c9c ;
+  margin-top: 15px;
+}
+
+.basketInnerContainerHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+
+.basketMediaContainer{
+  /* display: flex; */
+  width: 100%;
+  display: inline;
+}
+.basketItemContainer{
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: rgb(192 192 192) 0px 0px 8px;
+}
+
+.basketItem_media{
+  display: flex;
+  text-align: center;
+  background-color: #FCFCFC;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+.basketItems{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.basketItem{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: start;
+  background-color:#FCFCFC;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.basketItem>div{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 30px;
+  display: flex;
+}
+
+.basletItemImg{
+  width: 90px;
+  overflow: hidden;
+  border-radius: 20px;
+  
+  
+}
+
+.basletItemImg>img{
+  height: 120px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.basketItemName{
+  display: flex;
+  margin-left: 35px;
+  font-family: Gilroy;
+  white-space: nowrap;
+  width: 120px;
+  justify-content: center;
+}
+
+.basketItemName>p{
+  margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+.basketItemName_Photo>img{
+  height: 113px;
+  width: 61px;
+  margin-right: 10px;
+}
+
+.basketItemButton{
+  height: 27px;
+  display: flex;
+  align-items: center;
+}
+
+.basketItemButton>img{
+  height: 20px;
+  
+}
+
+.basketItem>p{
+  text-align: start;
+  width: 100%;
+}
+
+
+#buttonDelete{
+  max-width: 85px;
+  margin-right: 24px;
+  margin-left: 10px;
+}
+
+
+.basketButtonDeleteDiv{
+  display: flex;
+  margin-left: 20px;
+  
+}
+
+.basketButtonDelete{
+  margin-left: 20px;
+  text-align: center;
+  border: none;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basketItemPrice{
+  margin-left: 109px;
+  font-family: Gilroy;
+}
+
+.basketItemAmount{
+  height: 27px;
+  width: 74px;
+  display: flex;
+  margin-left: 160px;
+  font-family: Gilroy;
+  border: 1px orange solid;
+    border-radius: 10px;
+}
+
+.basketItemDiscount{
+  margin-left: 150px;
+  font-family: Gilroy;
+}
+
+.basketItemTotal{
+  margin-left: 165px;
+  font-family: Gilroy;
+}
+
+.basketItemAmountContainer{
+  display: flex;
+  position: absolute;
+  
+}
+.coffeeCard>.basketItemAmountContainer{
+  top: 310px;
+  left: -50px;
+}
+.Card>.basketItemAmountContainer{
+  top: 315px;
+  left: -50px;
+}
+.basketItemInput{
+  border: none;
+  width: 30px;
+  text-align: center;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  outline: none;
+}
+
+.basketInnerContainerP{
+  font-family: Gilroy;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.basketInnerContainerButton{
+  height: 24px;
+}
+
+.basketParamsContainersMedia{
+  display: flex;
+  flex-direction: column;
+}
+.basketParamsContainersMedia>p{
+  margin: 0%;
+  
+}
+
+.basketParams{
+  /* display: flex;
+  justify-content: space-between; */
+  white-space: nowrap;
+}
+
+.basketParamsP{
+  
+  font-family: Gilroy;
+  font-style: normal;
+  display: inline;
+  margin-left: 10px;
+}
+
+.basketParamsName{
+  margin-left: 94px;
+}
+
+.basketParamsCost, .basketParamsCount, .basketParamsDiscount, .basketParamsTotal{
+  margin-left: 150px;
+}
+
+.basketInnerContainerDelivery{
+  background-color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #9c9c9c ;
+}
+
+.basketInnerContainerDeliveryP{
+  font-family: Gilroy;
+    font-style: normal;
+    font-size: 24px;
+}
+
+
+
+.basketInnerContainerDeliveryInputs{
+  display: flex;
+  font-family: Gilroy;
+  font-style: normal;
+  
+  
+}
+
+.basketInnerContainerButton{
+  border: solid 1px #F9B300;
+  background-color: #FFF7E1;
+  color: #F9B300;
+}
+
+.basketInnerContainerButton:hover{
+  color: #FFF7E1;
+  background-color:#F9B300;
+}
+
+.DeliveryInputsDiv{
+  
+  flex-direction: column;
+  font-family: Gilroy;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.basketPromoCodeHeaderP{
+  font-family: Gilroy;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.DeliveryInput{
+  width: 90%;
+  line-height: 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: #f5f3f3be;
+  padding: 8px;
+  padding-right: 15px;
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: Gilroy;
+}
+
+.DeliveryButton{
+  margin-left: 1.1%;
+  margin-right:1.1%;
+  width: -webkit-fill-available;
+  margin-top:20px;
+  background-color: #FFF7E1;
+  border-radius: 5px;
+  border: solid 1px #F9B300;
+  height: 30px;
+  color: #F9B300;
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+.DeliveryButton:hover{
+  color: #FFF7E1;
+  background-color: #F9B300;
+}
+
+.basketPromoAndCost{
+  display: flex;
+  margin-top: 20px;
+  
+  padding-top: 30px;
+  
+}
+
+.basketPromoCode{
+  background-color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #9c9c9c;
+  padding: 30px;
+  margin-right: 15px;
+  width: 60%;
+}
+
+.basketPromoCodeInputContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.basketPromoCodeInputContainer>input{
+  border-radius: 7px;
+  border: none;
+  background-color: #f5f3f3be;
+  padding: 8px;
+  padding-right: 15px;
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  outline: none;
+  font-family: Gilroy;
+}
+
+.basketPromoCodeInputContainer>button{
+  background-color: #FFF7E1;
+  border-radius: 5px;
+  border: solid 1px #F9B300;
+  height: 30px;
+  color: #F9B300;
+  font-family: sans-serif;
+  font-style: normal;
+  margin-top: 10px;
+  font-family: Gilroy;
+}
+
+.basketPromoCodeInputContainer>button:hover{
+  color: #FFF7E1;
+  background-color: #F9B300;
+}
+
+.basketFinalCost{
+  background-color: white;
+  font-family: Gilroy;
+  font-style: normal;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #9c9c9c;
+  padding: 30px;
+  margin-left: 15px;
+  width: 40%;
+  text-align: center;
+}
+
+.basketFinalCostContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.basketFinalCostContainerText{
+  font-family: Gilroy;
+    font-style: normal;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.basketFinalCostContainerText>div{
+  display: flex;
+}
+
+.basketFinalCostContainerCards{
+  display: flex;
+  justify-content: center;
+  
+  align-items: flex-start;
+}
+
+.basketFinalCostContainerCards>img{
+  width:80px;
+  height: 50px;
+}
+
+#finalyGreyP{
+  margin-left: 10px;
+}
+
+#discountGreyP{
+  margin-left: 10px;
+}
+
+#payOrderButton{
+  background-color: #F9B300;
+  border-radius: 5px;
+  border:none;
+  height: 30px;
+  color: white;
+  font-family: sans-serif;
+  font-style: normal;
+  margin-top: 27px;
+  width: 80%;
+  font-family: Gilroy;
+}
+
+#payOrderButton:hover{
+  color: #F9B300;
+  background-color: #FFF7E1;
+  border: solid 1px #F9B300;
+}
+
+#totalP{
+  line-height: 10px;
+}
+
+#totalCostP{
+  margin-left: 5px;
+  line-height: 10px;
+}
+
+.greyP{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: grey;
+}
+
+.vectorGreyContainer{
+  position: relative;
+  z-index: 1;
+  top:-270px;
+  height: 300px;
+}
+
+#vectorGrey{
+  width: 100%;
+  position: relative;
+  top: 10px;
+}
+
+#vectorGreySquare{
+  background-color: #F5F5F5;
+  height: 130px;
+  width: 100%;
+
+}
+
+#vectorGreyReverse{
+  position: relative;
+  z-index: 50;
+  width: 100%;
+}
+
+#vectorOrangeReverseBasket{
+  position: absolute;
+  top: 386px;
+  width: 100%;
+  z-index: 30;
+}
+
+#imgCupInCoffeeCatalog{
+  width: 400px;
+  position: absolute;
+  top: 130px;
+  left: 60%;
+}
+
+.teaCatalogMain{
+  position: relative;
+  top:-90px;
+}
+
+.teaCatalogMainHeader{
+  height: 500px;
+  /* position: relative; */
+  z-index: 100;
+  background-color: white;
+}
+
+.teaCatalogMainHeaderDivTop{
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teaCatalogMainHeaderDivBottom{
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#CofeeDrinksImg{
+  width: 73px;
+}
+
+.teaCatalogMainHeaderDivContainer{
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 10px #9c9c9c;
+  margin: 10px;
+  position: relative;
+  z-index: 210;
+}
+
+.teaCatalogMainHeaderDivContainer_active{
+  box-shadow: 0px 0px 10px #F9B300;
+}
+
+.teaCatalogMainHeaderDivContainer>p{
+  margin-top: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+}
+
+.teaCatalogMainHeaderDivContainer>img{
+  width: 100px;
+  margin-top: 20px;
+  
+}
+
+.teaCatalogMainBody{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#sortButton{
+  font-family: Gilroy;
+  font-style: normal;
+}
+
+.teaCatalogMainBodyContainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:15px;
+}
+
+.Card{
+    box-shadow: rgb(192 192 192) 0px 0px 8px;
+    height: 400px;
+    width: 230px !important;
+    border-radius: 15px;
+    margin-right: 11px;
+    margin-left: 11px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    min-width: 230px;
+    max-width: 230px;
+    
+}
+
+.cardDivForImg{
+  position: relative;
+  width: 150px;
+  
+  top: -90px;
+  display: flex;
+  left: 35px;
+  height: 215px;
+  /* 30% */
+}
+
+.vendingCardImg{
+  width: 180px;
+  height: 180px;
+  position: absolute;
+    right: -21px;
+    top: 20px;
+}
+.vendingContainerImg{
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.vendingContainerImg>img{
+  height: 100%;
+  position: relative;
+    left: -168px;
+}
+
+.cardDivForImgVending{
+  position: relative;
+    width: 30%;
+    top: -70px;
+    display: flex;
+    left: 80px;
+    height: 30%;
+    justify-content: space-evenly;
+    /* width: 180px;
+  height: 180px;
+  position: absolute;
+    right: -21px;
+    top: 20px; */
+}
+
+.cardImg{
+    height: auto;
+    
+    
+}
+.foodCatalogMainHeaderDivContainer>p{
+  font-family:Gilroy;
+}
+.vendingCatalogMainHeaderDivContainer>p{
+  font-family:Gilroy;
+}
+
+.navigationsAImg{
+  width: 320px;
+  
+}
+
+
+.cardButton{
+  position: relative;
+    top: -160px;
+    left: 30px;
+    width: 130px;
+    background-color: #f9b300;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    color: #f0f0f0;
+    font-family: Gilroy;
+    z-index: 100;
+}
+
+.cardButton:hover{
+  color: #000000;
+}
+
+.cardDescription{
+  position: relative;
+    left: 18px;
+    top: -55px;
+    font-family: Gilroy;
+    font-size: 13px;
+    text-align: start;
+    width: 90%;
+    font-weight: 200;
+}
+
+/*
+position: absolute;
+    left: 24px;
+    top: 293px;
+    font-family: Gilroy;
+    font-size: 13px;
+    text-align: start;
+    width: 90%;
+    font-weight: 200;*/
+
+.cardName{
+  position: relative;
+    top: 170px;
+}
+
+.cardNowPrice{
+  position: relative;
+    top: -97px;
+    left: -76px;
+    color: #000000;
+    font-family: Gilroy;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.cardOldPrice{
+  position: relative;
+  top: -69px;
+  left: -76px;
+  color: rgb(212, 208, 208);
+  font-size: 20px;
+  font-family: Gilroy;
+}
+/* #teaCatalogMainHeaderDivTopImg{
+  width: 200px;
+} */
+
+
+
+.openCard_Container{
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 12px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgb(192 192 192) 0px 0px 8px;
+  height: 550px;
+  font-family: Gilroy;
+  padding:10px;
+}
+
+.openCard_Container_Info_Name{
+  font-family: Gilroy;
   font-size: 30px;
+}
+
+.openCard_Container_Info_Description{
+  font-family: Gilroy;
+}
+
+.openCard_Container_company_Description{
+  font-family: Gilroy;
+}
+
+.openCard_Container_settingsCoffee>div{
+  font-family: Gilroy;
+}
+
+.openCard_Container_Img{
+    margin-right: 5%;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+    
+}
+
+.openCard_Container_Info{
+  margin-left: 5%;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.openCard_Container_Img>img{
+  height: 65%;
+  margin-right: 15px;
+  border-radius: 30px;
+}
+
+.openCard_Container_amount{
+  background-color: #F6F6F6;
+  
+}
+
+.openCard_Container_amount>div{
+  padding: 10px;
+}
+
+#openCard_Container_amount_input{
+  
+  border: none;
+  width: 40px;
+  text-align: center;
+  
+  background-color: #F6F6F6;
+}
+
+#openCard_Container_amount_minus{
+  cursor: pointer;
+}
+#openCard_Container_amount_plus{
+  cursor: pointer;
+}
+.openCard_Container_Info_Stars{
+  margin-right: 15px;
+}
+.openCard_Container_Info_Stars_Reviews{
+  display: flex;
   font-family: Gilroy;
   
+}
+.openCard_Container_amount{
+  display: flex;
+}
+
+.openCard_Container_Button{
+  margin-left: 20px;
+  background-color: #f9b300;
+  border:none;
+  color: white;
+  border-radius: 5px;
+  font-family: Gilroy;
+}
+
+.openCard_Container_amountAndButton{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.inputs_select_container{
+  display: flex;
+  align-items: center;
+}
+
+.discountCircle{
+  background-color: #f9b300;
+  color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  top: 180px;
+  font-family: Gilroy;
+}
+
+
+.inputs_select_container>p{
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.inputs_select_circle{
+  width: 15px;
+  height: 15px;
+  background-color: #E4E4E4;
+  border-radius: 50%;
+  
+  
+}
+
+.inputs_select_circle_active{
+  background-color:  #f9b300 !important;
+}
+
+.openCard_Container_inputs_for_gramm{
+  display: flex;
+  font-family: Gilroy;
+  display: none;
+}
+
+.openCard_Container_settingsCoffee{
+  display: flex;
+  justify-content: flex-start;/**/
+  
+}
+.openCard_Container_oldPrice{
+  margin-top: 20px;
+}
+
+.openCard_Container_settings{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+
+
+.cirleSettings{
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.openCard_Container_bitterness, .openCard_Container_saturation, .openCard_Container_sourrness{
+  display: flex;
+}
+
+.buttonsInfoCards{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-family: Gilroy;
+  margin-top: 40px;
+  flex: 1 1 auto;
+  gap: 10px;
+}
+.buttonsInfoCards>div{
+  font-family: Gilroy;
+}
+
+
+.buttonInfoCard{
+  border-radius: 5px;
+  color: #f9b300;
+  background-color: #F6F6F6;
+  border: solid 1px #C9C9C9;
+  height: 35px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  cursor: default;
+  font-size: 18px;
+}
+
+.buttonsInfoCard_active{
+  background-color: #FFF7E1 !important; 
+  border: solid 1px #f9b300 !important;
+}
+
+.taste_container{
+  display: flex;
+  flex-direction: column;
+  font-family: Gilroy;
+}
+
+.taste_and_characteristics{
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  font-family: Gilroy;
+}
+
+.taste_container{
+  flex-grow: 1;
+  border-radius: 10px;
+  box-shadow: rgb(192 192 192) 0px 0px 8px;
+  margin-right: 10px;
+  padding: 30px;
+}
+
+.characteristics_container{
+  flex-grow: 3;
+  border-radius: 10px;
+  box-shadow: rgb(192 192 192) 0px 0px 8px;
+  margin-left: 10px;
+  padding: 30px;
+}
+
+
+
+.HowToCook{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Gilroy;
+  font-style: bolder;
+  font-size: 20px;
+  
+}
+
+.HowToCookStyles{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+.characteristics_item_params{
+  font-style: italic;
+}
+.characteristics_item_paramsName{
+  display: flex;
+  margin-right: 7px;
+}
+
+.characteristics_item{
+  display: flex;
+}
+
+.taste_container_div{
+  display: flex;
+  justify-content: space-between
+}
+
+.tasteDivForImg{
+  
+  height: 47px;
+  
+  
+    
+  background-color: #f9b300;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+#imgchocolade{
+  position: relative;
+  top: 2px;
+}
+
+.card_description{
+  display: flex;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 45px;
+  align-items: center;
+  font-family:Gilroy;
+}
+
+.card_description>p{
+  margin-right: 10px;
+  
+}
+.card_description>img{
+  margin-left: 10px;
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-right: 20px;
+}
+
+.divSearchTovarForInfo{
+  font-family: Gilroy;
+}
+
+.divSearchTovarForInfoPrices{
+  display: flex;
+  align-items: center;
+  
+}
+
+.divSearchTovarForInfoPricesCost{
+  margin-right: 10px;
+}
+
+.divSearchTovarForInfoPricesDiscount{
+  margin-right: 10px;
+}
+
+.divSearchTovarForInfo_Button{
+  
+    background-color: #f9b300;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 37px;
+    font-family: Gilroy;
+    
+}
+
+.HowToCookP{
+  text-align: center;
+}
+
+.reviews{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Additionally{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Gilroy;
+}
+
+/* width: -webkit-fill-available; */
+.AdditioallyItemImg{
+  width: -webkit-fill-available;
+}
+.vendingCatalogMainHeaderDivContainer{
+  
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #9c9c9c;
+    margin: 10px;
+    position: relative;
+    z-index: 210;
+    padding-top: 15px;
+}
+.foodCatalogmainHeaderContainer{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #9c9c9c;
+    margin: 10px;
+    position: relative;
+    z-index: 210;
+    padding-top: 15px;
+}
+.foodCatalogMainHeaderDivTop{
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  /* flex-shrink: 4; cвойство что поместит их в одну строку без пробелов*/
+}
+.vendingCatalogMainHeaderDivTop{
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  /* flex-shrink: 4; cвойство что поместит их в одну строку без пробелов*/
+}
+.foodCatalogMainHeaderDivBottom{
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+.vendingCatalogMainHeaderDivBottom{
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.vendingCatalogMainHeaderDivContainer_active{
+  box-shadow: 0px 0px 10px #F9B300;
+}
+.foodCatalogmainHeaderContainer_active{
+  box-shadow: 0px 0px 10px #F9B300;
+}
+
+.vendingCatalogMainBody{
+  width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#foodContainerimg0{
+  width:80%;
+  border-radius:12px;
+  height:70%;
+}
+#foodContainerimg1{
+  border-radius:12px;
+  height:70%;
+}
+#foodContainerimg2{
+  width:80%;
+  border-radius:12px;
+  height:70%;
+}
+#foodContainerimg3{
+  border-radius:12px;
+  height:70%;
+}
+#foodContainerimg4{
+  width:80%;
+  border-radius:12px;
+  height:70%;
+}
+
+.foodCatalogMainBody{
+  width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.basketLength{
+  position: absolute;
+  top: -8px;
+    left: -14px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    font-family: Gilroy;
+    z-index: 100;
+}
+
+#basket{
+  position: relative;
+}
+
+.NavigationsAContainer{
+  font-family: Gilroy;
+  
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.NavigationsAContainer>a{
+  margin-left: 5px;
+  font-size: 13px;
+  
+}
+
+.NavigationsAContainer>a:hover{
+  color: #f9b300;
+}
+
+.blogNavigationsButtons{
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blogNavigationsButton{
+  background-color: #f8f8f8;
+    border-radius: 5px;
+    border: solid 1px #afafaf;
+    height: 30px;
+    color: #F9B300;
+    font-family: Gilroy;
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+}
+
+.blogNavigationsButtonActive{
+  background-color: #FFF7E1;
+    border-radius: 5px;
+    border: solid 1px #F9B300;
+    height: 30px;
+    color: #F9B300;
+    font-family: Gilroy;
+    width: 100%;
+    margin: 5px;
+}
+
+.divsHeaderP{
+  margin-left: 5px;
+  font-family: Gilroy;
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.forThemes{
+  border-bottom: 2px #afafaf solid;
+  padding-bottom: 10px;
+}
+
+.typeActiveHeader{
+  font-family: Gilroy;
+  font-size: 20px;
+}
+
+.typeActiveText{
+  font-family: Gilroy;
+  font-size: 14px;
+}
+
+.typeActiveImg{
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 25px;
+}
+
+.themeForImg{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+}
+
+.themeForImg>img{
+  
+  width: 100%;
+  position: absolute;
+  
+}
+
+.themeName{
+  font-family: Gilroy;
+  font-size: 16px;
+}
+
+.themeText{
+  font-family: Gilroy;
+  font-size: 14px;
+}
+
+.blogNews{
+  border-bottom: 2px #afafaf solid;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 10000;
+}
+
+.blogNewsHeader{
+  margin-top: 25px;
+}
+
+.blogNewsHeaderText{
+  font-family: Gilroy;
+  font-size: 16px;
+}
+
+.FAQ{
+  position: relative;
+  min-height: 500px;
+}
+
+.FAQContainer{
+  width: 100%;
+}
+
+.FAQHeader{
+  font-family: Gilroy;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.FAQContent{
+  display: flex;
+  
+  position: relative;
+}
+
+.vectorsContainer{
+  position: absolute;
+  top: -200px;
+  
+}
+
+.FAQContent>img{
+  position: absolute;
+  left: 0%;
+  width: 480px;
+  /* width: 35%; */
+}
+
+.forQuestions{
+  width: 100%;
+  /* min-width: 650px; */
+  position: relative;
+  
+}
+
+.Question{
+  
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+  padding-right: 3px;
+  overflow: hidden;
+  align-items: flex-end;
+  
+}
+
+.QuestionContainer{
+  width: 555px;
+  padding: 5px;
+  
+}
+
+.containerForQuestion{
+  display: flex;
+  margin-left: 8px;
+  margin-top: 10px;
+  background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: #000000 1px 1px 4px;
+/*border-radius: 15px 15px 0px 0px;*/
+padding-left: 16px;
+    padding-right: 5px;
+}
+.containerForQuestion>p{
+  font-family: Gilroy;
+  font-size: 15px;
+}
+
+
+.forLines>{
+  position: relative;
+}
+
+.forLines>img{
+  position: absolute;
+  height: 25px;
+  top: 26px;
+    right: 17px;
+}
+
+.AnswerForQuestion{
+  width: 500px;
+  height: 0px;
+  transition: 1s;
+}
+
+.newsContainer{
+  display: flex;
+  height: 250px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  box-shadow: #484848 0px 0px 6px;
+  position: relative;
+  
+}
+
+.newsContainerWithoutimg{
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  box-shadow: #484848 0px 0px 6px;
+}
+
+.newsContainer:hover{
+  box-shadow: #F9B300 0px 0px 6px;
+}
+
+.newsContainerForImg>img{
+  height: 100%;
+}
+
+.newsContainerInfo{
+  margin-left: 15px;
+  padding: 5px;
+}
+
+.newsContainerInfoHeader{
+  font-family: Gilroy;
+  font-size: 25px;
+  color: black;
+}
+
+.newsContainerInfoText{
+  font-family: Gilroy;
+  width: 90%;
+}
+
+.newContainerInfoAuthor{
+  font-family: Gilroy;
+  display: flex;
+}
+
+#More{
+  margin-left: auto;
+    margin-right: 20px;
+    color: #f9b300;
+    cursor: pointer;
+    position: absolute;
+    right:-7px;
+    
+    font-family: Gilroy;
+    bottom: -8px;
+}
+
+#More:hover{
+  
+  border-bottom: #000000 1px solid;
+}
+
+.newsMoreButton{
+  font-family: Gilroy;
+  
+  text-align: center;
+  padding: 15px;
+  background-color: #F6F6F6;
+  border-radius: 15px;
+  box-shadow: #000000 0px 5px 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* .newsMoreButton:hover{
+  color: #f9b300;
+} */
+
+/* .AnswerForQuestion_active{
+
+} */
+
+.buttonToTop{
+  position: fixed;
+  top: 93%;
+  left: 90%;
+  z-index: 100000;
+}
+
+.contantForNews{
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.containerForNewsHeader{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 24px;
+  font-family: Gilroy;
+}
+.contantForNews{
+  font-family: Gilroy;
+}
+.contantForNews>p{
+  font-family: Gilroy;
+  margin-left: 10px;
+
 }
