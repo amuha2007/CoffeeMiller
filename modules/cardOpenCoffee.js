@@ -384,15 +384,19 @@ export function cardOpenCoffee(cardCoffeeInfo){
         <p class='AdditionallyItemHeader'>${cardCoffeeInfo.Additionally[i].header}</p>
         <p class='AdditioallyItemText'>${cardCoffeeInfo.Additionally[i].text}</p>
         
-        `;
-        if(cardCoffeeInfo.Additionally[i].img!==" "||cardCoffeeInfo.Additionally[i].img!==undefined){
-        let AdditionallyImg=document.createElement('img');
-        AdditionallyImg.setAttribute('src',`.${cardCoffeeInfo.Additionally[i].img}`);
-        AdditionallyImg.setAttribute('class','AdditioallyItemImg');
-        AdditionallyItem.appendChild(AdditionallyImg);
+        `
         document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
-        }
+
+        if(cardCoffeeInfo.Additionally[i].img===''||cardCoffeeInfo.Additionally[i].img==undefined){
+            
+    }else{
+        let AdditionallyImg=document.createElement('img');
+            AdditionallyImg.setAttribute('src',`${cardCoffeeInfo.Additionally[i].img}`);
+            AdditionallyImg.setAttribute('class','AdditioallyItemImg');
+            AdditionallyItem.appendChild(AdditionallyImg);
+            document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
     }
+}
 
     
     document.querySelector('.HowToCookStyles').style.cssText='justify-content: center;'
