@@ -396,7 +396,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
 
     
     document.querySelector('.HowToCookStyles').style.cssText='justify-content: center;'
-    //'Френч-пресс','Мока','Эспрессо','Воронка','Аэропресс','Чашка','Автомат'
+    
     cardCoffeeInfo.howToCook.forEach(function(elem){
         if(elem=='Турка'){
             let divType=document.createElement('div')
