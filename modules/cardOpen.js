@@ -241,8 +241,10 @@ export function cardOpen(data){
                     `
                     document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
 
-                    if(targetInfo.Additionally[i].img!==" "||targetInfo.Additionally[i].img!==undefined){
-                        let AdditionallyImg=document.createElement('img');
+                    if(targetInfo.Additionally[i].img===''||targetInfo.Additionally[i].img==undefined){
+                        
+                }else{
+                let AdditionallyImg=document.createElement('img');
                         AdditionallyImg.setAttribute('src',`.${targetInfo.Additionally[i].img}`);
                         AdditionallyImg.setAttribute('class','AdditioallyItemImg');
                         AdditionallyItem.appendChild(AdditionallyImg);
