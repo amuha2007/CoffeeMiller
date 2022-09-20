@@ -14,11 +14,11 @@ export function basketItemFunct(cardData){
         
 
         <div class='DiscountedCouruselItemStars'>
-            <img src='/img/StarGrey.png' class='stars' id='stars1'>
-            <img src='/img/StarGrey.png' class='stars' id='stars2'>
-            <img src='/img/StarGrey.png' class='stars' id='stars3'>
-            <img src='/img/StarGrey.png' class='stars' id='stars4'>
-            <img src='/img/StarGrey.png' class='stars' id='stars5'>
+            <img src='./img/StarGrey.png' class='stars' id='stars1'>
+            <img src='./img/StarGrey.png' class='stars' id='stars2'>
+            <img src='./img/StarGrey.png' class='stars' id='stars3'>
+            <img src='./img/StarGrey.png' class='stars' id='stars4'>
+            <img src='./img/StarGrey.png' class='stars' id='stars5'>
         </div>
         <span class='spanOtzivy'>${cardData.stars}<p>(32 отзыва)</p></span>
         <div class='cornsContainer'></div>
@@ -70,16 +70,16 @@ export function basketItemFunct(cardData){
             </div>
         </div>
         <p class='coffeName'>${cardData.name}</p>
-        <img class='catalogWithDiscountedCoruselItemsImg' src='${cardData.img}'>
+        <img class='catalogWithDiscountedCoruselItemsImg' src='.${cardData.img}'>
         <p class='coffeeDescription'>${cardData.description}</p>
         <p class='oldPrice'>${cardData.price}</p>
         <p class='nowPrice'>${cardData.price-(cardData.price*cardData.discount/100)}</p>
         <button class='DiscountedCouruselItemButton' id='button-${cardData.id}'>Удалить</button> 
         <div class='basketItemAmountContainer'>
                     <div class='basketItemAmount'>
-                        <div class='basketItemButton' id='basketItemButtonPlus${cardData.id}'><img src='/img/add_FILL0_wght400_GRAD0_opsz48.png'></div>
+                        <div class='basketItemButton' id='basketItemButtonPlus${cardData.id}'><img src='./img/add_FILL0_wght400_GRAD0_opsz48.png'></div>
                             <input class='basketItemInput' id='basketItemInput${cardData.id}' type='text' value='1'></input>
-                        <div class='basketItemButton' id='basketItemButtonMinus${cardData.id}'><img src='/img/remove_FILL0_wght400_GRAD0_opsz48.png'></div>
+                        <div class='basketItemButton' id='basketItemButtonMinus${cardData.id}'><img src='./img/remove_FILL0_wght400_GRAD0_opsz48.png'></div>
                     </div>
                 </div>
         `;
@@ -99,7 +99,7 @@ export function basketItemFunct(cardData){
             for(let j=0; j<cardData.coffeeStrength;j++){
                 let corns=document.createElement('img');
                 corns.setAttribute('class', 'Corns');
-                corns.setAttribute('src','/img/Corns.png');
+                corns.setAttribute('src','./img/Corns.png');
                 
                 coffeeCardDiv.querySelector('.cornsContainer').appendChild(corns);
                //тут отрисовывать зерна в карет и кружечки 
@@ -108,7 +108,7 @@ export function basketItemFunct(cardData){
             //отрисовываю звезды
             Array.from(coffeeCardDiv.querySelector('.DiscountedCouruselItemStars').children).forEach(function(elem,index){
                 if(index<cardData.stars){
-                    elem.setAttribute('src','/img/StarGold.png')
+                    elem.setAttribute('src','./img/StarGold.png')
                 }
             })
             //отрисовываю кислинку,горчинку,насыщенность
@@ -175,18 +175,18 @@ export function basketItemFunct(cardData){
         
 
         <div class='DiscountedCouruselItemStars'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars1'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars2'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars3'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars4'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars5'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars1'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars2'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars3'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars4'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars5'>
         </div>
 
                 
         
                 <p class='cardName'>${cardData.name}</p>
                 <div class='cardDivForImg'>
-                <img class='cardImg' src='${cardData.img}'>
+                <img class='cardImg' src='.${cardData.img}'>
                 </div>
                 <p class='cardDescription'>${cardData.description}</p>
                 <p class='cardOldPrice'>${cardData.price}</p>
@@ -194,9 +194,9 @@ export function basketItemFunct(cardData){
                 <button class='cardButton' id='button-${cardData.id}'>Удалить</button>
                 <div class='basketItemAmountContainer'>
                     <div class='basketItemAmount'>
-                        <div class='basketItemButton' id='basketItemButtonPlus${cardData.id}'><img src='/img/add_FILL0_wght400_GRAD0_opsz48.png'></div>
+                        <div class='basketItemButton' id='basketItemButtonPlus${cardData.id}'><img src='./img/add_FILL0_wght400_GRAD0_opsz48.png'></div>
                             <input class='basketItemInput' id='basketItemInput${cardData.id}' type='text' value='1'></input>
-                        <div class='basketItemButton' id='basketItemButtonMinus${cardData.id}'><img src='/img/remove_FILL0_wght400_GRAD0_opsz48.png'></div>
+                        <div class='basketItemButton' id='basketItemButtonMinus${cardData.id}'><img src='./img/remove_FILL0_wght400_GRAD0_opsz48.png'></div>
                     </div>
                 </div>
         `;
@@ -206,7 +206,7 @@ export function basketItemFunct(cardData){
             card.querySelector('.cardImg').setAttribute('class','vendingCardImg');
             card.querySelector('.cardDivForImg').querySelector('.vendingCardImg').remove()
             
-            card.querySelector('.cardDivForImg').style.cssText=`background-image:url(${cardData.img});background-position:center;width:75%;left:27px;border-radius:20px;top:-84px;`;
+            card.querySelector('.cardDivForImg').style.cssText=`background-image:url(.${cardData.img});background-position:center;width:75%;left:27px;border-radius:20px;top:-84px;`;
         }
         if (cardData.discount=='' || cardData.discount==undefined){
             //если у карточкиОбьекта нет discount то я скрываю их
@@ -215,7 +215,7 @@ export function basketItemFunct(cardData){
             card.querySelector('.cardOldPrice').style='opacity:0'; 
         }
         for(let j=0;j<cardData.stars;j++){
-            card.querySelector('.DiscountedCouruselItemStars').children[j].setAttribute('src','/img/StarGold.png');
+            card.querySelector('.DiscountedCouruselItemStars').children[j].setAttribute('src','./img/StarGold.png');
         };
         
         // basketItem.appendChild(card);
