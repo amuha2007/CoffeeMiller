@@ -39,7 +39,7 @@ export function cardOpen(data){
                 <div class='searchingTovars'></div>
                 <div class='openCard_Container' id='openCard_Container'>
             <div class='openCard_Container_Img'>
-                <img src='${targetInfo.img}'>
+                <img src='.${targetInfo.img}'>
             </div>
             <div class='openCard_Container_Info'>
                 <div class='openCard_Container_Info_Corns'>
@@ -114,7 +114,7 @@ export function cardOpen(data){
                 if(targetInfo.type=='vending'){
                     document.querySelector('.openCard_Container_Img').innerHTML=`
                         <div class='vendingContainerImg'>
-                            <img src='${targetInfo.img}'>
+                            <img src='.${targetInfo.img}'>
                         </div>
                     `;
                     
@@ -124,9 +124,9 @@ export function cardOpen(data){
                     let stars=document.createElement('img');
                     stars.setAttribute('class','openCard_Container_Stars');
                     if(i<targetInfo.stars){
-                        stars.setAttribute('src','/img/StarGold.png');
+                        stars.setAttribute('src','./img/StarGold.png');
                     }else{
-                        stars.setAttribute('src','/img/StarGrey.png');
+                        stars.setAttribute('src','./img/StarGrey.png');
                     }
                     
                     document.querySelector('.openCard_Container_Info_Stars').appendChild(stars);
@@ -224,7 +224,7 @@ export function cardOpen(data){
             }else{
                     
                     document.querySelector('.card_description').innerHTML=`
-                    <img src='${targetInfo.characteristics.img}'>
+                    <img src='.${targetInfo.characteristics.img}'>
                 <p>${targetInfo.characteristics.description}</p>
                 
                 `
@@ -237,7 +237,7 @@ export function cardOpen(data){
                     AdditionallyItem.innerHTML=`
                     <p class='AdditionallyItemHeader'>${targetInfo.Additionally[i].header}</p>
                     <p class='AdditioallyItemText'>${targetInfo.Additionally[i].text}</p>
-                    <img class='AdditioallyItemImg' src='${targetInfo.Additionally[i].img}'>
+                    <img class='AdditioallyItemImg' src='.${targetInfo.Additionally[i].img}'>
                     `
                     document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
                 }
