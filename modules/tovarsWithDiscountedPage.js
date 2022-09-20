@@ -37,7 +37,7 @@ export function tovarsWithdiscountedPage(event){
                 <div class="catalogProdItems">
                     <div class="catalogItem" id="catalogItem0" name='coffee'>
                         <div class='catalogItemForImg'>
-                        <img src="/img/freshCoffeCatalog.png" alt="" id="catalogItem0img">
+                        <img src="./img/freshCoffeCatalog.png" alt="" id="catalogItem0img">
                         </div>
                         <p>Свежеобжаренный кофе</p>
                         
@@ -45,7 +45,7 @@ export function tovarsWithdiscountedPage(event){
 
                     <div class="catalogItem" id="catalogItem1" name='tea'>
                         <div class='catalogItemForImg'>
-                        <img src="/img/teaAndCoffeeCatalog.png" alt="" style="bottom: 50px;">
+                        <img src="./img/teaAndCoffeeCatalog.png" alt="" style="bottom: 50px;">
                         </div>
                         <p>Чай и кофеные напитки</p>
                         
@@ -53,7 +53,7 @@ export function tovarsWithdiscountedPage(event){
 
                     <div class="catalogItem" id="catalogItem2" name='food'>
                         <div class='catalogItemForImg'>
-                        <img src="/img/HealthuFood.png" alt="">
+                        <img src="./img/HealthuFood.png" alt="">
                         </div>
                         <p>Здоровое питание</p>
                         
@@ -61,7 +61,7 @@ export function tovarsWithdiscountedPage(event){
 
                     <div class="catalogItem" id="catalogItem3" name='vending'>
                         <div class='catalogItemForImg'>
-                        <img src="/img/VendingProductCatalog.png" alt="">
+                        <img src="./img/VendingProductCatalog.png" alt="">
                         </div>
                         <p>Продукция для вендинга</p>
                         
