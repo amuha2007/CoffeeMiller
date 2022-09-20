@@ -391,7 +391,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
             
     }else{
         let AdditionallyImg=document.createElement('img');
-            AdditionallyImg.setAttribute('src',`${cardCoffeeInfo.Additionally[i].img}`);
+            AdditionallyImg.setAttribute('src',`.${cardCoffeeInfo.Additionally[i].img}`);
             AdditionallyImg.setAttribute('class','AdditioallyItemImg');
             AdditionallyItem.appendChild(AdditionallyImg);
             document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
