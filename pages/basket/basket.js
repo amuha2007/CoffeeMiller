@@ -3,7 +3,7 @@ import {SubscribeForNews} from '../../modules/subscribeForNews.js';
 import { BasketLength } from './basketLength.js';
 import {buttonToTop} from '../../modules/buttomToTop.js';
 import {FooterWithVector} from '../../modules/footerWithVector.js';
-import { basketItemFunct } from '../../modules/basketItem.js';
+import { basketItemFunct } from './../../modules/basketItem.js';
 export let basketMassive=[];
 let TotalCostFinal=0;
 let TotalCostItem=0;
