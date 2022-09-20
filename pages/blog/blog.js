@@ -356,15 +356,13 @@ export function blog(){
             `
             //console.log(elem.themes);
             elem.themes.forEach(function(theme,index){
-                //console.log(theme);
-                //<img src='${theme.themeImg}'>
-                //<div class='themeImg' style='background-image:url("${theme.themeImg}")'></div>
+                
                 let divForTheme=document.createElement('div');
                 divForTheme.innerHTML=`
                 <p class='themeName'>${theme.themeName}</p>
                 <p class='themeText'>${theme.themeText}</p>
                 <div class='themeForImg'>
-                    <img src='${theme.themeImg}'>
+                    <img src='.${theme.themeImg}'>
                 </div>
                 `;
                 document.querySelector('.forThemes').children[0].appendChild(divForTheme);
@@ -485,7 +483,6 @@ Array.from(document.querySelectorAll('.QuestionContainer')).forEach(function(ele
             }
         })
 
-console.log(index);
 
         if(elem.getAttribute('status')=='false'){
             elem.setAttribute('status','true');
@@ -533,8 +530,7 @@ console.log(index);
 
 
 News.forEach(function(elem,index){
-    console.log(elem);
-    console.log(elem.img);
+    
     if(elem.img!==undefined ||elem.img!==''){
 
     
@@ -554,7 +550,7 @@ News.forEach(function(elem,index){
     })
     newsContainer.innerHTML=`
         <div class='newsContainerForImg'>
-            <img src='${elem.img}'>
+            <img src='.${elem.img}'>
         </div>
 
         <div class='newsContainerInfo'>
