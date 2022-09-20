@@ -51,7 +51,7 @@ if(document.querySelector('.NewsCompany')){
                 <p class='textHeader'>${elem.header}</p>
                 <p class='textContainer'>${elem.text}</p>
                 
-                <a href='#' class='NewsCompanyContentA'>Подробнее <img src='/img/ArrowRightOrange.png' alt=''></img> </a>
+                <a href='#' class='NewsCompanyContentA'>Подробнее <img src='./img/ArrowRightOrange.png' alt=''></img> </a>
                 </div>
                 `;
                 post.addEventListener('click',function(){
@@ -71,14 +71,14 @@ if(document.querySelector('.NewsCompany')){
                 post.setAttribute('id',`${elem.id}`);
                 post.innerHTML=`
                 <div class='NewsCompanyContainerForImg'>
-                <img src='${elem.img}' class='NewsCompanyImg'>
+                <img src='.${elem.img}' class='NewsCompanyImg'>
                 </div>
                 
                 <div class='NewsComapnyWithImgText'>
                     <p class='textHeader'>${elem.header}</p>
                     <p class='textContainer'>${elem.text}</p>
                     
-                    <a href='#' class='NewsCompanyContentA'>Подробнее <img src='/img/ArrowRightOrange.png' alt=''></img> </a>
+                    <a href='#' class='NewsCompanyContentA'>Подробнее <img src='./img/ArrowRightOrange.png' alt=''></img> </a>
                 </div>
                 `
                 post.addEventListener('click',function(){
@@ -105,7 +105,7 @@ if(document.querySelector('.NewsCompany')){
                 <p class='textHeader'>${elem.header}</p>
                 <p class='textContainer'>${elem.text}</p>
                 
-                <a href='#' class='NewsCompanyContentA'>Подробнее <img src='/img/ArrowRightOrange.png' alt=''></img> </a>
+                <a href='#' class='NewsCompanyContentA'>Подробнее <img src='./img/ArrowRightOrange.png' alt=''></img> </a>
                 </div>
                 `;
                 post.addEventListener('click',function(){
@@ -125,14 +125,14 @@ if(document.querySelector('.NewsCompany')){
                 post.setAttribute('id',`${elem.id}`);
                 post.innerHTML=`
                 <div class='NewsCompanyContainerForImg'>
-                <img src='${elem.img}' class='NewsCompanyImg'>
+                <img src='.${elem.img}' class='NewsCompanyImg'>
                 </div>
                 
                 <div class='NewsComapnyWithImgText'>
                     <p class='textHeader'>${elem.header}</p>
                     <p class='textContainer'>${elem.text}</p>
                     
-                    <a href='#' class='NewsCompanyContentA'>Подробнее <img src='/img/ArrowRightOrange.png' alt=''></img> </a>
+                    <a href='#' class='NewsCompanyContentA'>Подробнее <img src='./img/ArrowRightOrange.png' alt=''></img> </a>
                 </div>
                 `;
                 post.addEventListener('click',function(){
