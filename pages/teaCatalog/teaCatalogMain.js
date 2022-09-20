@@ -66,34 +66,34 @@ export function teaCatalogMain(){
     <div class='teaCatalogMainHeader'>
         <div class='teaCatalogMainHeaderDivTop'>
             <div class='teaCatalogMainHeaderDivContainer' id='tea_black'>
-            <img src='/img/tea/TeaBlack.png'>
+            <img src='./img/tea/TeaBlack.png'>
             <p>Черный чай</p>
             </div>
             <div class='teaCatalogMainHeaderDivContainer' id='tea_green'>
-            <img src='/img/tea/TeaGreen.png'>
+            <img src='./img/tea/TeaGreen.png'>
             <p>Зеленый чай</p>
             </div>
             <div class='teaCatalogMainHeaderDivContainer' id='tea_milkUlung'>
-            <img src='/img/tea/TeaMilkUlun.png'>
+            <img src='./img/tea/TeaMilkUlun.png'>
             <p>Молочный улунг</p>
             </div>
             
         </div>
         <div class='teaCatalogMainHeaderDivBottom'>
             <div class='teaCatalogMainHeaderDivContainer' id='tea_Herb'>
-            <img src='/img/tea/TeaHerb.png'>
+            <img src='./img/tea/TeaHerb.png'>
             <p>Травяной чай</p>
             </div>
             <div class='teaCatalogMainHeaderDivContainer' id='tea_Matcha'>
-            <img src='/img/tea/TeaMatcha.png'>
+            <img src='./img/tea/TeaMatcha.png'>
             <p>Матча</p>
             </div>
             <div class='teaCatalogMainHeaderDivContainer' id='tea_Puer'>
-            <img src='/img/tea/TeaPuer.png'>
+            <img src='./img/tea/TeaPuer.png'>
                 <p>Пуэр</p>
                 </div>
             <div class='teaCatalogMainHeaderDivContainer' id='coffee_drincs'>
-            <img src='/img/tea/CofeeDrinks.png' id='CofeeDrinksImg'>
+            <img src='./img/tea/CofeeDrinks.png' id='CofeeDrinksImg'>
                 <p>Кофейные напитки</p>
             </div>
         </div>
@@ -107,7 +107,7 @@ export function teaCatalogMain(){
             
         </div>
     </div>`;
-//<img src='/img/kisspng-green-tea-longjing.png' id='teaCatalogMainHeaderDivTopImg'>
+//<img src='./img/kisspng-green-tea-longjing.png' id='teaCatalogMainHeaderDivTopImg'>
     document.querySelector('.main').appendChild(teaCatalogMain);
     
     //сделать функцию кард и отрисовывать карты чаев в teaCatalogMainBodyContainer полностью все(желательно в разнобой)
