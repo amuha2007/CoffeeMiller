@@ -241,9 +241,9 @@ export function cardOpen(data){
                     `
                     document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
 
-                    if(cardCoffeeInfo.Additionally[i].img!==" "||cardCoffeeInfo.Additionally[i].img!==undefined){
+                    if(targetInfo.Additionally[i].img!==" "||targetInfo.Additionally[i].img!==undefined){
                         let AdditionallyImg=document.createElement('img');
-                        AdditionallyImg.setAttribute('src',`${cardCoffeeInfo.Additionally[i].img}`);
+                        AdditionallyImg.setAttribute('src',`${targetInfo.Additionally[i].img}`);
                         AdditionallyImg.setAttribute('class','AdditioallyItemImg');
                         AdditionallyItem.appendChild(AdditionallyImg);
                         document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
