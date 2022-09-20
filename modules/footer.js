@@ -9,7 +9,7 @@ export function Footer(){
         footer.innerHTML=`
         <div class = 'footerContainer'>
                 <div class='footerNavigation'>
-                    <div class="logo"><img src="/img/Logo.png"></div>
+                    <div class="logo"><img src="./img/Logo.png"></div>
                     <div class="navButtons">
                     <a href='#'>Каталог товаров</a>
                     <a href='#'>Блог</a>
