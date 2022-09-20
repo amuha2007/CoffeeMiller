@@ -1,4 +1,4 @@
-// import navigationsA from '../pagesModules/navigationsA.js';
+
 import {SubscribeForNews} from '../../modules/subscribeForNews.js';
 import { BasketLength } from './basketLength.js';
 import {buttonToTop} from '../../modules/buttomToTop.js';
@@ -113,7 +113,7 @@ export function Basket(){
     basketContainer.innerHTML=`
     <div class='basketContainerMain'>
         <div class='basketContainerforBg'></div>
-        <img src='/img/Vector.png' class='basketVector'>
+        <img src='./img/Vector.png' class='basketVector'>
     
         <div class='basketContainer'> 
             <div class='basketContainerA'>
@@ -180,8 +180,8 @@ export function Basket(){
                                 <div class='greyP' id='discountGrey'><p>Скидка:</p><p id='discountGreyP'></p></div>
                             </div>
                             <div class='basketFinalCostContainerCards'>
-                                <img src='/img/MasterCard.png'>
-                                <img src='/img/Visa.png'>
+                                <img src='./img/MasterCard.png'>
+                                <img src='./img/Visa.png'>
                             </div> 
                             
                         </div>
@@ -201,9 +201,9 @@ export function Basket(){
         
     </div>
     <div class='vectorGreyContainer'>
-        <img id='vectorGrey' src='/img/VectorGrey.png'>
+        <img id='vectorGrey' src='./img/VectorGrey.png'>
         <div id='vectorGreySquare'></div>
-        <img id='vectorGreyReverse' src='/img/VectorGreyReverse.png'>
+        <img id='vectorGreyReverse' src='./img/VectorGreyReverse.png'>
         
     
     <div class='SubscribeForNews'></div>
