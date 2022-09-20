@@ -9,12 +9,12 @@ export function WeInInstagram(){
 
     <div class="WeInInstagramHeader">
         <p class="WeInInstagramHeaderP">Мы в Instagram</p>
-        <img src="/img/icons/instagramIco.png">
+        <img src="./img/icons/instagramIco.png">
     </div>
     <div class='WeInInstagramContainer'>
         <div class='WeInInstagramIphons'>
-            <img id='Iphone1' src='/img/айфон1withInst.png'>
-            <img id='Iphone2' src='/img/айфон1withinst.png'>
+            <img id='Iphone1' src='./img/айфон1withInst.png'>
+            <img id='Iphone2' src='./img/айфон1withinst.png'>
         </div>
 
         <div class='WeInInstagramImgs'>
@@ -25,16 +25,16 @@ export function WeInInstagram(){
     <div>
     
     <div class="WeInInstagramFooter">
-    <img src='/img/coffee-breans&cup2.png' id='coffeeBreansCup2'>
+    <img src='./img/coffee-breans&cup2.png' id='coffeeBreansCup2'>
     
-    <div id='opacityArrow'><img src='/img/ArrowRightOrange.png'></div>
+    <div id='opacityArrow'><img src='./img/ArrowRightOrange.png'></div>
     
     
     </div>
     
     `; 
 
-//<img src='/img/VectorOrangeReverse.png' alt='' id='InsVectorOrangeReverse'>
+//<img src='./img/VectorOrangeReverse.png' alt='' id='InsVectorOrangeReverse'>
     //делаю settimeout что бы после отрисовки нашло елемент
     //циклом форич бегу по массиву картинок создавая тег img 
     setTimeout(function(){
@@ -47,13 +47,13 @@ export function WeInInstagram(){
 
             if(i<instagrammPhotos.length/2){ 
                 let imgTag=document.createElement('img');
-                imgTag.setAttribute('src',`${instagrammPhotos[i]}`);
+                imgTag.setAttribute('src',`.${instagrammPhotos[i]}`);
                 imgTag.setAttribute('class', 'WeInInstagramImage');
                 document.querySelector('#WeInInstagramImgsContainer1').appendChild(imgTag);
 
             }else{
                 let imgTag=document.createElement('img');
-                imgTag.setAttribute('src',`${instagrammPhotos[i]}`);
+                imgTag.setAttribute('src',`.${instagrammPhotos[i]}`);
                 imgTag.setAttribute('class', 'WeInInstagramImage');
                 document.querySelector('#WeInInstagramImgsContainer2').appendChild(imgTag);
                 document.querySelector('#WeInInstagramImgsContainer2').style.top='220px';
