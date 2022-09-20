@@ -44,11 +44,11 @@ let DiscountedCouruselItemsContainer=document.querySelector('.DiscountedCourusel
                 
 
                 <div class='DiscountedCouruselItemStars'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars1'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars2'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars3'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars4'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars5'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars1'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars2'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars3'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars4'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars5'>
                 </div>
                 <span class='spanOtzivy'>${cardData.stars}<p>(32 отзыва)</p></span>
                 <div class='cornsContainer'></div>
@@ -100,7 +100,7 @@ let DiscountedCouruselItemsContainer=document.querySelector('.DiscountedCourusel
                     </div>
                 </div>
                 <p class='coffeName'>${cardData.name}</p>
-                <img class='catalogWithDiscountedCoruselItemsImg' src='${cardData.img}'>
+                <img class='catalogWithDiscountedCoruselItemsImg' src='.${cardData.img}'>
                 <p class='coffeeDescription'>${cardData.description}</p>
                 <p class='oldPrice'>${cardData.price}</p>
                 <p class='nowPrice'>${cardData.price-(cardData.price*cardData.discount/100)}</p>
@@ -131,7 +131,7 @@ let DiscountedCouruselItemsContainer=document.querySelector('.DiscountedCourusel
             for(let j=0; j<cardData.coffeeStrength;j++){
                 let corns=document.createElement('img');
                 corns.setAttribute('class', 'Corns');
-                corns.setAttribute('src','/img/Corns.png');
+                corns.setAttribute('src','./img/Corns.png');
                 
                 coffeeCardDiv.querySelector('.cornsContainer').appendChild(corns);
                //тут отрисовывать зерна в карет и кружечки 
@@ -140,7 +140,7 @@ let DiscountedCouruselItemsContainer=document.querySelector('.DiscountedCourusel
             //отрисовываю звезды
             Array.from(coffeeCardDiv.querySelector('.DiscountedCouruselItemStars').children).forEach(function(elem,index){
                 if(index<cardData.stars){
-                    elem.setAttribute('src','/img/StarGold.png')
+                    elem.setAttribute('src','./img/StarGold.png')
                 }
             })
             //отрисовываю кислинку,горчинку,насыщенность
