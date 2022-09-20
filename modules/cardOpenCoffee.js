@@ -385,8 +385,9 @@ export function cardOpenCoffee(cardCoffeeInfo){
         <p class='AdditioallyItemText'>${cardCoffeeInfo.Additionally[i].text}</p>
         
         `;
-        let AdditionallyImg=docuemnt.createElement('img');
+        let AdditionallyImg=document.createElement('img');
         AdditionallyImg.setAttribute('src',`${cardCoffeeInfo.Additionally[i].img}`);
+        AdditionallyImg.setAttribute('class','AdditioallyItemImg');
         AdditionallyItem.appendChild(AdditionallyImg);
         document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
     }
