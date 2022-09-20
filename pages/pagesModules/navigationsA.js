@@ -3,7 +3,7 @@ export default function navigationsA(aName1,aName2,aName3,img){
     navigationsA.setAttribute('class','navigations');
     
     
-//<img id='navigationsVector' src='/img/VectorOrangeReverse.png'>
+//<img id='navigationsVector' src='./img/VectorOrangeReverse.png'>
 if(document.querySelector('.navigations')){
 
         let searchingTovars=document.createElement('div');
@@ -31,7 +31,7 @@ if(document.querySelector('.navigations')){
     </div>
     <div class='navigationsAImgContainer'>
         
-        <img src='${img}' class='navigationsAImg'>
+        <img src='.${img}' class='navigationsAImg'>
     </div>
         
     `;
