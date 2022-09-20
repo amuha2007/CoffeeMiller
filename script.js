@@ -11,7 +11,6 @@ import {CoffeCatalogMain} from "./pages/coffeeCatalog/cofeeCatalogMain.js";
 import {teaCatalogMain} from "./pages/teaCatalog/teaCatalogMain.js";
 import {vendingCatalogMain} from "./pages/vendingCatalog/vendingCatalogMain.js";
 import {foodCatalogMain} from "./pages/foodCatalog/foodCatalogMain.js";
-import {Basket} from "../pages/basket/basket.js";
 import {mainPage} from './pages/MainPage/mainPage.js';
 
 import {allTovarsData} from './modules/allTovarsData.js';
