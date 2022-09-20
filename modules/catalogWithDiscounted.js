@@ -35,13 +35,13 @@ export function catalogWithDiscountedCorusel() {
 
                 <div class="catalogWithDiscountedCorusel">
 
-                        <div class="buttonCorusel" id='buttonPrev' style="background-image:url(/img/ArrowLeft.png);"></div>
+                        <div class="buttonCorusel" id='buttonPrev' style="background-image:url(./img/ArrowLeft.png);"></div>
                             <div class="DiscountedCouruselItems">
                                 <div class='DiscountedCouruselItemsContainer'>
                                         
                                 </div>
                             </div>
-                        <div class="buttonCorusel" id='buttonNext' style="background-image: url(/img/ArrowRight.png);"></div>
+                        <div class="buttonCorusel" id='buttonNext' style="background-image: url(./img/ArrowRight.png);"></div>
                 </div>
 
 
@@ -113,25 +113,7 @@ export function catalogWithDiscountedCorusel() {
         document.querySelector('.DiscountedCouruselItemsContainer').children
       );
   
-      // проходится по всем элентам массива coruselItems и для каждого задает отступ с лева от края контейнера
-      // for (let i = 0; i < coruselItems.length; i++) {
-      //   const element = coruselItems[i];
-      //   //console.log(coruselItems[i]);
-          
-      //   if(catalogWithDiscountedCoruselItems.length%2){
-      //     element.style.left = `${stepWidth * i}px`;
-          
-      //   }else{
-      //     // document.querySelector('.DiscountedCouruselItemsContainer').style.cssText=`
-      //     // position:relative;
-      //     // left:125px; 
-      //     // `;
-      //     stepWidth=stepWidth;
-          
-          
-      //     element.style.left = `${stepWidth * i}px`;
-      //   }
-      // }
+      
     };
   
     // сразу вызываем функцию, чтобы нарисовать наши элементы
