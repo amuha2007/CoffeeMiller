@@ -383,8 +383,11 @@ export function cardOpenCoffee(cardCoffeeInfo){
         AdditionallyItem.innerHTML=`
         <p class='AdditionallyItemHeader'>${cardCoffeeInfo.Additionally[i].header}</p>
         <p class='AdditioallyItemText'>${cardCoffeeInfo.Additionally[i].text}</p>
-        <img class='AdditioallyItemImg' src='.${cardCoffeeInfo.Additionally[i].img}'>
-        `
+        
+        `;
+        let AdditionallyImg=docuemnt.createElement('img');
+        AdditionallyImg.setAttribute('src',`${cardCoffeeInfo.Additionally[i].img}`);
+        AdditionallyItem.appendChild(AdditionallyImg);
         document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
     }
 
