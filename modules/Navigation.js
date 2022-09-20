@@ -14,7 +14,7 @@ export function Nav(){
     nav.innerHTML=`
             <div class="bodyContainer">
                 <div class="navContainer">
-                    <div class="logo"><img src="/img/Logo.png"></div>
+                    <div class="logo"><img src="./img/Logo.png"></div>
                     
                     <div class="navButtons">
                         <button class='nav_toogle'>Меню</button>
@@ -30,18 +30,18 @@ export function Nav(){
                         
                             <div class='divSearch' id='divSearch'>
                            
-                                <img src="/img/icons/SearchBlack.png" alt="">
+                                <img src="./img/icons/SearchBlack.png" alt="">
                                 
                             </div>
                             
                 
                         <div id='basket'>
-                        <img src="/img/icons/corzine.png">
+                        <img src="./img/icons/corzine.png">
                         <div class='basketLength'>${basketMassive.length}</div>
                         </div>
 
                         <div>
-                        <img src="/img/icons/people.png" id='registration'>
+                        <img src="./img/icons/people.png" id='registration'>
                         </div>
                     </div>
                     
@@ -187,7 +187,7 @@ let SearchInp = function(event){
                 })
                 divSearchTovar.innerHTML=`
                 <div class='divSearchTovarCoffeeForImg'>
-                    <img src='${searchTovars[i].img}'>
+                    <img src='.${searchTovars[i].img}'>
 
                 </div>
                 <div class='divSearchTovarForInfo'>
@@ -245,7 +245,7 @@ let SearchInp = function(event){
                 })
                 divSearchTovar.innerHTML=`
                 <div class='divSearchTovarForImgVending'>
-                    <img src='${searchTovars[i].img}'>
+                    <img src='.${searchTovars[i].img}'>
 
                 </div>
                 <div class='divSearchTovarForInfo'>
@@ -303,7 +303,7 @@ let SearchInp = function(event){
                 })
                 divSearchTovar.innerHTML=`
                 <div class='divSearchTovarForImg'>
-                    <img src='${searchTovars[i].img}'>
+                    <img src='.${searchTovars[i].img}'>
 
                 </div>
                 <div class='divSearchTovarForInfo'>
@@ -384,17 +384,17 @@ arNavIcons[0].children[0].addEventListener('click', SearchInp);
 /*
 arNavIcons[0].children[0].addEventListener('mouseover', function(){
     
-    this.setAttribute('src','/img/icons/SearchWhite.png');
+    this.setAttribute('src','./img/icons/SearchWhite.png');
 arNavIcons[0].children[0].addEventListener('mouseout', function(){
-    this.setAttribute('src','/img/icons/SearchBlack.png');
+    this.setAttribute('src','./img/icons/SearchBlack.png');
 })
     
 })
 
 arNavIcons[1].children[0].addEventListener('mouseover', function(){
-    this.setAttribute('src','/img/icons/corzineWhite.png');
+    this.setAttribute('src','./img/icons/corzineWhite.png');
     arNavIcons[1].children[0].addEventListener('mouseout', function(){
-        this.setAttribute('src','/img/icons/corzine.png');
+        this.setAttribute('src','./img/icons/corzine.png');
         
     })
 })
