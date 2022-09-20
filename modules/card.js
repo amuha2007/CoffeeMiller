@@ -35,18 +35,18 @@ if(document.querySelector('.teaCatalogMainBodyContainer')){
         
 
         <div class='DiscountedCouruselItemStars'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars1'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars2'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars3'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars4'>
-                    <img src='/img/StarGrey.png' class='stars' id='stars5'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars1'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars2'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars3'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars4'>
+                    <img src='./img/StarGrey.png' class='stars' id='stars5'>
         </div>
 
                 
         
                 <p class='cardName'>${cardData.name}</p>
                 <div class='cardDivForImg'>
-                <img class='cardImg' src='${cardData.img}'>
+                <img class='cardImg' src='.${cardData.img}'>
                 </div>
                 <p class='cardDescription'>${cardData.description}</p>
                 <p class='cardOldPrice'>${cardData.price}</p>
@@ -59,7 +59,7 @@ if(document.querySelector('.teaCatalogMainBodyContainer')){
             card.querySelector('.cardImg').setAttribute('class','vendingCardImg');
             card.querySelector('.cardDivForImg').querySelector('.vendingCardImg').remove()
             
-            card.querySelector('.cardDivForImg').style.cssText=`background-image:url(${cardData.img});background-position:center;width:75%;left:27px;border-radius:20px;top:-84px;`;
+            card.querySelector('.cardDivForImg').style.cssText=`background-image:url(.${cardData.img});background-position:center;width:75%;left:27px;border-radius:20px;top:-84px;`;
         }
         
         
@@ -114,7 +114,7 @@ if(document.querySelector('.teaCatalogMainBodyContainer')){
 
         
         for(let j=0;j<cardData.stars;j++){
-            card.querySelector('.DiscountedCouruselItemStars').children[j].setAttribute('src','/img/StarGold.png');
+            card.querySelector('.DiscountedCouruselItemStars').children[j].setAttribute('src','./img/StarGold.png');
         }
 
     card.querySelector('.cardButton').addEventListener('click', function(){
