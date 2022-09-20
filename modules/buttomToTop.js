@@ -1,7 +1,7 @@
 export function buttonToTop(){
     let buttonToTop=document.createElement('div');
     buttonToTop.setAttribute('class','buttonToTop');
-    buttonToTop.innerHTML=`<img src='/img/icons/arrowToTop.png'>`;
+    buttonToTop.innerHTML=`<img src='./img/icons/arrowToTop.png'>`;
     document.querySelector('.main').appendChild(buttonToTop);
 
     buttonToTop.addEventListener('click',function(){
