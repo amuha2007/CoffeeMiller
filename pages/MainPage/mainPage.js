@@ -33,11 +33,11 @@ document.querySelector('.main').innerHTML=`
     
     <div class="promoTopImage" style="display: flex;">
         
-        <img src="/img/coffee-breans&cup2.png" style="position: relative; z-index: 2;">
+        <img src="./img/coffee-breans&cup2.png" style="position: relative; z-index: 2;">
     </div>
     
 </div>
-<img class='' src="/img/blot.png" style=" top: 0px; max-height: 1100px; position: absolute; right: 0; z-index: 0;">
+<img class='' src="./img/blot.png" style=" top: 0px; max-height: 1100px; position: absolute; right: 0; z-index: 0;">
 </div>
 
 <div class="bodyContainer">
@@ -47,7 +47,7 @@ document.querySelector('.main').innerHTML=`
                     <div class="catalogProdItems">
                         <div class="catalogItem" id="catalogItem0">
                             <div class="catalogItemForImg">
-                                <img src="/img/freshCoffeCatalog.png" alt="" id="catalogItem0img">
+                                <img src="./img/freshCoffeCatalog.png" alt="" id="catalogItem0img">
                             </div>
                             <p>Свежеобжаренный кофе</p>
                             
@@ -55,7 +55,7 @@ document.querySelector('.main').innerHTML=`
 
                         <div class="catalogItem" id="catalogItem1">
                             <div class="catalogItemForImg">
-                                <img src="/img/teaAndCoffeeCatalog.png" alt="" style="bottom: 50px;">
+                                <img src="./img/teaAndCoffeeCatalog.png" alt="" style="bottom: 50px;">
                             </div>
                             <p>Чай и кофеные напитки</p>
                             
@@ -63,7 +63,7 @@ document.querySelector('.main').innerHTML=`
 
                         <div class="catalogItem" id="catalogItem2">
                             <div class="catalogItemForImg">
-                                <img src="/img/HealthuFood.png" alt="">
+                                <img src="./img/HealthuFood.png" alt="">
                             </div>
                             <p>Здоровое питание</p>
                             
@@ -71,7 +71,7 @@ document.querySelector('.main').innerHTML=`
 
                         <div class="catalogItem" id="catalogItem3">
                             <div class="catalogItemForImg">
-                                <img src="/img/VendingProductCatalog.png" alt="">
+                                <img src="./img/VendingProductCatalog.png" alt="">
                             </div>
                             <p>Продукция для вендинга</p>
                             
@@ -89,14 +89,14 @@ document.querySelector('.main').innerHTML=`
 <div class="WorkWithUs">
             <div class="containerWorkWithUsHeader">
                 
-                <img src="/img/Vector.png" alt="">
+                <img src="./img/Vector.png" alt="">
                 
             </div>
             <div class="containerWorkWithUs">
                 <div class="workWithUsLeft">
                     <div class="workWithUsLeft__wrapper">
-                        <img class="workWithUsLeft__img-1" src="/img/cup2.png" alt="image">
-                        <img class="workWithUsLeft__img-2" src="/img/CoffeeCorns2.png">
+                        <img class="workWithUsLeft__img-1" src="./img/cup2.png" alt="image">
+                        <img class="workWithUsLeft__img-2" src="./img/CoffeeCorns2.png">
                     </div> 
                 </div>
 
@@ -105,21 +105,21 @@ document.querySelector('.main').innerHTML=`
 
                         <div class="workWithUsRightSections">
                             <div class="workWithUsRightSection">
-                                <div class='circleWithIcoWorkWithUS' style="background-image: url('/img/cupIco.png');"></div>
+                                <div class='circleWithIcoWorkWithUS' style="background-image: url('./img/cupIco.png');"></div>
                                     <div class="workWithUsRightSectionText" >
                                         <p class="workWithUsRightSectionPTop">Всегда свежая обжарка</p>
                                         <p class="workWihtUsRightSectionPBottom">Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка</p>
                                     </div>
                             </div>
                             <div class="workWithUsRightSection">
-                                <div class="circleWithIcoWorkWithUS" style="background-image: url('/img/stickIco.png');"></div>
+                                <div class="circleWithIcoWorkWithUS" style="background-image: url('./img/stickIco.png');"></div>
                                     <div class="workWithUsRightSectionText" >
                                         <p class="workWithUsRightSectionPTop">Лучшие цены на продукции</p>
                                         <p class="workWihtUsRightSectionPBottom">Благодаря крупным объемам производства мы даем лучшие цены на нашу продукцию</p>
                                     </div>
                             </div>
                             <div class="workWithUsRightSection">
-                                <div class='circleWithIcoWorkWithUS' style="background-image: url('/img/peopleIco.png');"></div>
+                                <div class='circleWithIcoWorkWithUS' style="background-image: url('./img/peopleIco.png');"></div>
                                     <div class="workWithUsRightSectionText" >
                                         <p class="workWithUsRightSectionPTop">Консультации 24/7</p>
                                         <p class="workWihtUsRightSectionPBottom">Наши специалисты готовы всегда помочь и подсказать вам с выбором кофе или другой продукции.</p>
