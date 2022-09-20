@@ -1812,7 +1812,9 @@
   align-items: center;
 }
 
-
+#blog{
+cursor:poiner;
+}
 
 .coffeCatalogMainTypes{
   width: 100%;
