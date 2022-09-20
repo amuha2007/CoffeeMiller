@@ -4,7 +4,7 @@ let HowFriedCoffeeDiv = document.querySelector('.HowFriedCoffee');
     
 
         HowFriedCoffeeDiv.innerHTML=`
-        <img src="/img/Vector.png" class='vectorReverse'  alt="">
+        <img src="./img/Vector.png" class='vectorReverse'  alt="">
             <div class="HowFriedCoffeeContainer">
                 <div class='HowFriedCoffeeContainerInner'>
                     <div class="HowFriedCoffeeContainerText">
@@ -26,10 +26,9 @@ let HowFriedCoffeeDiv = document.querySelector('.HowFriedCoffee');
                 </div>
                 
             </div>
-            <img alt="" class='vectorWhite'  src="/img/VectorWhite.png">
+            <img alt="" class='vectorWhite'  src="./img/VectorWhite.png">
             
         `;
 
         
 }
-//<img alt='' style="position: relative;  top:-300px; width: 100%;" src="/img/VectorWhite.png"> белый вектор
