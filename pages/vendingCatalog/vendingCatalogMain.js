@@ -28,33 +28,33 @@ export function vendingCatalogMain(){
         <div class='vendingCatalogMainHeader'>
             <div class='vendingCatalogMainHeaderDivTop'>
                 <div class='vendingCatalogMainHeaderDivContainer' id='Гранулированный кофе'>
-                    <img src='/img/vending/granulated_coffee.png' class='' style='width:80%;border-radius:12px;height:70%;'>
+                    <img src='./img/vending/granulated_coffee.png' class='' style='width:80%;border-radius:12px;height:70%;'>
                     <p>Гранулированный кофе</p>
                 </div>
                 <div class='vendingCatalogMainHeaderDivContainer' id='Гранулированный цикорий'>
-                    <img src='/img/vending/granulated_cicoriy.png' class='' style='width:80%;border-radius:12px;height:70%;'>
+                    <img src='./img/vending/granulated_cicoriy.png' class='' style='width:80%;border-radius:12px;height:70%;'>
                     <p>Гранулированный цикорий</p>
                 </div>
                 <div class='vendingCatalogMainHeaderDivContainer' id='Зерновой кофе'>
-                    <img src='/img/vending/cornsCoffee.png' class='' style='width:80%;border-radius:12px;height:70%;'>
+                    <img src='./img/vending/cornsCoffee.png' class='' style='width:80%;border-radius:12px;height:70%;'>
                     <p>Зерновой кофе</p>
                 </div>
             </div>
             <div class='vendingCatalogMainHeaderDivBottom'>
                 <div class='vendingCatalogMainHeaderDivContainer' id='Гранулированный какао'>
-                    <img src='/img/vending/granul_cacao.png' class='' style='width:80%;border-radius:12px;height:70%;'>
+                    <img src='./img/vending/granul_cacao.png' class='' style='width:80%;border-radius:12px;height:70%;'>
                     <p>Гранулированный какао</p>
                 </div>
                 <div class='vendingCatalogMainHeaderDivContainer' id='Гранулированные кофейные напитки'>
-                    <img src='/img/vending/granul_coffee_drinks.png' class='' style='width:80%;border-radius:12px;height:70%;'>
+                    <img src='./img/vending/granul_coffee_drinks.png' class='' style='width:80%;border-radius:12px;height:70%;'>
                     <p>Гранулированные напитки</p>
                 </div>
                 <div class='vendingCatalogMainHeaderDivContainer' id='Кофе порошкообразный'>
-                    <img src='/img/vending/coffee_powdery.png' class='' style='width:80%;border-radius:12px;height:70%;'>
+                    <img src='./img/vending/coffee_powdery.png' class='' style='width:80%;border-radius:12px;height:70%;'>
                     <p>Кофе порошкообразный</p>
                 </div>
                 <div class='vendingCatalogMainHeaderDivContainer' id='Сухое молоко гранулированное'>
-                    <img src='/img/vending/suhoe-moloko.png' class='' style='width:80%;border-radius:12px;height:70%;'>
+                    <img src='./img/vending/suhoe-moloko.png' class='' style='width:80%;border-radius:12px;height:70%;'>
                     <p>Сухое молоко гранулированное</p>
                 </div>
             </div>
@@ -62,7 +62,7 @@ export function vendingCatalogMain(){
         <div class='vendingCatalogMainBody'></div>
     `;
 
-    navigationsA('Главная','Каталог товаров','Продукция для вендинга','/img/VendingProductCatalog.png');
+    navigationsA('Главная','Каталог товаров','Продукция для вендинга','./img/VendingProductCatalog.png');
 
     document.querySelector('.main').appendChild(vendingCatalogMain);
     allTovarsData.vending.forEach(function(elem){
