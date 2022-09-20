@@ -203,7 +203,7 @@ export function blog(){
 }
 
     window.addEventListener('resize',function(){
-        //console.log(window.innerWidth);
+        
         if(this.window.innerWidth>750){
             let forLinesArr = Array.from(this.document.querySelectorAll('.forLines'))
             forLinesArr.forEach(function(elem){
@@ -331,21 +331,20 @@ export function blog(){
             
     let CatalogMainTypesContent = function (){
         let typeActive=document.querySelector('.coffeCatalogMainTypeBlog_active').children[0].innerHTML;
-        //console.log(typeActive);
+        
 
         
-            console.log(infoCoffeCatalogMainTypes);
+            
             infoCoffeCatalogMainTypes.forEach(function(elem,index){
                 if(elem.type==typeActive){
-                    //console.log(elem);
-                    //<img src='${elem.headerInfo.img}' class='typeActiveImg'>
+                    
                     document.querySelector('.coffeCatalogMainTypesContent').innerHTML=`
                     <div class='wrapper'>
                     <p class='typeActiveHeader'>${elem.header}:</р>
                     
                     <p class='typeActiveText'>${elem.headerInfo.text}</p>
                     
-                    <div class='typeActiveImg' style='background-image:url("${elem.headerInfo.img}")'></div>
+                    <div class='typeActiveImg' style='background-image:url(".${elem.headerInfo.img}")'></div>
                     </div>
                     <div class='forThemes'>
                         <div class='wrapper'>
