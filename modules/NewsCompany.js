@@ -71,7 +71,7 @@ if(document.querySelector('.NewsCompany')){
                 post.setAttribute('id',`${elem.id}`);
                 post.innerHTML=`
                 <div class='NewsCompanyContainerForImg'>
-                <img src='.${elem.img}' class='NewsCompanyImg'>
+                <img src='${elem.img}' class='NewsCompanyImg'>
                 </div>
                 
                 <div class='NewsComapnyWithImgText'>
@@ -125,7 +125,7 @@ if(document.querySelector('.NewsCompany')){
                 post.setAttribute('id',`${elem.id}`);
                 post.innerHTML=`
                 <div class='NewsCompanyContainerForImg'>
-                <img src='.${elem.img}' class='NewsCompanyImg'>
+                <img src='${elem.img}' class='NewsCompanyImg'>
                 </div>
                 
                 <div class='NewsComapnyWithImgText'>
