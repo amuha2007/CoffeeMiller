@@ -349,8 +349,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
     })
 
     
-    //отрисовка картинок вкуса 
-    //надо еще написать условие 
+    
     for(let elem in cardCoffeeInfo.taste){
         
         
