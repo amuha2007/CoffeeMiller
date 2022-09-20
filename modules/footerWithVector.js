@@ -8,15 +8,7 @@ export function FooterWithVector(){
     console.log(document.querySelector('.main').children[document.querySelector('.main').children.length])
     document.querySelector('.main').children[document.querySelector('.main').children.length];
 
-    //document.querySelector('.main').append()
-    /*      <div id='vectorBg'>
-                <img src='./img/Vector.png'>
-                <div id='bgSquareSkin'></div>
-                <div id='bgSquareOrange'></div>
-                <img src='./img/VectorOrangeReverse.png'>
-            
-            
-            </div>*/ 
+    
 
 
             let subscribeForNewsContainer=document.createElement('div');
