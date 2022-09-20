@@ -21,7 +21,7 @@ import {OpenNews} from '../../modules/openNews.js';
         Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития.
         
         Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. С другой стороны реализация намеченных плановых заданий требуют от нас анализа существенных финансовых и административных условий.`,
-        img:'./../../img/coffee/kofe-v-turke-retina2.jpg'
+        img:'./img/coffee/kofe-v-turke-retina2.jpg'
     },
         
         themes:[{themeName:'Название темы 1',
@@ -39,17 +39,17 @@ import {OpenNews} from '../../modules/openNews.js';
 
     {
         type:'Френч-пресс',
-        header:'Как сварить кофе в френч-прессе',headerInfo:{text:'какой-то текст типа Френч-Пресс',img:'../../img/coffee/кофе в ФренчПрессПромо.jpg'},
-        img:'./../../img/coffee/кофе в ФренчПрессПромо.jpg',
+        header:'Как сварить кофе в френч-прессе',headerInfo:{text:'какой-то текст типа Френч-Пресс',img:'./img/coffee/кофе в ФренчПрессПромо.jpg'},
+        img:'./img/coffee/кофе в ФренчПрессПромо.jpg',
         themes:[{themeName:'Название темы 1',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофе в ФренчПресс1.jpg'},
+        themeImg:'./img/coffee/кофе в ФренчПресс1.jpg'},
         {themeName:'Название темы 2',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофе в ФренчПресс2.jpg'},
+        themeImg:'./img/coffee/кофе в ФренчПресс2.jpg'},
         {themeName:'Название темы 3',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофе в ФренчПресс3.jpg'}]
+        themeImg:'./img/coffee/кофе в ФренчПресс3.jpg'}]
 
         
     },
@@ -57,95 +57,95 @@ import {OpenNews} from '../../modules/openNews.js';
     
     {
         type:'Мока',
-        header:'Как сварить кофе в моке',headerInfo:{text:'какой-то текст типа Мока',img:'../../img/coffee/кофе в мокаПромо.jpg'},
-        img:'./../../img/coffee/кофе в мокаПромо.jpg',
+        header:'Как сварить кофе в моке',headerInfo:{text:'какой-то текст типа Мока',img:'./img/coffee/кофе в мокаПромо.jpg'},
+        img:'./img/coffee/кофе в мокаПромо.jpg',
         themes:[{themeName:'Название темы 1',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',themeImg:'../../img/coffee/кофе в мока1.jpg'},
         {themeName:'Название темы 2',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофе в мока2.jpg'},
+        themeImg:'./img/coffee/кофе в мока2.jpg'},
         {themeName:'Название темы 3',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофе в мока3.jpg'}]
+        themeImg:'./img/coffee/кофе в мока3.jpg'}]
 
         
     },
 
     {
         type:'Эспрессо',
-        header:'Как сварить Эспрессо',headerInfo:{text:'какой-то текст типа Эспрессо',img:'../../img/coffee/кофе ЭспрессоПромо.jpg'},
-        img:'./../../img/coffee/кофе ЭспрессоПромо.jpg',
+        header:'Как сварить Эспрессо',headerInfo:{text:'какой-то текст типа Эспрессо',img:'./img/coffee/кофе ЭспрессоПромо.jpg'},
+        img:'./img/coffee/кофе ЭспрессоПромо.jpg',
         themes:[{themeName:'Название темы 1',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',themeImg:'../../img/coffee/кофе Эспрессо1.jpg'},
         {themeName:'Название темы 2',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофе Эспрессо2.jpg'},
+        themeImg:'./img/coffee/кофе Эспрессо2.jpg'},
         {themeName:'Название темы 3',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофе Эспрессо3.jpg'}]
+        themeImg:'./img/coffee/кофе Эспрессо3.jpg'}]
 
         
     },
 
     {
         type:'Воронка',
-        header:'Как сварить кофе в воронке',headerInfo:{text:'какой-то текст типа Воронка',img:'../../img/coffee/кофеВВоронкеПромо.jpg'},
-        img:'./../../img/coffee/кофеВВоронкеПромо.jpg',
+        header:'Как сварить кофе в воронке',headerInfo:{text:'какой-то текст типа Воронка',img:'./img/coffee/кофеВВоронкеПромо.jpg'},
+        img:'./img/coffee/кофеВВоронкеПромо.jpg',
         themes:[{themeName:'Название темы 1',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',themeImg:'../../img/coffee/кофеВВоронке1.png'},
         {themeName:'Название темы 2',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофеВВоронке2.jpg'},
+        themeImg:'./img/coffee/кофеВВоронке2.jpg'},
         {themeName:'Название темы 3',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофеВВоронке3.jpg'}]
+        themeImg:'./img/coffee/кофеВВоронке3.jpg'}]
 
         
     },
 
     {
         type:'Aэропресс',
-        header:'Как сварить кофе в аэропрессе',headerInfo:{text:'какой-то текст типа Аэропресс',img:'../../img/coffee/КофеВАэропрессеПромо.png'},
-        img:'./../../img/coffee/КофеВАэропрессеПромо.png',
+        header:'Как сварить кофе в аэропрессе',headerInfo:{text:'какой-то текст типа Аэропресс',img:'./img/coffee/КофеВАэропрессеПромо.png'},
+        img:'./img/coffee/КофеВАэропрессеПромо.png',
         themes:[{themeName:'Название темы 1',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',themeImg:'../../img/coffee/кофеВАэропрессе1.jpg'},
         {themeName:'Название темы 2',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофеВАэропрессе2.jpg'},
+        themeImg:'./img/coffee/кофеВАэропрессе2.jpg'},
         {themeName:'Название темы 3',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофеВАэропрессе3.jpg'}]
+        themeImg:'./img/coffee/кофеВАэропрессе3.jpg'}]
 
         
     },
 
     {
         type:'Чашка',
-        header:'Как сварить кофе в чашке',headerInfo:{text:'какой-то текст типа Чашка',img:'../../img/coffee/кофеВЧашкеПромо.jpg'},
-        img:'./../../img/coffee/кофеВЧашкеПромо.jpg',
+        header:'Как сварить кофе в чашке',headerInfo:{text:'какой-то текст типа Чашка',img:'./img/coffee/кофеВЧашкеПромо.jpg'},
+        img:'./img/coffee/кофеВЧашкеПромо.jpg',
         themes:[{themeName:'Название темы 1',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',themeImg:'../../img/coffee/кофеВЧашке1.jpg'},
         {themeName:'Название темы 2',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофеВЧашке2.jpg'},
+        themeImg:'./img/coffee/кофеВЧашке2.jpg'},
         {themeName:'Название темы 3',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/кофеВЧашке3.jpg'}]
+        themeImg:'./img/coffee/кофеВЧашке3.jpg'}]
 
         
     },
 
     {
         type:'Автомат',
-        header:'Как сварить кофе в автомате',headerInfo:{text:'какой-то текст типа Автомат',img:'../../img/coffee/КофеИзКофемашиныПромо.jpg'},
-        img:'./../../img/coffee/КофеИзКофемашиныПромо.jpg',
+        header:'Как сварить кофе в автомате',headerInfo:{text:'какой-то текст типа Автомат',img:'./img/coffee/КофеИзКофемашиныПромо.jpg'},
+        img:'./img/coffee/КофеИзКофемашиныПромо.jpg',
         themes:[{themeName:'Название темы 1',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',themeImg:'../../img/coffee/КофеИзКофемашины1.jpg'},
         {themeName:'Название темы 2',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/КофеИзКофемашины2.jpg'},{themeName:'Название темы 3',
+        themeImg:'./img/coffee/КофеИзКофемашины2.jpg'},{themeName:'Название темы 3',
         themeText:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum arcu lorem, vel hendrerit tortor finibus in. Duis orci ipsum, gravida et metus sit amet, mollis vehicula turpis. Suspendisse vitae dictum orci. Curabitur at ex tincidunt, ultrices quam id, pharetra mauris. In sit amet felis eget magna mattis hendrerit. Vestibulum.',
-        themeImg:'./../../img/coffee/КофеИзКофемашины3.jpg'}]
+        themeImg:'./img/coffee/КофеИзКофемашины3.jpg'}]
 
         
     }
@@ -361,7 +361,7 @@ export function blog(){
                 <p class='themeName'>${theme.themeName}</p>
                 <p class='themeText'>${theme.themeText}</p>
                 <div class='themeForImg'>
-                    <img src='.${theme.themeImg}'>
+                    <img src='${theme.themeImg}'>
                 </div>
                 `;
                 document.querySelector('.forThemes').children[0].appendChild(divForTheme);
