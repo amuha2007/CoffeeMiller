@@ -24,7 +24,7 @@ export function CoffeCatalogMain(){
     let coffeCatalogMain = document.createElement('div');
     coffeCatalogMain.setAttribute('class', 'coffeCatalogMain');
 
-    navigationsA('Главная','Каталог товаров','Свежеобжаренный кофе','/img/coffee-breans&cup2.png');
+    navigationsA('Главная','Каталог товаров','Свежеобжаренный кофе','./img/coffee-breans&cup2.png');
     document.querySelector('.main').appendChild(coffeCatalogMain);
     document.querySelector('#navigationsVector').style.top='325px';
     //<div class='searchingTovars'></div>
@@ -36,7 +36,7 @@ export function CoffeCatalogMain(){
         <div class='coffeCatalogMainParamsInner'>
             <div class='coffeCatalogMainParams'>
                 <div class='coffeCatalogMainParamsLeft'>
-                    <img src='/img/Rectangle 35.png'>
+                    <img src='./img/Rectangle 35.png'>
                     <div class='coffeCatalogMainParamsLeftContent'>
                         <p class=''>Степерь обжарки</p>
                         <div class='selectCoffeeCornsContainer'>
@@ -85,14 +85,14 @@ export function CoffeCatalogMain(){
             </div>
 
                 <div class='coffeCatalogMainTypes'>
-                    <div class='coffeCatalogMainType'><p>Турка</p><img src='/img/turka.png'></div>
-                    <div class='coffeCatalogMainType'><p>Френч-пресс</p><img src='/img/teapot.png'></div>
-                    <div class='coffeCatalogMainType'><p>Мока</p><img src='/img/coffeePot.png'></div>
-                    <div class='coffeCatalogMainType'><p>Эспрессо</p><img src='/img/coffeeMachine.png'></div>
-                    <div class='coffeCatalogMainType'><p>Воронка</p><img src='/img/Voronka.png'></div>
-                    <div class='coffeCatalogMainType'><p>Aэропресс</p><img src='/img/press.png'></div>
-                    <div class='coffeCatalogMainType'><p>Чашка</p><img src='/img/cupwithSmoke.png'></div>
-                    <div class='coffeCatalogMainType'><p>Автомат</p><img src='/img/automat.png'></div>
+                    <div class='coffeCatalogMainType'><p>Турка</p><img src='./img/turka.png'></div>
+                    <div class='coffeCatalogMainType'><p>Френч-пресс</p><img src='./img/teapot.png'></div>
+                    <div class='coffeCatalogMainType'><p>Мока</p><img src='./img/coffeePot.png'></div>
+                    <div class='coffeCatalogMainType'><p>Эспрессо</p><img src='./img/coffeeMachine.png'></div>
+                    <div class='coffeCatalogMainType'><p>Воронка</p><img src='./img/Voronka.png'></div>
+                    <div class='coffeCatalogMainType'><p>Aэропресс</p><img src='./img/press.png'></div>
+                    <div class='coffeCatalogMainType'><p>Чашка</p><img src='./img/cupwithSmoke.png'></div>
+                    <div class='coffeCatalogMainType'><p>Автомат</p><img src='./img/automat.png'></div>
                 </div>
                 
         </div>
@@ -144,7 +144,7 @@ export function CoffeCatalogMain(){
                 
             let imgCorn=document.createElement('img');
             imgCorn.setAttribute('class', 'imgCorn');
-            imgCorn.setAttribute('src','/img/Corns.png');
+            imgCorn.setAttribute('src','./img/Corns.png');
             selectCoffeeCorns[i].appendChild(imgCorn);
         }
     }
