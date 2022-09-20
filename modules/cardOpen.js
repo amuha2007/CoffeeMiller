@@ -237,10 +237,18 @@ export function cardOpen(data){
                     AdditionallyItem.innerHTML=`
                     <p class='AdditionallyItemHeader'>${targetInfo.Additionally[i].header}</p>
                     <p class='AdditioallyItemText'>${targetInfo.Additionally[i].text}</p>
-                    <img class='AdditioallyItemImg' src='.${targetInfo.Additionally[i].img}'>
+                    
                     `
                     document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
+
+                    if(cardCoffeeInfo.Additionally[i].img!==" "||cardCoffeeInfo.Additionally[i].img!==undefined){
+                        let AdditionallyImg=document.createElement('img');
+                        AdditionallyImg.setAttribute('src',`${cardCoffeeInfo.Additionally[i].img}`);
+                        AdditionallyImg.setAttribute('class','AdditioallyItemImg');
+                        AdditionallyItem.appendChild(AdditionallyImg);
+                        document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
                 }
+            }
                
                 if(targetInfo.reviews.length==0){
                     document.querySelector('.reviews').style.cssText='display:none';
