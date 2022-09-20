@@ -8,10 +8,10 @@ export function SubscribeForNews(elemTo){
     document.querySelector('.SubscribeForNews').innerHTML=`
     <div class='containerForVector'>
     <div id='vectorBg'>
-                <img src='/img/Vector.png'>
+                <img src='./img/Vector.png'>
                 <div id='bgSquareSkin'></div>
                 <div id='bgSquareOrange'></div>
-                <img src='/img/VectorOrangeReverse.png'>
+                <img src='./img/VectorOrangeReverse.png'>
             
             
             </div>
