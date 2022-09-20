@@ -15,7 +15,7 @@ let howtocookdiv = function(cardCoffeeInfo){
             let div = document.createElement('div');
             div.innerHTML=`
                 <p>${elem}</p>
-                <img src='/img/turka.png'>
+                <img src='./img/turka.png'>
             `;
             div.setAttribute('class','coffeCatalogMainType');
             document.querySelector('.HowToCookStyles').append(div);
@@ -23,7 +23,7 @@ let howtocookdiv = function(cardCoffeeInfo){
             let div = document.createElement('div');
             div.innerHTML=`
                 <p>${elem}</p>
-                <img src='/img/teapot.png'>
+                <img src='./img/teapot.png'>
             `;
             div.setAttribute('class','coffeCatalogMainType');
             document.querySelector('.HowToCookStyles').append(div);
@@ -31,7 +31,7 @@ let howtocookdiv = function(cardCoffeeInfo){
             let div = document.createElement('div');
             div.innerHTML=`
                 <p>${elem}</p>
-                <img src='/img/coffeePot.png'>
+                <img src='./img/coffeePot.png'>
             `;
             div.setAttribute('class','coffeCatalogMainType');
             document.querySelector('.HowToCookStyles').append(div);
@@ -39,7 +39,7 @@ let howtocookdiv = function(cardCoffeeInfo){
             let div = document.createElement('div');
             div.innerHTML=`
                 <p>${elem}</p>
-                <img src='/img/coffeeMachine.png'>
+                <img src='./img/coffeeMachine.png'>
             `;
             div.setAttribute('class','coffeCatalogMainType');
             document.querySelector('.HowToCookStyles').append(div);
@@ -47,7 +47,7 @@ let howtocookdiv = function(cardCoffeeInfo){
             let div = document.createElement('div');
             div.innerHTML=`
                 <p>${elem}</p>
-                <img src='/img/Voronka.png'>
+                <img src='./img/Voronka.png'>
             `;
             div.setAttribute('class','coffeCatalogMainType');
             document.querySelector('.HowToCookStyles').append(div);
@@ -55,7 +55,7 @@ let howtocookdiv = function(cardCoffeeInfo){
             let div = document.createElement('div');
             div.innerHTML=`
                 <p>${elem}</p>
-                <img src='/img/press.png'>
+                <img src='./img/press.png'>
             `;
             div.setAttribute('class','coffeCatalogMainType');
             document.querySelector('.HowToCookStyles').append(div);
@@ -63,7 +63,7 @@ let howtocookdiv = function(cardCoffeeInfo){
             let div = document.createElement('div');
             div.innerHTML=`
                 <p>${elem}</p>
-                <img src='/img/cupwithSmoke.png'>
+                <img src='./img/cupwithSmoke.png'>
             `;
             div.setAttribute('class','coffeCatalogMainType');
             document.querySelector('.HowToCookStyles').append(div);
@@ -71,7 +71,7 @@ let howtocookdiv = function(cardCoffeeInfo){
             let div = document.createElement('div');
             div.innerHTML=`
                 <p>${elem}</p>
-                <img src='/img/automat.png'>
+                <img src='./img/automat.png'>
             `;
             div.setAttribute('class','coffeCatalogMainType');
             document.querySelector('.HowToCookStyles').append(div);
@@ -90,7 +90,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
     <div class='searchingTovars'></div>
         <div class='openCard_Container' id='openCard_Container'>
             <div class='openCard_Container_Img'>
-                <img src='${cardCoffeeInfo.img}'>
+                <img src='.${cardCoffeeInfo.img}'>
             </div>
             <div class='openCard_Container_Info'>
                 <div class='openCard_Container_Info_Corns'>
@@ -210,7 +210,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
     for(let i=0;i<cardCoffeeInfo.coffeeStrength;i++){
         let corn=document.createElement('img');
     corn.setAttribute('class','openCard_Container_Corn');
-    corn.setAttribute('src','/img/Corns.png');
+    corn.setAttribute('src','./img/Corns.png');
         document.querySelector('.openCard_Container_Info_Corns').appendChild(corn);
     }
 //отрисовка звезд
@@ -218,9 +218,9 @@ export function cardOpenCoffee(cardCoffeeInfo){
         let stars=document.createElement('img');
         stars.setAttribute('class','openCard_Container_Stars');
         if(i<cardCoffeeInfo.stars){
-            stars.setAttribute('src','/img/StarGold.png');
+            stars.setAttribute('src','./img/StarGold.png');
         }else{
-            stars.setAttribute('src','/img/StarGrey.png');
+            stars.setAttribute('src','./img/StarGrey.png');
         }
         
         document.querySelector('.openCard_Container_Info_Stars').appendChild(stars);
@@ -359,7 +359,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
         div.setAttribute('class','taste_container_div');
         div.innerHTML=`<p>${cardCoffeeInfo.taste[elem].name}</p>
                     <div class='tasteDivForImg' '>
-                    <img src='${cardCoffeeInfo.taste[elem].img}' id='img${elem}'>
+                    <img src='.${cardCoffeeInfo.taste[elem].img}' id='img${elem}'>
                     </div>
         `;
         document.querySelector('.taste_container').appendChild(div);
@@ -372,7 +372,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
         
         document.querySelector('.card_description').innerHTML=`
     <p>${cardCoffeeInfo.characteristics.description}</p>
-    <img src='${cardCoffeeInfo.characteristics.img}'>
+    <img src='.${cardCoffeeInfo.characteristics.img}'>
     `
     
     }
@@ -384,7 +384,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
         AdditionallyItem.innerHTML=`
         <p class='AdditionallyItemHeader'>${cardCoffeeInfo.Additionally[i].header}</p>
         <p class='AdditioallyItemText'>${cardCoffeeInfo.Additionally[i].text}</p>
-        <img class='AdditioallyItemImg' src='${cardCoffeeInfo.Additionally[i].img}'>
+        <img class='AdditioallyItemImg' src='.${cardCoffeeInfo.Additionally[i].img}'>
         `
         document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
     }
@@ -398,7 +398,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
             divType.setAttribute('class','coffeCatalogMainType');
             divType.innerHTML=`
                 <p>${elem}</p>
-                <img src='/img/turka.png'>
+                <img src='./img/turka.png'>
                 
             `
             document.querySelector('.HowToCookStyles').append(divType);
@@ -408,7 +408,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
             divType.setAttribute('class','coffeCatalogMainType');
             divType.innerHTML=`
             <p>${elem}</p>
-                <img src='/img/teapot.png'>
+                <img src='./img/teapot.png'>
                 
             `
             document.querySelector('.HowToCookStyles').append(divType);
@@ -418,7 +418,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
             divType.setAttribute('class','coffeCatalogMainType');
             divType.innerHTML=`
             <p>${elem}</p>
-                <img src='/img/coffeePot.png'>
+                <img src='./img/coffeePot.png'>
                 
             `
             document.querySelector('.HowToCookStyles').append(divType);
@@ -428,7 +428,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
             divType.setAttribute('class','coffeCatalogMainType');
             divType.innerHTML=`
             <p>${elem}</p>
-                <img src='/img/coffeeMachine.png'>
+                <img src='./img/coffeeMachine.png'>
                 
             `
             document.querySelector('.HowToCookStyles').append(divType);
@@ -438,7 +438,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
             divType.setAttribute('class','coffeCatalogMainType');
             divType.innerHTML=`
             <p>${elem}</p>
-                <img src='/img/Voronka.png'>
+                <img src='./img/Voronka.png'>
                 
             `
             document.querySelector('.HowToCookStyles').append(divType);
@@ -448,7 +448,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
             divType.setAttribute('class','coffeCatalogMainType');
             divType.innerHTML=`
             <p>${elem}</p>
-                <img src='/img/press.png'>
+                <img src='./img/press.png'>
                 
             `
             document.querySelector('.HowToCookStyles').append(divType);
@@ -458,7 +458,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
             divType.setAttribute('class','coffeCatalogMainType');
             divType.innerHTML=`
             <p>${elem}</p>
-                <img src='/img/cupwithSmoke.png'>
+                <img src='./img/cupwithSmoke.png'>
                 
             `
             document.querySelector('.HowToCookStyles').append(divType);
@@ -468,7 +468,7 @@ export function cardOpenCoffee(cardCoffeeInfo){
             divType.setAttribute('class','coffeCatalogMainType');
             divType.innerHTML=`
             <p>${elem}</p>
-                <img src='/img/automat.png'>
+                <img src='./img/automat.png'>
                 
             `
             document.querySelector('.HowToCookStyles').append(divType);
