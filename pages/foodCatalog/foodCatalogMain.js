@@ -24,26 +24,26 @@ export function foodCatalogMain(){
     <div class='foodCatalogMainHeader'>
     <div class='foodCatalogMainHeaderDivTop'>
         <div class='foodCatalogmainHeaderContainer' id='Цикорий и корень цикория' >
-            <img src='/img/food/cikoriy2.png' id='foodContainerimg0'>
+            <img src='./img/food/cikoriy2.png' id='foodContainerimg0'>
             <p>Цикорий и корень цикория</p>
         </div>
         <div class='foodCatalogmainHeaderContainer' id='Ячменные напитки'>
-            <img src='/img/food/uachmen.png' id='foodContainerimg1'>
+            <img src='./img/food/uachmen.png' id='foodContainerimg1'>
             <p>Ячменные напитки</p>
         </div>
         
     </div>
     <div class='foodCatalogMainHeaderDivBottom'>
         <div class='foodCatalogmainHeaderContainer' id='Напитки для здоровья'>
-            <img src='/img/food/drink2.png' id='foodContainerimg2'>
+            <img src='./img/food/drink2.png' id='foodContainerimg2'>
             <p>Напитки для здоровья</p>
         </div>
         <div class='foodCatalogmainHeaderContainer' id='Протеиновые смеси'>
-            <img src='/img/food/ProteinPack.png' id='foodContainerimg3'>
+            <img src='./img/food/ProteinPack.png' id='foodContainerimg3'>
             <p>Протеиновые смеси</p>
         </div>
         <div class='foodCatalogmainHeaderContainer' id='Толокняные каши'>
-            <img src='/img/food/foodKasha.png' id='foodContainerimg4'>
+            <img src='./img/food/foodKasha.png' id='foodContainerimg4'>
             <p>Толокняные каши</p>
         </div>
         
