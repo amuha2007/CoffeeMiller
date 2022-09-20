@@ -15,7 +15,7 @@ if(document.querySelector('.navigations')){
 }
 
     let imgVector=document.createElement('img');
-    imgVector.setAttribute('src','/img/VectorOrangeReverse.png');
+    imgVector.setAttribute('src','./img/VectorOrangeReverse.png');
     imgVector.setAttribute('id', 'navigationsVector');
     imgVector.style.width='100%';
     document.querySelector('.main').appendChild(imgVector);
