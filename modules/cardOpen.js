@@ -243,7 +243,7 @@ export function cardOpen(data){
 
                     if(targetInfo.Additionally[i].img!==" "||targetInfo.Additionally[i].img!==undefined){
                         let AdditionallyImg=document.createElement('img');
-                        AdditionallyImg.setAttribute('src',`${targetInfo.Additionally[i].img}`);
+                        AdditionallyImg.setAttribute('src',`.${targetInfo.Additionally[i].img}`);
                         AdditionallyImg.setAttribute('class','AdditioallyItemImg');
                         AdditionallyItem.appendChild(AdditionallyImg);
                         document.querySelector('.AdditionallyBody').appendChild(AdditionallyItem);
