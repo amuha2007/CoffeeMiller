@@ -885,6 +885,9 @@
         height: 125px;
         
       }
+    .modalWindowContainerRight>p{
+    font-size:14px
+    }
     .divSearchTovarForInfoPrices>p{
         font-size: 12px;
     }
