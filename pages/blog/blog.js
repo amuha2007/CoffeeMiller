@@ -353,7 +353,6 @@ export function blog(){
                     </div>
                     
             `
-            //console.log(elem.themes);
             elem.themes.forEach(function(theme,index){
                 
                 let divForTheme=document.createElement('div');
@@ -361,7 +360,7 @@ export function blog(){
                 <p class='themeName'>${theme.themeName}</p>
                 <p class='themeText'>${theme.themeText}</p>
                 <div class='themeForImg'>
-                    <img src='${theme.themeImg}'>
+                    <img src='.${theme.themeImg}'>
                 </div>
                 `;
                 document.querySelector('.forThemes').children[0].appendChild(divForTheme);
@@ -549,7 +548,7 @@ News.forEach(function(elem,index){
     })
     newsContainer.innerHTML=`
         <div class='newsContainerForImg'>
-            <img src='.${elem.img}'>
+            <img src='${elem.img}'>
         </div>
 
         <div class='newsContainerInfo'>
