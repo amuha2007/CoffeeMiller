@@ -62,7 +62,7 @@ export function vendingCatalogMain(){
         <div class='vendingCatalogMainBody'></div>
     `;
 
-    navigationsA('Главная','Каталог товаров','Продукция для вендинга','./img/VendingProductCatalog.png');
+    navigationsA('Главная','Каталог товаров','Продукция для вендинга','/img/VendingProductCatalog.png');
 
     document.querySelector('.main').appendChild(vendingCatalogMain);
     allTovarsData.vending.forEach(function(elem){
