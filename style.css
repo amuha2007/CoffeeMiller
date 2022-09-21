@@ -1508,7 +1508,19 @@
   margin: 5px;
   outline: none;
 }
-
+.modalWindowContainerRightP{
+  font-family: Ubuntu, sans-serif; 
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  margin:10px;
+}
+.modalWindowContainerLeft>img{
+  width: 220px;
+}
+.modalWindowContainerRight>img{
+  width: 220px;
+}
 #modalWindowregistrationButton{
   background-color: #f9b300;
   color: white;
