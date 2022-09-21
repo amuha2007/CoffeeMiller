@@ -958,6 +958,9 @@
     }
 }
 @media screen and (max-width:500px){
+    .GilroyFont {
+        font-size: 35px;
+    }
     .modalWindowContainerFront{
         height: 400px;
     }
@@ -1272,6 +1275,9 @@
     }
 }
 @media screen and (max-width:356px){
+    .GilroyFont {
+        font-size: 30px;
+    }
     #modalWindowregistrationButtonRecoveryCod{
         width: 100px;
         font-size: 12px;
