@@ -1097,6 +1097,13 @@
     }
 }
 @media screen and (max-width:435px){
+    .modalWindowContainerRightInput{
+        font-size:12px;
+        padding:5px;
+    }
+    .modalWindowContainerRight>p{
+        font-size:18px;
+    }
     .SubscribeForNews{
         top: -1010px;
     }
