@@ -3610,6 +3610,9 @@ padding-left: 16px;
   margin-right: auto;
 
 }
+.contantForNews>div{
+  margin-left:10px;
+}
 
 .containerForNewsHeader{
   margin-left: auto;
