@@ -1507,6 +1507,7 @@
   padding: 10px;
   margin: 5px;
   outline: none;
+  border-radius: 10px;
 }
 .modalWindowContainerRightP{
   font-family: Ubuntu, sans-serif; 
