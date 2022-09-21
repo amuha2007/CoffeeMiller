@@ -874,7 +874,7 @@
 }
 @media screen and (max-width:555px) {
     .modalWindowContainerLeft>img{
-        width: 170px !important;
+        width: 170px ;
     }
     .divSearchTovarCoffeeForImg{
         width: 170px;
@@ -886,10 +886,10 @@
         
       }
     .modalWindowContainerRight>p{
-    font-size:14px !important;
+    font-size:14px ;
     }
     .divSearchTovarForInfoPrices>p{
-        font-size: 12px !important;
+        font-size: 12px ;
     }
     .divSearchTovarForInfoPrices>button{
         font-size: 12px;
@@ -968,7 +968,7 @@
 }
 @media screen and (max-width:500px){
     #modalWindowCloseRegistration{
-        left:85%;!important
+        left:85%;
     }
     .foodCatalogMainHeader{
         display: flex;
@@ -1104,8 +1104,8 @@
 }
 @media screen and (max-width:435px){
     .modalWindowContainerRightInput{
-        font-size:12px !important;
-        padding:5px !important;
+        font-size:12px ;
+        padding:5px ;
     }
     .modalWindowContainerRight>p{
         font-size:14px;
