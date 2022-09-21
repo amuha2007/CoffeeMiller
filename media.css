@@ -967,6 +967,9 @@
     }
 }
 @media screen and (max-width:500px){
+    #modalWindowCloseRegistration{
+        left:85%;
+    }
     .foodCatalogMainHeader{
         display: flex;
         flex-direction: column;
