@@ -1104,6 +1104,15 @@
     .modalWindowContainerRight>p{
         font-size:18px;
     }
+    .modalWindowregistrationButton{
+        padding: 5px;
+    }
+    #fogetPassword{
+    font-size:12px;
+    }
+    #backtoPage{
+    font-size:12px;
+    }
     .SubscribeForNews{
         top: -1010px;
     }
