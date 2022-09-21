@@ -344,7 +344,7 @@ export function blog(){
                     
                     <p class='typeActiveText'>${elem.headerInfo.text}</p>
                     
-                    <div class='typeActiveImg' style='background-image:url(".${elem.headerInfo.img}")'></div>
+                    <div class='typeActiveImg' style='background-image:url("${elem.headerInfo.img}")'></div>
                     </div>
                     <div class='forThemes'>
                         <div class='wrapper'>
@@ -360,7 +360,7 @@ export function blog(){
                 <p class='themeName'>${theme.themeName}</p>
                 <p class='themeText'>${theme.themeText}</p>
                 <div class='themeForImg'>
-                    <img src='.${theme.themeImg}'>
+                    <img src='${theme.themeImg}'>
                 </div>
                 `;
                 document.querySelector('.forThemes').children[0].appendChild(divForTheme);
