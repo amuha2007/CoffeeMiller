@@ -20,15 +20,15 @@ export function registration(element){
             modalWindow.innerHTML=`
                 <div class='modalWindowContainerFront'>
                     <div class='modalWindowContainerLeft'>
-                        <img src='./img/coffee-breans&cup2.png' style='width:220px'> 
+                        <img src='./img/coffee-breans&cup2.png'> 
                         <p  class='modalWindowHeaderText'>Добро пожаловать!</p>
                         <p>Уже есть аккаунт?</p>
                         <button class='modalWindowButton'>Войти</button>
                     </div>
 
                     <div class='modalWindowContainerRight'>
-                        <img src='./img/Logo.png' style='height:40px'>
-                        <p style='font-family: Ubuntu, sans-serif; font-style: normal;font-weight: 900;font-size: 25px; margin:10px;'>Регистрация</p>
+                        <img src='./img/Logo.png' class='modalWindowContainerRightLogo'>
+                        <p class='modalWindowContainerRightP'>Регистрация</p>
                         <p id='modalWindowText' style='text-align:center;font-family: Ubuntu, sans-serif;font-size:14px;'>Зарегистрируйтесь на сайте, чтобы первым получать скидки <br>и узнавать акционные предложения!</p>
                         <input class='modalWindowContainerRightInput' placeholder='Имя и фамилия'></input>
                         <input type='Email' class='modalWindowContainerRightInput' placeholder='Email'></input>
@@ -41,14 +41,14 @@ export function registration(element){
                 </div>
                 <div class='modalWindowContainerBack'>
                     <div class='modalWindowContainerLeft'>
-                    <img src='./img/coffee-breans&cup2.png' style='width:220px'>
+                    <img src='./img/coffee-breans&cup2.png'>
                     
                     <p style='text-align: center;'>Получайте скидки первым</p>
                     <button class='modalWindowButton' id='modalWindowButtonRegistation'>Регистрация</button>
                     </div>
                     <div class='modalWindowContainerRight'>
-                        <img src='./img/Logo.png' style='height:40px'>
-                        <p style='font-family: Ubuntu, sans-serif; font-style: normal;font-weight: 900;font-size: 25px; margin:10px;'>Войти в личный кабинет</p>
+                        <img src='./img/Logo.png' class='modalWindowContainerRightLogo'>
+                        <p class='modalWindowContainerRightP'>Войти в личный кабинет</p>
                         
                         
                         <input type='Email' class='modalWindowContainerRightInput' placeholder='Email'></input>
@@ -121,7 +121,7 @@ let ForgetPassword=function(event){
     setTimeout(() => {
         document.querySelectorAll('.modalWindowContainerRight')[1].innerHTML=`
                     <img src='./img/Logo.png' style='height:40px'>
-                    <p style='font-family: Ubuntu, sans-serif; font-style: normal;font-weight: 900;font-size: 25px; margin:10px;'>Забыли пароль?</p>
+                    <p class='modalWindowContainerRightP'>Забыли пароль?</p>
                     <input type='Email' class='modalWindowContainerRightInput' placeholder='Email'></input>
                     <button id='modalWindowregistrationButtonRecoveryCod'>Получить код</button>
                     <a href='' id='backtoPage'>Вернуться на страницу назад</a>
