@@ -1414,7 +1414,7 @@
   transition: 1s;
   opacity: 0;
   height: 80%;
-  min-height:400px;
+  min-height:345px;
   backface-visibility: hidden;
   /*пробую играть с контейнером и его прозрачностью*/
   /* opacity: 0; */
@@ -1435,7 +1435,7 @@
   transition: 1s;
   backface-visibility: hidden;
   height: 80%;
-  min-height:400px;
+  min-height:345px;
 }
 
 .modalWindowContainerLeft{
