@@ -873,6 +873,9 @@
     }
 }
 @media screen and (max-width:555px) {
+    .modalWindowContainerLeft>img{
+        width: 170px;
+    }
     .divSearchTovarCoffeeForImg{
         width: 170px;
         height: 124px;
