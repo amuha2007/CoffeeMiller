@@ -4,15 +4,6 @@
     }
 };
     
-
-
-
-@media screen and (max-width:1520px){
-    /* надо поработать с "Как мы обжариваем кофе" с векторами */
-    /* .HowFriedCoffee{
-
-    } */
-}
 @media screen and (max-width:1650px){
     #catalogItem0{
         grid-column-start: 2;
