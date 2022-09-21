@@ -24,7 +24,7 @@ export function CoffeCatalogMain(){
     let coffeCatalogMain = document.createElement('div');
     coffeCatalogMain.setAttribute('class', 'coffeCatalogMain');
 
-    navigationsA('Главная','Каталог товаров','Свежеобжаренный кофе','./img/coffee-breans&cup2.png');
+    navigationsA('Главная','Каталог товаров','Свежеобжаренный кофе','/img/coffee-breans&cup2.png');
     document.querySelector('.main').appendChild(coffeCatalogMain);
     document.querySelector('#navigationsVector').style.top='325px';
     //<div class='searchingTovars'></div>
@@ -99,30 +99,6 @@ export function CoffeCatalogMain(){
     `;
     document.querySelector('.main').appendChild(coffeCatalogMain);
     
-
-/*
-                <ul>
-                    <p>Кислинка</p>
-                    <li><div class='circle'></div>Низкая</li>
-                    <li><div class='circle'></div>Средняя</li>
-                    <li><div class='circle'></div>Высокая</li>
-                </ul>
-*/ 
-
-    // document.querySelector('#coffeeCatalogMainButton').addEventListener('mousedown', function(){
-    //     this.style.cssText='box-shadow:none; top:5px;'
-    // })
-
-    // document.querySelector('#coffeeCatalogMainButton').addEventListener('mouseup', function(){
-    //     this.style.cssText='box-shadow: #000000 0px 5px 8px; top:0px';
-    // })
-
-    // document.querySelector('#coffeeCatalogMainButton').addEventListener('mouseout', function(){
-    //     this.style.cssText='box-shadow: #000000 0px 5px 8px; top:0px';
-    // })
-
-    
-
 
     
     let coffeeCatalogWraperCards=document.createElement('div');
