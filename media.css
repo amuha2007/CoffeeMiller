@@ -189,12 +189,7 @@
 }
 
 @media screen and (max-width:950px) {
-    .modalWindowContainerBack {
-      height: 50%;
-    }
-    .modalWindowContainerFront{
-        height: 50%; 
-    }
+    
     .basketItemName>p{
         font-size: 14px;
     }
@@ -273,6 +268,9 @@
     }
 }
 @media screen and (max-width:851px){
+    .openCard_Container_Img>img{
+        margin-right: 0px;
+    }
     .openCard_Container_Info_Corns{
         text-align: center;
         margin-top: 15px;
@@ -327,6 +325,7 @@
         height: 160px;
     }
     
+
     
 }
 
@@ -438,9 +437,7 @@
 .card_description{
     flex-direction: column-reverse;
 }
-.openCard_Container_Info{
-    margin-left: 23px;
-}    
+   
 .openCard_Container_Img{
     margin-right: 0px;
 }
@@ -873,9 +870,6 @@
     }
 }
 @media screen and (max-width:555px) {
-    .modalWindowContainerLeft>img{
-        width: 170px ;
-    }
     .divSearchTovarCoffeeForImg{
         width: 170px;
         height: 124px;
@@ -885,11 +879,8 @@
         height: 125px;
         
       }
-    .modalWindowContainerRight>p{
-    font-size:14px ;
-    }
     .divSearchTovarForInfoPrices>p{
-        font-size: 12px ;
+        font-size: 12px;
     }
     .divSearchTovarForInfoPrices>button{
         font-size: 12px;
@@ -967,8 +958,50 @@
     }
 }
 @media screen and (max-width:500px){
-    #modalWindowCloseRegistration{
-        left:85%;
+    .modalWindowContainerFront{
+        height: 400px;
+    }
+    .modalWindowContainerBack{
+        height: 400px;
+    }
+    #backtoPage{
+        font-size: 13px;
+        padding-left: 5px;
+    padding-right: 5px;
+    }
+    #modalWindowClose {
+        margin-top: 30px;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 85%;
+    }
+    #modalWindowCloseRegistration {
+        margin-top: 30px;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 85%;
+    }
+    .modalWindowContainerRightInput{
+        padding: 5px;
+        font-size: 11px;
+    }
+    #fogetPassword {
+        font-family: 'Ubuntu', sans-serif;
+        text-decoration: underline;
+        color: #000000;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .modalWindowContainerRight>img {
+        width: 150px;
+    }
+    .modalWindowContainerLeft>img{
+        width: 160px;
+    }
+    .modalWindowContainerRightP{
+        font-size: 20px;
     }
     .foodCatalogMainHeader{
         display: flex;
@@ -994,11 +1027,20 @@
     }
 }
 @media screen and (max-width:480px){
-    
+    .nav_toogle {
+        right: -9px;
+    }
     .logo>img{
         width: 136px;
         height: 74px;
         margin-top: 20px;
+    }
+    .navButtonsLinks {
+        flex-direction: column;
+        display: none;
+        cursor: pointer;
+        position: relative;
+        left: 9px;
     }
 
     .coffeCatalogMainParamsRight{
@@ -1069,6 +1111,10 @@
     }
 }
 @media screen and (max-width:450px){
+    .NewsCompanyContainerForImg> img {
+        padding-left: 0px;
+        border-radius: 10px;
+    }
     .NewsCompanyContentWithImg{
         flex-direction: column;
         height: auto;
@@ -1079,6 +1125,10 @@
     }
 }
 @media screen and (max-width:446px){
+    .modalWindowContainerRightInput {
+        padding: 5px;
+        font-size: 9px;
+    }
     .divSearchTovarCoffeeForImg>img {
         height: 107px;
     }
@@ -1103,22 +1153,6 @@
     }
 }
 @media screen and (max-width:435px){
-    .modalWindowContainerRightInput{
-        font-size:12px ;
-        padding:5px ;
-    }
-    .modalWindowContainerRight>p{
-        font-size:14px;
-    }
-    .modalWindowregistrationButton{
-        padding: 4px;
-    }
-    #fogetPassword{
-    font-size:12px;
-    }
-    #backtoPage{
-    font-size:12px;
-    }
     .SubscribeForNews{
         top: -1010px;
     }
@@ -1157,6 +1191,10 @@
     }
 }
 @media screen and (max-width:410px){
+    
+    .modalWindowButton{
+        font-size: 11px;
+    }
     .divSearchTovarCoffeeForImg>img {
         height: 85px;
     }
@@ -1211,8 +1249,17 @@
         height: 500px;
     }
 }
-
+@media screen and (max-width:375px){
+    .themeForImg {
+        height: 177px;
+    }
+}
 @media screen and (max-width:364px){
+    .logo>img {
+        width: 110px;
+        height: 53px;
+        margin-top: 29px;
+    }
     .navigationsAContainer>a{
      font-size: 11px;
     }
@@ -1225,6 +1272,10 @@
     }
 }
 @media screen and (max-width:356px){
+    #modalWindowregistrationButtonRecoveryCod{
+        width: 100px;
+        font-size: 12px;
+    }
     .QuestionContainer {
         width: 535px;
         
@@ -1236,5 +1287,46 @@
 @media screen and (max-width:348px){
     .WeInInstagram {
         top: 205px;
+    }
+}
+
+@media screen and (max-width: 375px){
+.themeForImg {
+    height: 160px;
+}
+.divSearchTovarForInfo>p{
+    font-size: 13px;
+}
+}
+@media screen and (max-width:330px){
+    .contactsButtons>#contacts ,#shops {
+        
+        height: 42px;
+        
+    }
+    .containerForQuestion>p {
+        font-size: 12px;
+    }
+    .containerForQuestion {
+        width: 235px;
+        margin-left: 282px;
+    }
+    .modalWindowContainerRight>img {
+        width: 110px;
+    }
+    .modalWindowContainerLeft>img {
+        width: 130px;
+    }
+    .modalWindowContainerFront {
+        height: 350px;
+    }
+    .modalWindowContainerBack {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:272px){
+    .WeInInstagram {
+        top: 275px;
     }
 }
