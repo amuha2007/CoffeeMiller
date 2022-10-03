@@ -12,6 +12,7 @@ import {FooterWithVector} from "../modules/footerWithVector.js";
 
 
 export function cardOpen(data){
+    document.querySelector('.navButtonsLinks').classList.remove('visibility');
     document.querySelector('.main').style.height='fit-content';
     //возвращаю страницу к самому верху
     console.log(data);
