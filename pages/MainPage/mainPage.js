@@ -8,7 +8,8 @@ import {catalogWithDiscountedCorusel} from'../../modules/catalogWithDiscounted.j
 import {registration} from "../../modules/registration.js";
 import { CoffeeCard } from "../../modules/coffeeCard.js";
 import { buttonToTop } from "../../modules/buttomToTop.js";
-
+import { blog } from "../blog/blog.js";
+import { Contacts } from "../contacts/contacts.js";
 
 export function mainPage(){
 
@@ -152,7 +153,15 @@ setTimeout(() => {
     registration(document.querySelector('#registration'));
     buttonToTop();
     window.scrollTo(0,0);
-
+    document.querySelector('.footer').querySelector('.logo').addEventListener('click',function(){
+        mainPage();
+    })
+    document.querySelector('.footer').querySelector('.navButtons').children[0].addEventListener('click',function(){
+        blog();
+    })
+    document.querySelector('.footer').querySelector('.navButtons').children[1].addEventListener('click',function(){
+        Contacts();
+    })
 }, 0);
     
 
