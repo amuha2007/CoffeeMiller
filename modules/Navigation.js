@@ -57,7 +57,10 @@ export function Nav(){
         event.preventDefault();
         Contacts();
         });
-        
+        document.querySelector('.logo').children[0].addEventListener('click', function(){
+            
+            PageMain();
+        });
     document.querySelector('#basket').addEventListener('click', Basket);
     
 
