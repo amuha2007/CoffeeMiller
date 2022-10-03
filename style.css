@@ -1416,6 +1416,7 @@
   height: 80%;
   min-height:345px;
   backface-visibility: hidden;
+  max-width: 1000px;
   /*пробую играть с контейнером и его прозрачностью*/
   /* opacity: 0; */
 }
@@ -1436,6 +1437,7 @@
   backface-visibility: hidden;
   height: 80%;
   min-height:345px;
+  max-width: 1000px;
 }
 
 .modalWindowContainerLeft{
