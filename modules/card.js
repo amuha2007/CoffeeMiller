@@ -7,7 +7,7 @@ import { BasketLength } from "../pages/basket/basketLength.js";
 export function Card(cardData){
 
     
-
+document.querySelector('.navButtonsLinks').classList.remove('visibility');
 
 if(document.querySelector('.teaCatalogMainBodyContainer')){
     //document.querySelector('.teaCatalogMainBodyContainer').innerHTML='';
