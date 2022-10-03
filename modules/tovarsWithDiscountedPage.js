@@ -14,6 +14,7 @@ import navigationsA from '../pages/pagesModules/navigationsA.js';
 
 
 export function tovarsWithdiscountedPage(event){
+    document.querySelector('.navButtonsLinks').classList.remove('visibility');
     window.scrollTo(0, 0);
     
     document.querySelector('.main').classList.add('mainHeight');
