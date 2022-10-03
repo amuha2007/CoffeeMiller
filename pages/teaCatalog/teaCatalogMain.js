@@ -48,7 +48,7 @@ for(let i=0;i<teaCardsMassive.length;i++){
 
 
 export function teaCatalogMain(){
-
+    document.querySelector('.navButtonsLinks').classList.remove('visibility');
     window.scrollTo(0, 0);
 
     //console.log(teaCardsMassive);
