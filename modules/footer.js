@@ -11,7 +11,7 @@ export function Footer(){
                 <div class='footerNavigation'>
                     <div class="logo"><img src="./img/Logo.png"></div>
                     <div class="navButtons">
-                    <a href='#'>Каталог товаров</a>
+                    
                     <a href='#'>Блог</a>
                     <a href='#'>Контакты</a>
                 </div> 
