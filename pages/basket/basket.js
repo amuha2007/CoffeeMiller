@@ -103,7 +103,8 @@ Array.from(document.querySelector('.basketItems').children).forEach(function(ele
 export function Basket(){
 
     window.scrollTo(0, 0);
-
+    document.querySelector('.navButtonsLinks').classList.remove('visibility');
+    
     document.querySelector('.main').style.height='auto';
     document.querySelector('.main').innerHTML=`<div class='searchingTovars'></div>`;
     
