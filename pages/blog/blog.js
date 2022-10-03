@@ -199,7 +199,7 @@ import {OpenNews} from '../../modules/openNews.js';
 
 
 export function blog(){
-
+document.querySelector('.navButtonsLinks').classList.remove('visibility');
     if(window.innerWidth<750){
         document.querySelector('.main').style.cssText='height:0px';
          setTimeout(() => {
