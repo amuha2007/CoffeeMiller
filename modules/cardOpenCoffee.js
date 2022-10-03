@@ -9,6 +9,7 @@ import {FooterWithVector} from "../modules/footerWithVector.js";
 document.querySelector('.main').style.height='fit-content';
 
 let howtocookdiv = function(cardCoffeeInfo){
+    document.querySelector('.navButtonsLinks').classList.remove('visibility');
     //cardCoffeeInfo.howToCook
     cardCoffeeInfo.howToCook.forEach(function(elem){
         if(elem=='Турка'){
