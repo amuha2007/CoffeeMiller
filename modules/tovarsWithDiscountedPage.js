@@ -19,11 +19,7 @@ export function tovarsWithdiscountedPage(event){
     
     document.querySelector('.main').classList.add('mainHeight');
     
-    //     let imgVector=document.createElement('img');
-    // imgVector.setAttribute('src','/img/VectorOrangeReverse.png');
-    // imgVector.setAttribute('id', 'navigationsVector');
-    // imgVector.style.width='100%';
-    // document.querySelector('.main').appendChild(imgVector);
+   
     
     
     document.querySelector('.main').innerHTML=`
