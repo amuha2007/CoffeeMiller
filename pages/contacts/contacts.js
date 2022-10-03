@@ -9,6 +9,7 @@ import {registration} from "../../modules/registration.js";
 import { FooterWithVector } from "../../modules/footerWithVector.js";
 export function Contacts(){
     window.scrollTo(0, 0);
+    document.querySelector('.navButtonsLinks').classList.remove('visibility');
 
     document.querySelector('.nav').children[0].style.cssText='box-shadow: rgb(192 192 192) 0px 0px 15px;'
 
