@@ -3,7 +3,7 @@ import { FooterWithVector } from "./footerWithVector.js";
 
 
 export function OpenNews(data){
-    console.log(data);
+    document.querySelector('.navButtonsLinks').classList.remove('visibility');
     document.querySelector('.main').innerHTML=`
     <div class='searchingTovars'></div>
         <div class='containerForNews'>
