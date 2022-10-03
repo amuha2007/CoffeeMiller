@@ -15,7 +15,7 @@ allTovarsData.vending.forEach(function(elem){
 
 
 export function vendingCatalogMain(){
-
+    document.querySelector('.navButtonsLinks').classList.remove('visibility');
     window.scrollTo(0, 0);
 
     document.querySelector('.main').style.height='auto';
