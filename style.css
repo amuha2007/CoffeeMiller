@@ -1097,15 +1097,23 @@
 
   
 }
+
+.WeInInstagramImgsWraper{
+  width: 1116px;
+  height: 438px;
+  position: relative;
+  overflow: hidden;
+  left: 427px;
+}
+
 .WeInInstagramImgsContainer{
   display: flex;
-  flex-wrap: wrap;
+  
   width: 1335px;
   justify-content: center;
   position: absolute;
   
-  left: 510px;
-  overflow: hidden;
+  
 }
 .WeInInstagramImage{
   width: 200px;
