@@ -18,8 +18,11 @@ export function WeInInstagram(){
         </div>
 
         <div class='WeInInstagramImgs'>
-            <div class='WeInInstagramImgsContainer' id='WeInInstagramImgsContainer1'></div> 
-            <div class='WeInInstagramImgsContainer' id='WeInInstagramImgsContainer2'></div>       
+            <div class='WeInInstagramImgsWraper'>
+                <div class='WeInInstagramImgsContainer' id='WeInInstagramImgsContainer1'></div> 
+                <div class='WeInInstagramImgsContainer' id='WeInInstagramImgsContainer2'></div>   
+                <div id='opacityArrow'><img src='/img/ArrowRightOrange.png'></div>
+            </div>    
         </div>
         
     <div>
@@ -27,7 +30,7 @@ export function WeInInstagram(){
     <div class="WeInInstagramFooter">
     <img src='./img/coffee-breans&cup2.png' id='coffeeBreansCup2'>
     
-    <div id='opacityArrow'><img src='./img/ArrowRightOrange.png'></div>
+    
     
     
     </div>
