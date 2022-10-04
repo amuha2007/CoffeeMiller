@@ -1081,8 +1081,8 @@
   line-height: 43px;
   justify-content: center;
   position: relative;
-  top: -70px;
-  left: 85.1%;
+  left: 872px;
+    top: 199px;
   cursor: pointer;
 }
 
@@ -3461,7 +3461,11 @@ position: absolute;
 .vectorsContainer{
   position: absolute;
   top: -200px;
-  
+  width: 100%;
+}
+
+.vectorsContainer>img{
+  width: 100%;
 }
 
 .FAQContent>img{
