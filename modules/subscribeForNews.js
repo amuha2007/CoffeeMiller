@@ -81,5 +81,5 @@ export function SubscribeForNews(elemTo){
     }
 
     console.log(document.querySelector('#vectorBg').children[3]);
-    document.querySelector('#vectorBg').children[3].style.cssText='position:relative;';
+    document.querySelector('#vectorBg').children[3].style.cssText='position:relative;top: -5px;';
 }
