@@ -21,7 +21,7 @@ export function WeInInstagram(){
             <div class='WeInInstagramImgsWraper'>
                 <div class='WeInInstagramImgsContainer' id='WeInInstagramImgsContainer1'></div> 
                 <div class='WeInInstagramImgsContainer' id='WeInInstagramImgsContainer2'></div>   
-                <div id='opacityArrow'><img src='/img/ArrowRightOrange.png'></div>
+                <div id='opacityArrow'><img src='./img/ArrowRightOrange.png'></div>
             </div>    
         </div>
         
