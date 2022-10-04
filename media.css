@@ -1,7 +1,11 @@
+@media screen and (min-width:2400px){
+    /* .WeInInstagramContainer {
+        
+        left: 10%;
+    } */
+}
 @media screen and (min-width:2150px){
-    #opacityArrow{
-        left :1800px;
-    }
+    
     .WeInInstagramContainer {
         
         left: 5%;
@@ -27,7 +31,12 @@
     }
 };
     
-
+@media screen and (min-width:1618px){
+    .WeInInstagramImgsContainer{
+        justify-content: center;
+        overflow: visible;
+    }
+}
 
 
 @media screen and (max-width:1520px){
@@ -86,7 +95,9 @@
     .textHeader{
         font-size: 18px;
     }
-
+    #opacityArrow{
+        left: 649px;
+    }
     
 }
 
@@ -167,7 +178,9 @@
 
 @media screen and (max-width:1125px){
     
-
+#opacityArrow{
+        left: 427px;
+    }
     .catalogWithDiscounted{
         margin-bottom: 20px;
     }
@@ -225,6 +238,9 @@
     }
 }
 @media screen and (max-width:910px) {
+    #opacityArrow{
+        left: 208px;
+    }
     .basketItem{
         height: 170px;
     }
@@ -353,9 +369,7 @@
 }
 
 @media screen and (max-width:825px) {
-    .WeInInstagramImgs{
-        left: -120px;
-    }
+    
     .WeInInstagramIphons{
         left: -50px;
     }
@@ -643,6 +657,14 @@
 @media screen and (max-width:705px){
 
 }
+
+@media screen and (max-width:685px){
+    .WeInInstagramImgsWraper {
+        
+        left: 377px;
+    }
+}
+
 @media screen and (max-width:678px){
     .workWithUsRightSectionText{
         font-size: 14px;
@@ -724,7 +746,15 @@
     
 }
 @media screen and (max-width:630px){
-    
+    #Iphone1{
+        display: none;
+    }
+    #Iphone2{
+        display: none;
+    }
+    .WeInInstagramImgsWraper {
+        left: 0px;
+    }
     
     .WorkWithUs{
         margin-top: 130px;
@@ -740,15 +770,7 @@
     
 }
 @media screen and (max-width:618px){
-    #Iphone1{
-        display: none;
-    }
-    #Iphone2{
-        display: none;
-    }
-    .WeInInstagramImgs {
-        left: -477px;
-    }
+   
     .coffeCatalogMainTypes{
        justify-content: center;
     }
